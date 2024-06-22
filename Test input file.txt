@@ -1,0 +1,74 @@
+            output = self.exe.output_format_huawei  # Initializes the structured output format for huawei nodes
+
+            if self.ui.cb_physical_inteface.isChecked():
+                dis_int_output = self.SSH_connection.send_command_timing(self.exe.display_interface_cmd,
+                                                                         use_textfsm=True,
+
+                                                                         textfsm_template="TEXT_FSM_FILES"
+                                                                                          "//huawei_vrp_display_interface")
+                output.update({self.exe.display_interface_cmd: dis_int_output})
+
+            if self.ui.cb_trunks.isChecked():
+                dis_int_eth_output = self.SSH_connection.send_command_timing(self.exe.display_interface_eth_cmd,
+                                                                             use_textfsm=True,
+
+                                                                             textfsm_template="TEXT_FSM_FILES"
+                                                                                              "//huawei_vrp_display_interface_eth_trunk")
+                output.update({self.exe.display_interface_eth_cmd: dis_int_eth_output})
+
+            if self.ui.cb_interface_decription.isChecked():
+                dis_int_des_output = self.SSH_connection.send_command_timing(self.exe.display_interface_description_cmd,
+                                                                             use_textfsm=True,
+
+                                                                             textfsm_template="TEXT_FSM_FILES"
+                                                                                              "//huawei_vrp_display_interface_description")
+                output.update({self.exe.display_interface_description_cmd: dis_int_des_output})
+
+            if self.ui.cb_lpu_cards.isChecked():
+                dis_dev_pic_output = self.SSH_connection.send_command_timing(self.exe.display_device_pic_status_cmd,
+                                                                             use_textfsm=True,
+
+                                                                             textfsm_template="TEXT_FSM_FILES"
+                                                                                              "//huawei_vrp_display_device_pic_status.textfsm")
+                output.update({self.exe.display_device_pic_status_cmd: dis_dev_pic_output})
+                #-------------
+                dis_version_output = self.SSH_connection.send_command_timing(self.exe.display_version_cmd,
+                                                                             use_textfsm=True,
+
+                                                                             textfsm_template="TEXT_FSM_FILES"
+                                                                                              "//huawei_vrp_display_version.textfsm")
+                output.update({self.exe.display_version_cmd: dis_version_output})
+                #---------
+                dis_elable_brief_output = self.SSH_connection.send_command_timing(self.exe.display_elable_brief_cmd,
+                                                                                  use_textfsm=True,
+
+                                                                                  textfsm_template="TEXT_FSM_FILES"
+                                                                                                   "//huawei_vrp_display_elable_brief.textfsm")
+                output.update({self.exe.display_elable_brief_cmd: dis_elable_brief_output})
+
+            if self.ui.cb_licenses.isChecked():
+                dis_lic_ver_output = self.SSH_connection.send_command_timing(self.exe.display_license_verbose_cmd,
+                                                                             use_textfsm=True,
+
+                                                                             textfsm_template="TEXT_FSM_FILES/huawei_vrp_display_license_verbose")
+                output.update({self.exe.display_license_verbose_cmd: dis_lic_ver_output})
+                dis_lic_res_output = self.SSH_connection.send_command_timing(
+                    self.exe.display_license_resource_usage_cmd,
+                    use_textfsm=True,
+
+                    textfsm_template="TEXT_FSM_FILES/huawei_vrp_display_license_resource_usage")
+                output.update({self.exe.display_license_resource_usage_cmd: dis_lic_res_output})
+
+            if self.ui.cb_optical_modules.isChecked():
+                dis_opt_mod_output = self.SSH_connection.send_command_timing(self.exe.display_optical_module_brief_cmd,
+                                                                             use_textfsm=True,
+
+                                                                             textfsm_template="TEXT_FSM_FILES"
+                                                                                              "//huawei_vrp_display_optical_module_brief.textfsm")
+                output.update({self.exe.display_optical_module_brief_cmd: dis_opt_mod_output})
+
+            if self.ui.cb_port_lic_utilization.isChecked():
+                dis_lic_port_basic_output = self.SSH_connection.send_command_timing(
+                    self.exe.display_license_resource_usage_port_basic_cmd, use_textfsm=True,
+                    textfsm_template="TEXT_FSM_FILES//huawei_vrp_display_lic_res_usage_port_basic.textfsm")
+                output.update({self.exe.display_license_resource_usage_port_basic_cmd: dis_lic_port_basic_output})

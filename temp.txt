@@ -1,0 +1,20 @@
+exe.display_interface_eth_cmd = "display interface eth-trunk"
+exe.display_license_verbose_cmd = "display license verbose"
+exe.display_license_resource_usage_cmd = "display license resource usage"
+exe.display_device_pic_status_cmd = "display device pic-status"
+        exe.display_version_cmd = "display version"
+        exe.display_elable_brief_cmd = "display elabel brief"
+
+  exe.display_optical_module_brief_cmd = "display optical-module brief"
+  exe.display_interface_cmd = "display interface"
+  exe.display_interface_description_cmd = "display interface description"
+    exe.display_license_resource_usage_port_basic_cmd = "display license resource usage port-basic all"
+
+
+
+
+
+
+
+
+
