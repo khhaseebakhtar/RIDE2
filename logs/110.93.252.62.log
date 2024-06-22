@@ -1,0 +1,13 @@
+
+Warning: The initial password poses security risks.
+The password needs to be changed. Change now? [Y/N]:N
+
+Info: The max number of VTY users is 20, the number of current VTY users online is 1, and total number of terminal users online is 1.
+      The current login time is 2024-06-22 14:14:35+04:40.
+      The last login time is 2024-06-22 14:14:34+04:40 from 110.93.192.18 through SSH.
+<KHI-CE8850-32CQ-CLS>
+<KHI-CE8850-32CQ-CLS>
+<KHI-CE8850-32CQ-CLS>screen-length 0 temporary
+Error: You do not have permission to run the command or the command is incomplete.
+<KHI-CE8850-32CQ-CLS>
+<KHI-CE8850-32CQ-CLS>quit
