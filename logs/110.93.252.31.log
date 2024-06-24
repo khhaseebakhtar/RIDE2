@@ -3,8 +3,8 @@ Warning: The initial password poses security risks.
 The password needs to be changed. Change now? [Y/N]:N
 
 Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
-      The current login time is 2024-06-24 15:34:14+05:00.
-      The last login time is 2024-06-24 15:34:12+05:00 from 110.93.192.18 through SSH.
+      The current login time is 2024-06-24 15:53:08+05:00.
+      The last login time is 2024-06-24 15:53:06+05:00 from 110.93.192.18 through SSH.
 <KHI-PL-CE8850-32CQ>
 <KHI-PL-CE8850-32CQ>
 <KHI-PL-CE8850-32CQ>screen-length 0 temporary
@@ -22,17 +22,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2022-04-27 07:21:09+05:00
 Last physical down time : 2022-04-27 07:20:33+05:00
-Current system time: 2024-06-24 15:34:14+05:00
+Current system time: 2024-06-24 15:53:09+05:00
 Statistics last cleared:2023-02-24 11:18:48+05:00
-    Last 300 seconds input rate: 22292220291 bits/sec, 2237995 packets/sec
-    Last 300 seconds output rate: 2241947628 bits/sec, 1200929 packets/sec
+    Last 300 seconds input rate: 22062499519 bits/sec, 2217003 packets/sec
+    Last 300 seconds output rate: 2171028303 bits/sec, 1169293 packets/sec
     Input peak rate 35749153114 bits/sec, Record time: 2024-02-08 22:48:07+05:00
     Output peak rate 36179066859 bits/sec, Record time: 2023-05-08 14:22:00+05:00
-    Input :  90939132338088876 bytes,     75491205062843 packets
-    Output:  22752334042725288 bytes,     50515255536901 packets
+    Input :  90942307701489967 bytes,     75493755780636 packets
+    Output:  22752648641162515 bytes,     50516610669317 packets
     Input: 
-      Unicast:         74855336531554,   Multicast:             31420735781
-      Broadcast:             16762033,   Jumbo:                604431009569
+      Unicast:         74857864595111,   Multicast:             31421696580
+      Broadcast:             16762359,   Jumbo:                604452726587
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -44,15 +44,15 @@ Statistics last cleared:2023-02-24 11:18:48+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:         50381325159545,   Multicast:             50115804861
-      Broadcast:          34640481300,   Jumbo:                 49174087117
+      Unicast:         50382676490951,   Multicast:             50116776671
+      Broadcast:          34641469642,   Jumbo:                 49175932052
       Discard:               53519355,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  55.73%
-    Last 300 seconds output utility rate: 5.60%
+    Last 300 seconds input utility rate:  55.15%
+    Last 300 seconds output utility rate: 5.42%
 
 100GE1/0/2 current state : DOWN (ifindex: 6)
 Line protocol current state : DOWN 
@@ -66,7 +66,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : 2023-05-08 17:51:30+05:00
 Last physical down time : 2023-05-08 21:03:19+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:09+05:00
 Statistics last cleared:2023-05-08 14:29:00+05:00
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -110,17 +110,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2024-06-20 08:19:22+05:00
 Last physical down time : 2024-06-20 08:19:21+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:09+05:00
 Statistics last cleared:2023-12-29 11:16:25+05:00
-    Last 300 seconds input rate: 15440473831 bits/sec, 6756624 packets/sec
-    Last 300 seconds output rate: 41385772913 bits/sec, 9413849 packets/sec
+    Last 300 seconds input rate: 14971443432 bits/sec, 6549861 packets/sec
+    Last 300 seconds output rate: 40899890815 bits/sec, 9214583 packets/sec
     Input peak rate 17271429642 bits/sec, Record time: 2024-03-19 22:21:37+05:00
     Output peak rate 42998749491 bits/sec, Record time: 2024-05-18 23:00:10+05:00
-    Input :  14252793812768379 bytes,     49954460721669 packets
-    Output:  45293727992487405 bytes,     84120705106371 packets
+    Input :  14254948266309921 bytes,     49962010355041 packets
+    Output:  45299556353665382 bytes,     84131261427579 packets
     Input: 
-      Unicast:         49954458804195,   Multicast:                  508607
-      Broadcast:                 6881,   Jumbo:                           0
+      Unicast:         49962008437528,   Multicast:                  508645
+      Broadcast:                 6882,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -132,15 +132,15 @@ Statistics last cleared:2023-12-29 11:16:25+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:         84120689931273,   Multicast:                15164983
+      Unicast:         84131246251348,   Multicast:                15166117
       Broadcast:                 6922,   Jumbo:                        3193
       Discard:                2859707,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  15.44%
-    Last 300 seconds output utility rate: 41.38%
+    Last 300 seconds input utility rate:  14.97%
+    Last 300 seconds output utility rate: 40.89%
 
 100GE1/0/4 current state : Administratively DOWN (ifindex: 8)
 Line protocol current state : DOWN 
@@ -154,7 +154,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : 2024-01-17 18:08:21+05:00
 Last physical down time : 2024-01-17 18:28:32+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:09+05:00
 Statistics last cleared:2024-01-17 18:29:38+05:00
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -199,7 +199,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2022-09-21 10:18:53+05:00
 Last physical down time : 2023-05-15 12:20:19+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:09+05:00
 Statistics last cleared:2023-12-20 14:59:30+05:00
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -244,7 +244,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : 2022-07-14 06:29:55+05:00
 Last physical down time : 2022-09-07 23:34:22+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:09+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -288,17 +288,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                           RS-FEC
 Last physical up time   : 2023-03-31 14:38:30+05:00
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:09+05:00
 Statistics last cleared:2023-03-31 14:38:49+05:00
-    Last 300 seconds input rate: 3794994802 bits/sec, 1530212 packets/sec
-    Last 300 seconds output rate: 28199526385 bits/sec, 2926987 packets/sec
+    Last 300 seconds input rate: 3697849398 bits/sec, 1559055 packets/sec
+    Last 300 seconds output rate: 29215288352 bits/sec, 3014432 packets/sec
     Input peak rate 14578499498 bits/sec, Record time: 2024-02-14 22:40:43+05:00
     Output peak rate 50735010520 bits/sec, Record time: 2024-02-21 21:58:35+05:00
-    Input :  12871197696836450 bytes,     41787533110965 packets
-    Output:  88433040332278040 bytes,     73025024845559 packets
+    Input :  12871726490950040 bytes,     41789293729905 packets
+    Output:  88437158402138194 bytes,     73028427566953 packets
     Input: 
-      Unicast:         41787530713549,   Multicast:                 1298815
-      Broadcast:              1098601,   Jumbo:                           0
+      Unicast:         41789291332450,   Multicast:                 1298853
+      Broadcast:              1098602,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -310,15 +310,15 @@ Statistics last cleared:2023-03-31 14:38:49+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:         73024985848301,   Multicast:                38962410
-      Broadcast:                34301,   Jumbo:                         549
+      Unicast:         73028388568557,   Multicast:                38963544
+      Broadcast:                34303,   Jumbo:                         549
       Discard:                4966414,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  3.79%
-    Last 300 seconds output utility rate: 28.19%
+    Last 300 seconds input utility rate:  3.69%
+    Last 300 seconds output utility rate: 29.21%
 
 100GE1/0/8 current state : Administratively DOWN (ifindex: 12)
 Line protocol current state : DOWN 
@@ -333,7 +333,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:09+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -378,7 +378,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -422,16 +422,16 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                           RS-FEC
 Last physical up time   : 2022-01-10 15:56:19+05:00
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:never
-    Last 300 seconds input rate: 46777558991 bits/sec, 4422436 packets/sec
-    Last 300 seconds output rate: 15584780800 bits/sec, 2578499 packets/sec
+    Last 300 seconds input rate: 47698202524 bits/sec, 4506704 packets/sec
+    Last 300 seconds output rate: 16362310898 bits/sec, 2686784 packets/sec
     Input peak rate 61218641358 bits/sec, Record time: 2022-02-01 22:27:51+05:00
     Output peak rate 30671133615 bits/sec, Record time: 2023-12-18 23:27:36+05:00
-    Input : 297633921895010964 bytes,    224621620231940 packets
-    Output: 114242362896525413 bytes,    143902309414031 packets
+    Input : 297640665852000597 bytes,    224626722077487 packets
+    Output: 114244647454765177 bytes,    143905324643755 packets
     Input: 
-      Unicast:        224621612465798,   Multicast:                 7766129
+      Unicast:        224626714311232,   Multicast:                 7766242
       Broadcast:                   13,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
@@ -444,15 +444,15 @@ Statistics last cleared:never
       Ignoreds:                     0
    
     Output:
-      Unicast:        143902274920475,   Multicast:                34429011
-      Broadcast:                64545,   Jumbo:                           0
+      Unicast:        143905290150161,   Multicast:                34429049
+      Broadcast:                64546,   Jumbo:                           0
       Discard:              379651373,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  46.77%
-    Last 300 seconds output utility rate: 15.58%
+    Last 300 seconds input utility rate:  47.70%
+    Last 300 seconds output utility rate: 16.36%
 
 100GE1/0/11 current state : UP (ifindex: 15)
 Line protocol current state : UP 
@@ -466,16 +466,16 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2022-09-14 05:06:50+05:00
 Last physical down time : 2022-09-14 04:58:42+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:never
-    Last 300 seconds input rate: 30552427206 bits/sec, 3158538 packets/sec
-    Last 300 seconds output rate: 10293819126 bits/sec, 1590738 packets/sec
+    Last 300 seconds input rate: 31355196985 bits/sec, 3234889 packets/sec
+    Last 300 seconds output rate: 10176037308 bits/sec, 1617537 packets/sec
     Input peak rate 100000000000 bits/sec, Record time: 2023-05-12 22:36:42+05:00
     Output peak rate 31658983945 bits/sec, Record time: 2023-05-12 22:36:42+05:00
-    Input : 137821809254146375 bytes,    115975449621311 packets
-    Output:  48099914580986892 bytes,     66252272215534 packets
+    Input : 137826138930475804 bytes,    115979028742791 packets
+    Output:  48101312277575347 bytes,     66254045336612 packets
     Input: 
-      Unicast:        115975446706886,   Multicast:                 2914423
+      Unicast:        115979025828329,   Multicast:                 2914461
       Broadcast:                    2,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
@@ -488,15 +488,15 @@ Statistics last cleared:never
       Ignoreds:                     0
    
     Output:
-      Unicast:         66252269566239,   Multicast:                 2586174
-      Broadcast:                63121,   Jumbo:                           0
+      Unicast:         66254042687278,   Multicast:                 2586212
+      Broadcast:                63122,   Jumbo:                           0
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  30.55%
-    Last 300 seconds output utility rate: 10.29%
+    Last 300 seconds input utility rate:  31.36%
+    Last 300 seconds output utility rate: 10.17%
 
 100GE1/0/12 current state : Administratively DOWN (ifindex: 16)
 Line protocol current state : DOWN 
@@ -511,7 +511,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : 2023-08-25 12:08:59+05:00
 Last physical down time : 2023-11-13 22:37:52+05:00
-Current system time: 2024-06-24 15:34:15+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:2024-04-08 23:19:46+05:00
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -556,7 +556,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -601,7 +601,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -645,16 +645,16 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                           RS-FEC
 Last physical up time   : 2024-05-26 17:32:07+05:00
 Last physical down time : 2024-05-26 17:28:12+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:2024-05-26 17:07:13+05:00
-    Last 300 seconds input rate: 3878733650 bits/sec, 964090 packets/sec
-    Last 300 seconds output rate: 18707063665 bits/sec, 1998870 packets/sec
+    Last 300 seconds input rate: 3787037284 bits/sec, 998270 packets/sec
+    Last 300 seconds output rate: 20201263862 bits/sec, 2128560 packets/sec
     Input peak rate 4494172295 bits/sec, Record time: 2024-05-30 17:17:36+05:00
     Output peak rate 22837005660 bits/sec, Record time: 2024-06-13 15:03:22+05:00
-    Input :    725503984379681 bytes,      1460785856181 packets
-    Output:   3945450441075501 bytes,      3219981480120 packets
+    Input :    726037583071100 bytes,      1461897030876 packets
+    Output:   3948227206988401 bytes,      3222329796556 packets
     Input: 
-      Unicast:          1460785682885,   Multicast:                  173295
+      Unicast:          1461896857502,   Multicast:                  173373
       Broadcast:                    1,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
@@ -667,15 +667,15 @@ Statistics last cleared:2024-05-26 17:07:13+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:          3219978980898,   Multicast:                 2498070
-      Broadcast:                 1152,   Jumbo:                           0
+      Unicast:          3222327296200,   Multicast:                 2499203
+      Broadcast:                 1153,   Jumbo:                           0
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  3.87%
-    Last 300 seconds output utility rate: 18.70%
+    Last 300 seconds input utility rate:  3.78%
+    Last 300 seconds output utility rate: 20.19%
 
 100GE1/0/16 current state : UP (ifindex: 20)
 Line protocol current state : UP 
@@ -689,16 +689,16 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                           RS-FEC
 Last physical up time   : 2024-05-26 17:32:06+05:00
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:2024-05-26 17:13:19+05:00
-    Last 300 seconds input rate: 3634228219 bits/sec, 919167 packets/sec
-    Last 300 seconds output rate: 18814102177 bits/sec, 2008462 packets/sec
+    Last 300 seconds input rate: 3765048032 bits/sec, 978343 packets/sec
+    Last 300 seconds output rate: 20816199243 bits/sec, 2180461 packets/sec
     Input peak rate 4345250686 bits/sec, Record time: 2024-06-12 16:15:51+05:00
     Output peak rate 22848266762 bits/sec, Record time: 2024-06-13 15:33:38+05:00
-    Input :    728100097267328 bytes,      1455141013617 packets
-    Output:   3966394872478382 bytes,      3237235851827 packets
+    Input :    728629169867804 bytes,      1456227912540 packets
+    Output:   3969235075842242 bytes,      3239634366128 packets
     Input: 
-      Unicast:          1455140839209,   Multicast:                  173290
+      Unicast:          1456227738057,   Multicast:                  173369
       Broadcast:                 1118,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
@@ -711,15 +711,15 @@ Statistics last cleared:2024-05-26 17:13:19+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:          3237233353833,   Multicast:                 2497996
+      Unicast:          3239631867001,   Multicast:                 2499129
       Broadcast:                    0,   Jumbo:                           0
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  3.63%
-    Last 300 seconds output utility rate: 18.81%
+    Last 300 seconds input utility rate:  3.76%
+    Last 300 seconds output utility rate: 20.82%
 
 100GE1/0/17:1 current state : DOWN (ifindex: 80)
 Line protocol current state : DOWN 
@@ -734,7 +734,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:45+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -779,7 +779,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:45+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:10+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -824,7 +824,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:45+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -869,7 +869,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:45+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -914,7 +914,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:50+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -959,7 +959,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:50+05:00
-Current system time: 2024-06-24 15:34:16+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1004,7 +1004,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:50+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1049,7 +1049,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:50+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1094,7 +1094,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:51+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1139,7 +1139,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:51+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1184,7 +1184,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:51+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1229,7 +1229,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:51+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1274,7 +1274,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:55+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1319,7 +1319,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:55+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1364,7 +1364,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:55+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1409,7 +1409,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:39:55+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:11+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1454,7 +1454,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:40:00+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1499,7 +1499,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:40:00+05:00
-Current system time: 2024-06-24 15:34:17+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1544,7 +1544,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:40:00+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1589,7 +1589,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:40:00+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1634,7 +1634,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:40:05+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1679,7 +1679,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:40:05+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1724,7 +1724,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:40:05+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1769,7 +1769,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-10-18 05:40:05+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1813,17 +1813,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2024-02-21 17:54:42+05:00
 Last physical down time : 2024-02-21 17:54:41+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:2022-10-21 03:09:47+05:00
-    Last 300 seconds input rate: 484831603 bits/sec, 66441 packets/sec
-    Last 300 seconds output rate: 160486982 bits/sec, 46818 packets/sec
+    Last 300 seconds input rate: 444911239 bits/sec, 63390 packets/sec
+    Last 300 seconds output rate: 141953957 bits/sec, 43494 packets/sec
     Input peak rate 4029823382 bits/sec, Record time: 2024-04-20 08:59:24+05:00
     Output peak rate 1013048802 bits/sec, Record time: 2024-01-31 09:24:21+05:00
-    Input :   1474369509540095 bytes,      1667789595911 packets
-    Output:    748479139331848 bytes,      1286917272199 packets
+    Input :   1474433689064151 bytes,      1667862212930 packets
+    Output:    748500329485589 bytes,      1286968033643 packets
     Input: 
-      Unicast:          1458258695913,   Multicast:                12199377
-      Broadcast:              1610889,   Jumbo:                209517074927
+      Unicast:          1458319948135,   Multicast:                12199942
+      Broadcast:              1610890,   Jumbo:                209528453941
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -1835,15 +1835,15 @@ Statistics last cleared:2022-10-21 03:09:47+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:          1128974227895,   Multicast:               388643651
-      Broadcast:            713058892,   Jumbo:                156841333302
+      Unicast:          1129021456312,   Multicast:               388652661
+      Broadcast:            713063469,   Jumbo:                156844861201
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  4.85%
-    Last 300 seconds output utility rate: 1.60%
+    Last 300 seconds input utility rate:  4.45%
+    Last 300 seconds output utility rate: 1.42%
 
 100GE1/0/23:2 current state : UP (ifindex: 69)
 Line protocol current state : UP 
@@ -1857,17 +1857,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2023-09-13 21:00:54+05:00
 Last physical down time : 2023-09-13 20:39:26+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:2022-10-21 04:03:37+05:00
-    Last 300 seconds input rate: 24817 bits/sec, 16 packets/sec
-    Last 300 seconds output rate: 34824 bits/sec, 11 packets/sec
+    Last 300 seconds input rate: 21982 bits/sec, 16 packets/sec
+    Last 300 seconds output rate: 33428 bits/sec, 10 packets/sec
     Input peak rate 50162727 bits/sec, Record time: 2023-01-20 17:00:08+05:00
     Output peak rate 43517408 bits/sec, Record time: 2024-03-01 17:11:10+05:00
-    Input :     11309112177660 bytes,        11056380285 packets
-    Output:       635027972510 bytes,         4605898030 packets
+    Input :     11309115337408 bytes,        11056398346 packets
+    Output:       635032801374 bytes,         4605910967 packets
     Input: 
-      Unicast:            10574075129,   Multicast:               288255952
-      Broadcast:            194049201,   Jumbo:                           3
+      Unicast:            10574081363,   Multicast:               288266465
+      Broadcast:            194050515,   Jumbo:                           3
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -1879,8 +1879,8 @@ Statistics last cleared:2022-10-21 04:03:37+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:             4561654925,   Multicast:                20987652
-      Broadcast:             23255453,   Jumbo:                           0
+      Unicast:             4561667356,   Multicast:                20987690
+      Broadcast:             23255921,   Jumbo:                           0
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
@@ -1901,18 +1901,18 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2023-09-13 21:00:54+05:00
 Last physical down time : 2023-09-13 20:39:59+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:12+05:00
 Statistics last cleared:2022-10-21 04:36:30+05:00
-    Last 300 seconds input rate: 109707265 bits/sec, 31541 packets/sec
-    Last 300 seconds output rate: 519289564 bits/sec, 70076 packets/sec
+    Last 300 seconds input rate: 113066507 bits/sec, 33399 packets/sec
+    Last 300 seconds output rate: 500066478 bits/sec, 68349 packets/sec
     Input peak rate 6434957404 bits/sec, Record time: 2023-08-30 17:53:59+05:00
     Output peak rate 4002211473 bits/sec, Record time: 2024-04-20 08:59:27+05:00
-    Input :   1270678449282565 bytes,      1973642320543 packets
-    Output:   1696428942896387 bytes,      1938482589807 packets
+    Input :   1270697852571777 bytes,      1973680075276 packets
+    Output:   1696496935016426 bytes,      1938558197823 packets
     Input: 
-      Unicast:          1953058708353,   Multicast:             11782823579
-      Broadcast:           6521347214,   Jumbo:                  2274951632
-      Discard:                      0,   Frames:                    4489728
+      Unicast:          1953096412368,   Multicast:             11782836734
+      Broadcast:           6521366333,   Jumbo:                  2274969998
+      Discard:                      0,   Frames:                    4489841
       Pause:                        0
       
       Total Error:                  4
@@ -1923,15 +1923,15 @@ Statistics last cleared:2022-10-21 04:36:30+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:          1899801728291,   Multicast:               118488113
-      Broadcast:           1111685789,   Jumbo:                 37450687561
+      Unicast:          1899877203765,   Multicast:               118491154
+      Broadcast:           1111717588,   Jumbo:                 37450785316
       Discard:                  37373,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  1.09%
-    Last 300 seconds output utility rate: 5.18%
+    Last 300 seconds input utility rate:  1.13%
+    Last 300 seconds output utility rate: 5.01%
 
 100GE1/0/23:4 current state : Administratively DOWN (ifindex: 71)
 Line protocol current state : DOWN 
@@ -1946,7 +1946,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2023-10-07 14:31:24+05:00
 Last physical down time : 2023-11-13 22:37:52+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -1990,17 +1990,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2022-10-21 03:53:03+05:00
 Last physical down time : 2022-10-21 03:52:06+05:00
-Current system time: 2024-06-24 15:34:18+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:2022-10-21 03:09:47+05:00
-    Last 300 seconds input rate: 600494409 bits/sec, 83805 packets/sec
-    Last 300 seconds output rate: 197930543 bits/sec, 51318 packets/sec
+    Last 300 seconds input rate: 658812792 bits/sec, 84631 packets/sec
+    Last 300 seconds output rate: 206922251 bits/sec, 54332 packets/sec
     Input peak rate 4032565367 bits/sec, Record time: 2024-04-20 08:59:24+05:00
     Output peak rate 1172288421 bits/sec, Record time: 2024-01-31 09:16:01+05:00
-    Input :   1518323817243091 bytes,      1805581373308 packets
-    Output:    924235912433827 bytes,      1435446060414 packets
+    Input :   1518410025235070 bytes,      1805676190606 packets
+    Output:    924268499872658 bytes,      1435508387380 packets
     Input: 
-      Unicast:          1570827759871,   Multicast:               135077244
-      Broadcast:           1130180747,   Jumbo:                233488347252
+      Unicast:          1570912273699,   Multicast:               135080547
+      Broadcast:           1130212010,   Jumbo:                233498624350
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -2012,15 +2012,15 @@ Statistics last cleared:2022-10-21 03:09:47+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:          1244094416603,   Multicast:               703704587
-      Broadcast:            604092979,   Jumbo:                190043840995
+      Unicast:          1244152232062,   Multicast:               703724352
+      Broadcast:            604094722,   Jumbo:                190048336244
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  5.99%
-    Last 300 seconds output utility rate: 1.97%
+    Last 300 seconds input utility rate:  6.58%
+    Last 300 seconds output utility rate: 2.07%
 
 100GE1/0/24:2 current state : UP (ifindex: 57)
 Line protocol current state : UP 
@@ -2034,17 +2034,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2022-10-21 04:28:26+05:00
 Last physical down time : 2022-10-21 04:28:16+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:2022-10-21 04:03:37+05:00
-    Last 300 seconds input rate: 37060 bits/sec, 27 packets/sec
-    Last 300 seconds output rate: 32179 bits/sec, 10 packets/sec
+    Last 300 seconds input rate: 27681 bits/sec, 26 packets/sec
+    Last 300 seconds output rate: 32140 bits/sec, 10 packets/sec
     Input peak rate 56386303 bits/sec, Record time: 2023-03-07 16:57:03+05:00
     Output peak rate 39497818 bits/sec, Record time: 2024-06-05 14:45:13+05:00
-    Input :     22463824422169 bytes,        16784063808 packets
-    Output:       702008841808 bytes,         5460717856 packets
+    Input :     22463828455501 bytes,        16784094016 packets
+    Output:       702013480384 bytes,         5460729512 packets
     Input: 
-      Unicast:            16427017068,   Multicast:               189077978
-      Broadcast:            167968762,   Jumbo:                           0
+      Unicast:            16427038918,   Multicast:               189084452
+      Broadcast:            167970646,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -2056,8 +2056,8 @@ Statistics last cleared:2022-10-21 04:03:37+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:             5431980718,   Multicast:                18202148
-      Broadcast:             10534990,   Jumbo:                           0
+      Unicast:             5431992335,   Multicast:                18202186
+      Broadcast:             10534991,   Jumbo:                           0
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
@@ -2078,18 +2078,18 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2023-05-31 12:24:21+05:00
 Last physical down time : 2023-05-31 12:23:52+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:2023-02-16 01:52:46+05:00
-    Last 300 seconds input rate: 246580326 bits/sec, 66631 packets/sec
-    Last 300 seconds output rate: 563002139 bits/sec, 80240 packets/sec
+    Last 300 seconds input rate: 233022182 bits/sec, 64374 packets/sec
+    Last 300 seconds output rate: 597799134 bits/sec, 79431 packets/sec
     Input peak rate 5882076467 bits/sec, Record time: 2023-08-30 17:55:40+05:00
     Output peak rate 4049786554 bits/sec, Record time: 2024-04-20 08:59:28+05:00
-    Input :    431898825211295 bytes,       883291361256 packets
-    Output:   1455883434006389 bytes,      1676187230514 packets
+    Input :    431932875230541 bytes,       883366709405 packets
+    Output:   1455965315880130 bytes,      1676279051941 packets
     Input: 
-      Unicast:           845728980173,   Multicast:             14803681171
-      Broadcast:           8138239561,   Jumbo:                 14616918950
-      Discard:                      0,   Frames:                    3541387
+      Unicast:           845803916145,   Multicast:             14803689306
+      Broadcast:           8138254783,   Jumbo:                 14617307666
+      Discard:                      0,   Frames:                    3541500
       Pause:                        0
       
       Total Error:                  6
@@ -2100,15 +2100,15 @@ Statistics last cleared:2023-02-16 01:52:46+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:          1642729043036,   Multicast:                39402436
-      Broadcast:             11438189,   Jumbo:                 33407346697
+      Unicast:          1642820776288,   Multicast:                39403404
+      Broadcast:             11438891,   Jumbo:                 33407433358
       Discard:                  24145,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  2.46%
-    Last 300 seconds output utility rate: 5.63%
+    Last 300 seconds input utility rate:  2.33%
+    Last 300 seconds output utility rate: 5.96%
 
 100GE1/0/24:4 current state : Administratively DOWN (ifindex: 59)
 Line protocol current state : DOWN 
@@ -2123,7 +2123,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2023-10-23 00:45:39+05:00
 Last physical down time : 2023-11-13 22:37:52+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:2023-11-15 17:04:13+05:00
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -2167,16 +2167,16 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                           RS-FEC
 Last physical up time   : 2024-06-24 12:39:18+05:00
 Last physical down time : 2024-06-24 12:39:18+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:2023-09-26 10:19:55+05:00
-    Last 300 seconds input rate: 1023932 bits/sec, 141 packets/sec
-    Last 300 seconds output rate: 28953 bits/sec, 8 packets/sec
+    Last 300 seconds input rate: 1116314 bits/sec, 146 packets/sec
+    Last 300 seconds output rate: 35893 bits/sec, 8 packets/sec
     Input peak rate 1006452290 bits/sec, Record time: 2024-05-18 04:01:12+05:00
     Output peak rate 32010264305 bits/sec, Record time: 2024-02-10 23:16:53+05:00
-    Input :     22618887885090 bytes,        27059228773 packets
-    Output:   1204402215477334 bytes,      1307841379706 packets
+    Input :     22619053285793 bytes,        27059398706 packets
+    Output:   1204402220649646 bytes,      1307841390075 packets
     Input: 
-      Unicast:            27058449797,   Multicast:                  776572
+      Unicast:            27058619693,   Multicast:                  776609
       Broadcast:                 2403,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
@@ -2189,7 +2189,7 @@ Statistics last cleared:2023-09-26 10:19:55+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:          1307840583513,   Multicast:                  777896
+      Unicast:          1307840593843,   Multicast:                  777935
       Broadcast:                18297,   Jumbo:                           0
       Discard:                9567653,   Buffers Purged:                  0
       Pause:                        0
@@ -2212,7 +2212,7 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                                -
 Last physical up time   : -
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -2256,18 +2256,18 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2023-12-28 18:39:37+05:00
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:2023-12-29 02:38:47+05:00
-    Last 300 seconds input rate: 55787629367 bits/sec, 9210779 packets/sec
-    Last 300 seconds output rate: 64441226709 bits/sec, 9232763 packets/sec
+    Last 300 seconds input rate: 58708555834 bits/sec, 9389421 packets/sec
+    Last 300 seconds output rate: 63466282700 bits/sec, 8997637 packets/sec
     Input peak rate 69147833172 bits/sec, Record time: 2024-05-30 23:59:32+05:00
     Output peak rate 79654310108 bits/sec, Record time: 2024-05-04 22:14:19+05:00
-    Input :  62653170686958060 bytes,     89178618296049 packets
-    Output:  92156838212588666 bytes,     93129572775478 packets
+    Input :  62661374962802181 bytes,     89189222449238 packets
+    Output:  92165901773933516 bytes,     93139917136919 packets
     Input: 
-      Unicast:         89129648939375,   Multicast:             14492617215
-      Broadcast:          12150861545,   Jumbo:                 22325403718
-      Discard:                      0,   Frames:                     474197
+      Unicast:         89140249714766,   Multicast:             14493310016
+      Broadcast:          12151729090,   Jumbo:                 22327221141
+      Discard:                      0,   Frames:                     474226
       Pause:                        0
       
       Total Error:                  3
@@ -2278,15 +2278,15 @@ Statistics last cleared:2023-12-29 02:38:47+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:         93046758370241,   Multicast:                31275447
-      Broadcast:               793502,   Jumbo:                 82782336292
+      Unicast:         93057095111630,   Multicast:                31277747
+      Broadcast:               793522,   Jumbo:                 82789954022
       Discard:                   4017,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  55.83%
-    Last 300 seconds output utility rate: 64.14%
+    Last 300 seconds input utility rate:  58.74%
+    Last 300 seconds output utility rate: 63.49%
 
 100GE1/0/28 current state : UP (ifindex: 32)
 Line protocol current state : UP 
@@ -2300,16 +2300,16 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2023-12-21 16:44:17+05:00
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:2023-12-21 16:43:55+05:00
-    Last 300 seconds input rate: 2709953944 bits/sec, 860370 packets/sec
-    Last 300 seconds output rate: 7536181131 bits/sec, 871920 packets/sec
+    Last 300 seconds input rate: 2674990498 bits/sec, 847142 packets/sec
+    Last 300 seconds output rate: 7339632033 bits/sec, 843880 packets/sec
     Input peak rate 5743148042 bits/sec, Record time: 2024-02-17 15:49:42+05:00
     Output peak rate 9459067397 bits/sec, Record time: 2024-05-15 10:07:57+05:00
-    Input :   3497085358547273 bytes,      8984349815689 packets
-    Output:   9777951825854949 bytes,      8675308693947 packets
+    Input :   3497454965828825 bytes,      8985313525379 packets
+    Output:   9779013101279625 bytes,      8676286037215 packets
     Input: 
-      Unicast:          8984348202133,   Multicast:                 1606436
+      Unicast:          8985311911709,   Multicast:                 1606550
       Broadcast:                 7120,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
@@ -2322,15 +2322,15 @@ Statistics last cleared:2023-12-21 16:43:55+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:          8675308093286,   Multicast:                  571939
-      Broadcast:                28722,   Jumbo:                           0
+      Unicast:          8676285436514,   Multicast:                  571977
+      Broadcast:                28724,   Jumbo:                           0
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  2.71%
-    Last 300 seconds output utility rate: 7.53%
+    Last 300 seconds input utility rate:  2.67%
+    Last 300 seconds output utility rate: 7.34%
 
 100GE1/0/29 current state : UP (ifindex: 33)
 Line protocol current state : UP 
@@ -2344,17 +2344,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2023-12-21 16:43:57+05:00
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:2023-12-21 16:43:55+05:00
-    Last 300 seconds input rate: 2687763279 bits/sec, 848998 packets/sec
-    Last 300 seconds output rate: 7632344666 bits/sec, 885021 packets/sec
+    Last 300 seconds input rate: 2600356194 bits/sec, 842965 packets/sec
+    Last 300 seconds output rate: 7352909509 bits/sec, 854729 packets/sec
     Input peak rate 5654861120 bits/sec, Record time: 2024-02-17 15:50:32+05:00
     Output peak rate 9526969607 bits/sec, Record time: 2024-05-15 10:07:57+05:00
-    Input :   3491632990306318 bytes,      8987182050636 packets
-    Output:   9867338810265258 bytes,      8753222235684 packets
+    Input :   3492011193673942 bytes,      8988142241092 packets
+    Output:   9868410795230804 bytes,      8754217640415 packets
     Input: 
-      Unicast:          8987180704832,   Multicast:                 1338644
-      Broadcast:                 7161,   Jumbo:                           0
+      Unicast:          8988140895191,   Multicast:                 1338739
+      Broadcast:                 7162,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -2366,15 +2366,15 @@ Statistics last cleared:2023-12-21 16:43:55+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:          8753221637443,   Multicast:                  598241
+      Unicast:          8754217042131,   Multicast:                  598285
       Broadcast:                    0,   Jumbo:                           0
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  2.68%
-    Last 300 seconds output utility rate: 7.63%
+    Last 300 seconds input utility rate:  2.60%
+    Last 300 seconds output utility rate: 7.36%
 
 100GE1/0/30 current state : UP (ifindex: 34)
 Line protocol current state : UP 
@@ -2389,17 +2389,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2022-01-10 15:56:19+05:00
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:13+05:00
 Statistics last cleared:never
-    Last 300 seconds input rate: 60417811026 bits/sec, 5893217 packets/sec
-    Last 300 seconds output rate: 15897669228 bits/sec, 3772308 packets/sec
+    Last 300 seconds input rate: 56292287579 bits/sec, 5178846 packets/sec
+    Last 300 seconds output rate: 18209192014 bits/sec, 3857175 packets/sec
     Input peak rate 97305570173 bits/sec, Record time: 2024-01-10 20:12:22+05:00
     Output peak rate 56636720699 bits/sec, Record time: 2024-05-30 23:59:29+05:00
-    Input : 439882713099944844 bytes,    313174551999154 packets
-    Output:  98610865635917842 bytes,    216515269955878 packets
+    Input : 439890872421056026 bytes,    313180791908469 packets
+    Output:  98613410583237270 bytes,    216519659168275 packets
     Input: 
-      Unicast:        313174050068869,   Multicast:               311045246
-      Broadcast:            190885040,   Jumbo:                           0
+      Unicast:        313180289948580,   Multicast:               311065718
+      Broadcast:            190894172,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -2411,15 +2411,15 @@ Statistics last cleared:never
       Ignoreds:                     0
    
     Output:
-      Unicast:        216510234336508,   Multicast:                50745257
-      Broadcast:           4984874114,   Jumbo:                           0
+      Unicast:        216514623475246,   Multicast:                50746973
+      Broadcast:           4984946057,   Jumbo:                           0
       Discard:              425874480,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  60.41%
-    Last 300 seconds output utility rate: 15.86%
+    Last 300 seconds input utility rate:  56.26%
+    Last 300 seconds output utility rate: 18.21%
 
 100GE1/0/31 current state : UP (ifindex: 35)
 Line protocol current state : UP 
@@ -2433,18 +2433,18 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                           RS-FEC
 Last physical up time   : 2023-12-25 21:18:06+05:00
 Last physical down time : 2023-12-25 20:53:16+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Statistics last cleared:never
-    Last 300 seconds input rate: 54897693959 bits/sec, 8865830 packets/sec
-    Last 300 seconds output rate: 64579516531 bits/sec, 9217416 packets/sec
+    Last 300 seconds input rate: 57065376659 bits/sec, 8976386 packets/sec
+    Last 300 seconds output rate: 63359018391 bits/sec, 9000981 packets/sec
     Input peak rate 68955324891 bits/sec, Record time: 2024-05-30 23:59:29+05:00
     Output peak rate 99974965076 bits/sec, Record time: 2023-05-13 23:37:51+05:00
-    Input : 265887651996120958 bytes,    386793776879031 packets
-    Output: 520908196874256168 bytes,    452908825440946 packets
+    Input : 265895632770556724 bytes,    386803922036825 packets
+    Output: 520917175858024684 bytes,    452919116610088 packets
     Input: 
-      Unicast:        386564191640270,   Multicast:            112535582762
-      Broadcast:          40706713442,   Jumbo:                 76328937245
-      Discard:                      0,   Frames:                   14004733
+      Unicast:        386574335947206,   Multicast:            112535759230
+      Broadcast:          40706772427,   Jumbo:                 76329551159
+      Discard:                      0,   Frames:                   14005215
       Pause:                        0
       
       Total Error:                 47
@@ -2455,15 +2455,15 @@ Statistics last cleared:never
       Ignoreds:                     0
    
     Output:
-      Unicast:        452266764057451,   Multicast:               174286057
-      Broadcast:             52461694,   Jumbo:                641834628065
+      Unicast:        452277047915510,   Multicast:               174293786
+      Broadcast:             52464816,   Jumbo:                641841923385
       Discard:              479585720,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  54.89%
-    Last 300 seconds output utility rate: 64.59%
+    Last 300 seconds input utility rate:  57.07%
+    Last 300 seconds output utility rate: 63.37%
 
 100GE1/0/32 current state : UP (ifindex: 36)
 Line protocol current state : UP 
@@ -2477,18 +2477,18 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                           RS-FEC
 Last physical up time   : 2022-01-10 15:56:23+05:00
 Last physical down time : 2022-01-10 15:54:28+05:00
-Current system time: 2024-06-24 15:34:19+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Statistics last cleared:never
-    Last 300 seconds input rate: 56301930534 bits/sec, 9174814 packets/sec
-    Last 300 seconds output rate: 63933743897 bits/sec, 9147617 packets/sec
+    Last 300 seconds input rate: 57624164190 bits/sec, 9201343 packets/sec
+    Last 300 seconds output rate: 62684228378 bits/sec, 8908292 packets/sec
     Input peak rate 68218076094 bits/sec, Record time: 2024-05-30 23:59:29+05:00
     Output peak rate 100000000000 bits/sec, Record time: 2023-12-23 21:48:08+05:00
-    Input : 253581918630485407 bytes,    332794326571047 packets
-    Output: 519697460176965299 bytes,    451883928890201 packets
+    Input : 253590058105416345 bytes,    332804783277402 packets
+    Output: 519706403911986290 bytes,    451894186219061 packets
     Input: 
-      Unicast:        332742433943595,   Multicast:             21377353896
-      Broadcast:           6824644246,   Jumbo:                 23665224254
-      Discard:                      0,   Frames:                   25404472
+      Unicast:        332752889743647,   Multicast:             21377457234
+      Broadcast:           6824777859,   Jumbo:                 23665892826
+      Discard:                      0,   Frames:                   25404842
       Pause:                        0
       
       Total Error:                  1
@@ -2499,15 +2499,15 @@ Statistics last cleared:never
       Ignoreds:                     0
    
     Output:
-      Unicast:        451217409631975,   Multicast:             48695485903
-      Broadcast:            157994829,   Jumbo:                617665771589
+      Unicast:        451227660159868,   Multicast:             48695495878
+      Broadcast:            158001170,   Jumbo:                617672554996
       Discard:             8014646119,   Buffers Purged:                  0
       Pause:                        0
 
     Input bandwidth utilization threshold : 90.00%
     Output bandwidth utilization threshold: 90.00%
-    Last 300 seconds input utility rate:  56.28%
-    Last 300 seconds output utility rate: 63.93%
+    Last 300 seconds input utility rate:  57.63%
+    Last 300 seconds output utility rate: 62.68%
 
 10GE1/0/1 current state : UP (ifindex: 37)
 Line protocol current state : UP 
@@ -2522,14 +2522,14 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                      -,     Fec:                             NONE
 Last physical up time   : 2023-05-31 12:47:06+05:00
 Last physical down time : 2023-05-31 12:46:42+05:00
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
-    Last 300 seconds output rate: 938 bits/sec, 1 packets/sec
+    Last 300 seconds output rate: 924 bits/sec, 1 packets/sec
     Input peak rate 792451468 bits/sec, Record time: 2023-02-01 09:07:35+05:00
     Output peak rate 569203766 bits/sec, Record time: 2023-12-16 09:41:04+05:00
     Input :    138449298663340 bytes,       120703580262 packets
-    Output:     33208199295884 bytes,        91929350485 packets
+    Output:     33208199433716 bytes,        91929351893 packets
     Input: 
       Unicast:           120697416121,   Multicast:                 5585729
       Broadcast:                32181,   Jumbo:                      546189
@@ -2544,8 +2544,8 @@ Statistics last cleared:never
       Ignoreds:                     0
    
     Output:
-      Unicast:            91906511610,   Multicast:                17076779
-      Broadcast:              5761499,   Jumbo:                         597
+      Unicast:            91906511610,   Multicast:                17077053
+      Broadcast:              5762633,   Jumbo:                         597
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
 
@@ -2567,17 +2567,17 @@ Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
 Mdi:                   AUTO,     Fec:                             NONE
 Last physical up time   : 2023-12-12 15:26:15+05:00
 Last physical down time : 2023-12-12 15:26:10+05:00
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Statistics last cleared:2023-11-16 18:17:03+05:00
-    Last 300 seconds input rate: 894 bits/sec, 0 packets/sec
-    Last 300 seconds output rate: 19 bits/sec, 0 packets/sec
+    Last 300 seconds input rate: 905 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 10 bits/sec, 0 packets/sec
     Input peak rate 270870 bits/sec, Record time: 2023-12-20 16:24:55+05:00
     Output peak rate 367026 bits/sec, Record time: 2023-12-20 11:12:22+05:00
-    Input :         2554182560 bytes,            9449144 packets
-    Output:          727814082 bytes,            4483546 packets
+    Input :         2554320259 bytes,            9449582 packets
+    Output:          727816770 bytes,            4483578 packets
     Input: 
-      Unicast:                2823877,   Multicast:                  673264
-      Broadcast:              5952003,   Jumbo:                           0
+      Unicast:                2823928,   Multicast:                  673302
+      Broadcast:              5952352,   Jumbo:                           0
       Discard:                      0,   Frames:                          0
       Pause:                        0
       
@@ -2589,7 +2589,7 @@ Statistics last cleared:2023-11-16 18:17:03+05:00
       Ignoreds:                     0
    
     Output:
-      Unicast:                1804793,   Multicast:                 2678073
+      Unicast:                1804825,   Multicast:                 2678073
       Broadcast:                  680,   Jumbo:                           0
       Discard:                      0,   Buffers Purged:                  0
       Pause:                        0
@@ -2606,18 +2606,18 @@ Description: TES-RES-IPTX-KHI-Bkup
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 3794994802 bits/sec, 1530212 packets/sec
-    Last 300 seconds output rate 28199526385 bits/sec, 2926987 packets/sec
-    Input: 41787538877674 packets,12871199459105648 bytes
-           41787536480260 unicast,1098601 broadcast,1298815 multicast
+    Last 300 seconds input rate 3697849398 bits/sec, 1559055 packets/sec
+    Last 300 seconds output rate 29215288352 bits/sec, 3014432 packets/sec
+    Input: 41789299751718 packets,12871728313908301 bytes
+           41789297354263 unicast,1098602 broadcast,1298853 multicast
            0 errors,0 drops
-    Output:73025036060345 packets,88433053867897453 bytes
-           73024997063082 unicast,34301 broadcast,38962414 multicast
+    Output:73028439118852 packets,88437172373087759 bytes
+           73028400120453 unicast,34303 broadcast,38963548 multicast
            0 errors,4966414 drops
-    Last 300 seconds input utility rate:  3.79%
-    Last 300 seconds output utility rate: 28.19%
+    Last 300 seconds input utility rate:  3.69%
+    Last 300 seconds output utility rate: 29.21%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2633,15 +2633,15 @@ Description: [INFRA-BKHL-L]-[CE8850-PL]-to-[5352-PL]-2x10G-AGG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 61877 bits/sec, 43 packets/sec
-    Last 300 seconds output rate 67003 bits/sec, 21 packets/sec
-    Input: 27840444127 packets,33772936605305 bytes
-           27001092208 unicast,362017967 broadcast,477333949 multicast
+    Last 300 seconds input rate 49663 bits/sec, 42 packets/sec
+    Last 300 seconds output rate 65568 bits/sec, 20 packets/sec
+    Input: 27840492362 packets,33772943792908 bytes
+           27001120281 unicast,362021161 broadcast,477350917 multicast
            0 errors,0 drops
-    Output:10066615896 packets,1337036815403 bytes
-           9993635653 unicast,33790443 broadcast,39189800 multicast
+    Output:10066640479 packets,1337046281758 bytes
+           9993659691 unicast,33790912 broadcast,39189876 multicast
            0 errors,0 drops
     Last 300 seconds input utility rate:  0.01%
     Last 300 seconds output utility rate: 0.01%
@@ -2661,18 +2661,18 @@ Description: Mobilink-Alberq-CIR-0883-39G-Primary[Multinet]-link-3
 Switch Port, PVID : 2828, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 15440806624 bits/sec, 6756476 packets/sec
-    Last 300 seconds output rate 41385820466 bits/sec, 9413560 packets/sec
-    Input: 49954494648596 packets,14252803520887315 bytes
-           49954492731126 unicast,6881 broadcast,508607 multicast
+    Last 300 seconds input rate 14971443432 bits/sec, 6549861 packets/sec
+    Last 300 seconds output rate 40899890815 bits/sec, 9214583 packets/sec
+    Input: 49962035782192 packets,14254955544612963 bytes
+           49962033864679 unicast,6882 broadcast,508645 multicast
            1527534 errors,0 drops
-    Output:84120752381029 packets,45293754086314763 bytes
-           84120737205926 unicast,6922 broadcast,15164988 multicast
+    Output:84131296964835 packets,45299576081026439 bytes
+           84131281788600 unicast,6922 broadcast,15166121 multicast
            0 errors,2859707 drops
-    Last 300 seconds input utility rate:  15.44%
-    Last 300 seconds output utility rate: 41.38%
+    Last 300 seconds input utility rate:  14.97%
+    Last 300 seconds output utility rate: 40.89%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2687,7 +2687,7 @@ Description: CMPAK-GI-FBB-KHI-100G-02-[CIR-0845]-Backup
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 0Mbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
     Last 300 seconds input rate 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate 0 bits/sec, 0 packets/sec
@@ -2714,18 +2714,18 @@ Description: [INFRA-CDN]-Facebook-FNA-KHI-Agg
 Switch Port, PVID : 2208, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 30552427206 bits/sec, 3158538 packets/sec
-    Last 300 seconds output rate 10293819126 bits/sec, 1590738 packets/sec
-    Input: 115975464948987 packets,137821827792804854 bytes
-           115975462034561 unicast,2 broadcast,2914424 multicast
+    Last 300 seconds input rate 31355196985 bits/sec, 3234889 packets/sec
+    Last 300 seconds output rate 10176037308 bits/sec, 1617537 packets/sec
+    Input: 115979036692246 packets,137826148534170532 bytes
+           115979033777783 unicast,2 broadcast,2914461 multicast
            0 errors,0 drops
-    Output:66252279799297 packets,48099920589377579 bytes
-           66252277150004 unicast,63121 broadcast,2586174 multicast
+    Output:66254049414074 packets,48101315516007712 bytes
+           66254046764740 unicast,63122 broadcast,2586212 multicast
            0 errors,0 drops
-    Last 300 seconds input utility rate:  30.55%
-    Last 300 seconds output utility rate: 10.29%
+    Last 300 seconds input utility rate:  31.35%
+    Last 300 seconds output utility rate: 10.17%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2741,15 +2741,15 @@ Description: CMPAK-GI-MBB-KHI-[1x100G]-[CIR-0845]-Backup-Tertiary
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 1023932 bits/sec, 141 packets/sec
-    Last 300 seconds output rate 28953 bits/sec, 8 packets/sec
-    Input: 27059228897 packets,22618887956886 bytes
-           27058449921 unicast,2403 broadcast,776572 multicast
+    Last 300 seconds input rate 1116314 bits/sec, 146 packets/sec
+    Last 300 seconds output rate 35893 bits/sec, 8 packets/sec
+    Input: 27059398758 packets,22619053292318 bytes
+           27058619745 unicast,2403 broadcast,776609 multicast
            2 errors,0 drops
-    Output:1307841379720 packets,1204402215480930 bytes
-           1307840583527 unicast,18297 broadcast,777896 multicast
+    Output:1307841390082 packets,1204402220651546 bytes
+           1307840593850 unicast,18297 broadcast,777935 multicast
            0 errors,9567653 drops
     Last 300 seconds input utility rate:  0.01%
     Last 300 seconds output utility rate: 0.01%
@@ -2768,18 +2768,18 @@ Description: [INFRA-BKHL-L]-MX960-PL-to-CE8850-[TMEN]-2x10G-AGG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 1085326012 bits/sec, 150246 packets/sec
-    Last 300 seconds output rate 358417525 bits/sec, 98136 packets/sec
-    Input: 3473371159096 packets,2992693498310034 bytes
-           3029086620205 unicast,1131791680 broadcast,147276628 multicast
+    Last 300 seconds input rate 1103724031 bits/sec, 148021 packets/sec
+    Last 300 seconds output rate 348876208 bits/sec, 97826 packets/sec
+    Input: 3473538585743 packets,2992843877830275 bytes
+           3029232383269 unicast,1131822924 broadcast,147280494 multicast
            37 errors,0 drops
-    Output:2722363458191 packets,1672715107185878 bytes
-           2373068760817 unicast,1317151876 broadcast,1092348268 multicast
+    Output:2722476540203 packets,1672768881048637 bytes
+           2373173799124 unicast,1317158204 broadcast,1092377040 multicast
            0 errors,0 drops
-    Last 300 seconds input utility rate:  5.42%
-    Last 300 seconds output utility rate: 1.79%
+    Last 300 seconds input utility rate:  5.51%
+    Last 300 seconds output utility rate: 1.74%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2796,18 +2796,18 @@ Description: [INFRA-CDN-GGC-100G]
 Switch Port, PVID : 2210, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 46777558991 bits/sec, 4422436 packets/sec
-    Last 300 seconds output rate 15584780800 bits/sec, 2578499 packets/sec
-    Input: 224621642538793 packets,297633951437597585 bytes
-           224621634772650 unicast,13 broadcast,7766130 multicast
+    Last 300 seconds input rate 47698202524 bits/sec, 4506704 packets/sec
+    Last 300 seconds output rate 16362310898 bits/sec, 2686784 packets/sec
+    Input: 224626739111656 packets,297640688369250194 bytes
+           224626731345400 unicast,13 broadcast,7766244 multicast
            0 errors,0 drops
-    Output:143902322376139 packets,114242372517900003 bytes
-           143902287882583 unicast,64545 broadcast,34429011 multicast
+    Output:143905334852406 packets,114244655254005117 bytes
+           143905300358811 unicast,64546 broadcast,34429049 multicast
            0 errors,379651373 drops
-    Last 300 seconds input utility rate:  46.77%
-    Last 300 seconds output utility rate: 15.58%
+    Last 300 seconds input utility rate:  47.69%
+    Last 300 seconds output utility rate: 16.36%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2823,18 +2823,18 @@ Description: TES-Res-Backup
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 80Gbps, Current BW : 40Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 22292220291 bits/sec, 2237995 packets/sec
-    Last 300 seconds output rate 2241947628 bits/sec, 1200929 packets/sec
-    Input: 75528048247806 packets,90973630030837076 bytes
-           74891950898313 unicast,16762235 broadcast,31437476114 multicast
+    Last 300 seconds input rate 22067742817 bits/sec, 2217383 packets/sec
+    Last 300 seconds output rate 2170607783 bits/sec, 1169560 packets/sec
+    Input: 75530599383627 packets,90976805971777824 bytes
+           74894479371869 unicast,16762556 broadcast,31438436096 multicast
            1748464 errors,0 drops
-    Output:50560802264068 packets,22798394254747156 bytes
-           50426842216119 unicast,34642898444 broadcast,50133297617 multicast
+    Output:50562157546901 packets,22798708837915361 bytes
+           50428193701582 unicast,34643888037 broadcast,50134269841 multicast
            0 errors,53519355 drops
-    Last 300 seconds input utility rate:  55.73%
-    Last 300 seconds output utility rate: 5.60%
+    Last 300 seconds input utility rate:  55.16%
+    Last 300 seconds output utility rate: 5.42%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2851,18 +2851,18 @@ Description: [INFRA-BKHL-L]-MX960-PL-to-CE-8850-2x100G-LAG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 300Gbps, Current BW : 300Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 166987253860 bits/sec, 27251423 packets/sec
-    Last 300 seconds output rate 192954487137 bits/sec, 27597796 packets/sec
-    Input: 808766733506568 packets,582122750231588598 bytes
-           808436286277793 unicast,59682220232 broadcast,148405554529 multicast
+    Last 300 seconds input rate 173398096683 bits/sec, 27567150 packets/sec
+    Last 300 seconds output rate 189509529469 bits/sec, 26906910 packets/sec
+    Input: 808797940160191 packets,582147075370714805 bytes
+           808467487798112 unicast,59683280904 broadcast,148406527447 multicast
            51 errors,0 drops
-    Output:997922338863916 packets,1132762505508333528 bytes
-           996530943805986 unicast,211250025 broadcast,48901047411 multicast
+    Output:997953232129262 packets,1132789492420783960 bytes
+           996561815340039 unicast,211259508 broadcast,48901067411 multicast
            0 errors,8494235856 drops
-    Last 300 seconds input utility rate:  55.66%
-    Last 300 seconds output utility rate: 64.31%
+    Last 300 seconds input utility rate:  57.79%
+    Last 300 seconds output utility rate: 63.16%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2880,18 +2880,18 @@ Description: [INFRA-BKHL-L]-CE8850-to-S5700-PL2-[TMEN]-2x10G-AGG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 356287591 bits/sec, 98172 packets/sec
-    Last 300 seconds output rate 1082291703 bits/sec, 150316 packets/sec
-    Input: 2856933807445 packets,1702577329390642 bytes
-           2798787813524 unicast,14659586821 broadcast,26586504777 multicast
+    Last 300 seconds input rate 346088689 bits/sec, 97773 packets/sec
+    Last 300 seconds output rate 1097865612 bits/sec, 147780 packets/sec
+    Input: 2857046902382 packets,1702630778366897 bytes
+           2798900446137 unicast,14659621151 broadcast,26586526062 multicast
            10 errors,0 drops
-    Output:3614670010114 packets,3152312547518530 bytes
-           3542530960933 unicast,1123124023 broadcast,157890556 multicast
+    Output:3614837430712 packets,3152462412702554 bytes
+           3542698160962 unicast,1123156505 broadcast,157894563 multicast
            0 errors,61518 drops
-    Last 300 seconds input utility rate:  1.78%
-    Last 300 seconds output utility rate: 5.41%
+    Last 300 seconds input utility rate:  1.73%
+    Last 300 seconds output utility rate: 5.48%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2908,18 +2908,18 @@ Description: [INFRA-BKHL-L]-[CE8850-PL]-to-[6730-02-PL]-2x100G-AGG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:20+05:00
+Current system time: 2024-06-24 15:53:14+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 5397717223 bits/sec, 1709368 packets/sec
-    Last 300 seconds output rate 15168525797 bits/sec, 1756941 packets/sec
-    Input: 17971534035223 packets,6988719170969960 bytes
-           17971531075861 unicast,14281 broadcast,2945081 multicast
+    Last 300 seconds input rate 5275346692 bits/sec, 1690107 packets/sec
+    Last 300 seconds output rate 14692541542 bits/sec, 1698609 packets/sec
+    Input: 17973455766471 packets,6989466159502766 bytes
+           17973452806900 unicast,14282 broadcast,2945289 multicast
            0 errors,0 drops
-    Output:17428533188986 packets,19645293086640743 bytes
-           17428531990085 unicast,28722 broadcast,1170180 multicast
+    Output:17430503677630 packets,19647423896510429 bytes
+           17430502478645 unicast,28724 broadcast,1170262 multicast
            0 errors,0 drops
-    Last 300 seconds input utility rate:  2.69%
-    Last 300 seconds output utility rate: 7.58%
+    Last 300 seconds input utility rate:  2.63%
+    Last 300 seconds output utility rate: 7.34%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2936,18 +2936,18 @@ Description: TWA-TES-GPON-KHI-NEW-LINK-2*100G
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:21+05:00
+Current system time: 2024-06-24 15:53:15+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 7514452300 bits/sec, 1883469 packets/sec
-    Last 300 seconds output rate 37523731048 bits/sec, 4007635 packets/sec
-    Input: 2915934036618 packets,1453607611501561 bytes
-           2915933688914 unicast,1119 broadcast,346585 multicast
+    Last 300 seconds input rate 7550664244 bits/sec, 1976662 packets/sec
+    Last 300 seconds output rate 41016726851 bits/sec, 4308939 packets/sec
+    Input: 2918132731612 packets,1454670489958853 bytes
+           2918132383750 unicast,1119 broadcast,346743 multicast
            0 errors,0 drops
-    Output:6457232556535 packets,7911863173752225 bytes
-           6457227559311 unicast,1152 broadcast,4996072 multicast
+    Output:6461980784303 packets,7917481995396946 bytes
+           6461975784810 unicast,1153 broadcast,4998340 multicast
            0 errors,0 drops
-    Last 300 seconds input utility rate:  3.75%
-    Last 300 seconds output utility rate: 18.76%
+    Last 300 seconds input utility rate:  3.77%
+    Last 300 seconds output utility rate: 20.50%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -2963,7 +2963,7 @@ Last line protocol up time : 2022-01-10 15:56:03+05:00
 Description: [INFRA-MGMT]-CE8850-Loopback-IP
 Route Port,The Maximum Transmit Unit is 1500 
 Internet Address is 110.93.252.31/32
-Current system time: 2024-06-24 15:34:21+05:00
+Current system time: 2024-06-24 15:53:15+05:00
 Physical is Loopback
     Last 300 seconds input rate 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate 0 bits/sec, 0 packets/sec
@@ -2986,7 +2986,7 @@ Media type: COMMON COPPER, Link type: auto negotiation
 Loopback: NONE, Maximal BW: 1000M, Current BW: 1000M, Full-duplex mode
 Last physical up time   : 2022-02-02 17:53:03+05:00
 Last physical down time : 2022-02-02 18:07:04+05:00
-Current system time: 2024-06-24 15:34:21+05:00
+Current system time: 2024-06-24 15:53:15+05:00
 Statistics last cleared:never
     Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
@@ -3014,7 +3014,7 @@ Line protocol current state : UP (spoofing)
 Description: 
 Route Port,The Maximum Transmit Unit is 1500 
 Internet protocol processing : disabled
-Current system time: 2024-06-24 15:34:21+05:00
+Current system time: 2024-06-24 15:53:15+05:00
 Physical is NULL DEV
     Last 300 seconds input rate 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate 0 bits/sec, 0 packets/sec
@@ -3034,7 +3034,7 @@ Route Port,The Maximum Transmit Unit is 1500
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-265a
 Physical is VLANIF
-Current system time: 2024-06-24 15:34:21+05:00
+Current system time: 2024-06-24 15:53:15+05:00
     Input bandwidth utilization  : --
     Output bandwidth utilization : --
 
@@ -3046,7 +3046,7 @@ Route Port,The Maximum Transmit Unit is 1500
 Internet Address is 110.93.252.11/31
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2654
 Physical is VLANIF
-Current system time: 2024-06-24 15:34:21+05:00
+Current system time: 2024-06-24 15:53:15+05:00
     Input bandwidth utilization  : --
     Output bandwidth utilization : --
 
@@ -3057,7 +3057,7 @@ Route Port,The Maximum Transmit Unit is 1500
 Internet Address is 110.93.203.209/30
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2656
 Physical is VLANIF
-Current system time: 2024-06-24 15:34:21+05:00
+Current system time: 2024-06-24 15:53:15+05:00
     Input bandwidth utilization  : --
     Output bandwidth utilization : --
 
@@ -3159,18 +3159,18 @@ Description: TES-RES-IPTX-KHI-Bkup
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 3796975577 bits/sec, 1530788 packets/sec
-    Last 300 seconds output rate 28221000578 bits/sec, 2928955 packets/sec
-    Input: 41787548762683 packets,12871202567572321 bytes
-           41787546365267 unicast,1098601 broadcast,1298815 multicast
+    Last 300 seconds input rate 3682911636 bits/sec, 1552160 packets/sec
+    Last 300 seconds output rate 29169184433 bits/sec, 3009649 packets/sec
+    Input: 41789309327582 packets,12871731174457355 bytes
+           41789306930127 unicast,1098602 broadcast,1298853 multicast
            0 errors,0 drops
-    Output:73025055017853 packets,88433076752983368 bytes
-           73025016020582 unicast,34301 broadcast,38962421 multicast
+    Output:73028457520489 packets,88437194664013936 bytes
+           73028418522084 unicast,34303 broadcast,38963554 multicast
            0 errors,4966414 drops
-    Last 300 seconds input utility rate:  3.79%
-    Last 300 seconds output utility rate: 28.22%
+    Last 300 seconds input utility rate:  3.68%
+    Last 300 seconds output utility rate: 29.16%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3186,15 +3186,15 @@ Description: [INFRA-BKHL-L]-[CE8850-PL]-to-[5352-PL]-2x10G-AGG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 61949 bits/sec, 43 packets/sec
-    Last 300 seconds output rate 66684 bits/sec, 21 packets/sec
-    Input: 27840444512 packets,33772936662896 bytes
-           27001092463 unicast,362017983 broadcast,477334063 multicast
+    Last 300 seconds input rate 50610 bits/sec, 42 packets/sec
+    Last 300 seconds output rate 66156 bits/sec, 21 packets/sec
+    Input: 27840492693 packets,33772943866444 bytes
+           27001120476 unicast,362021181 broadcast,477351033 multicast
            0 errors,0 drops
-    Output:10066616130 packets,1337036868860 bytes
-           9993635887 unicast,33790443 broadcast,39189800 multicast
+    Output:10066640688 packets,1337046351161 bytes
+           9993659894 unicast,33790918 broadcast,39189876 multicast
            0 errors,0 drops
     Last 300 seconds input utility rate:  0.01%
     Last 300 seconds output utility rate: 0.01%
@@ -3214,18 +3214,18 @@ Description: Mobilink-Alberq-CIR-0883-39G-Primary[Multinet]-link-3
 Switch Port, PVID : 2828, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 15500349044 bits/sec, 6760204 packets/sec
-    Last 300 seconds output rate 41425690016 bits/sec, 9412956 packets/sec
-    Input: 49954537309756 packets,14252815658648517 bytes
-           49954535392285 unicast,6881 broadcast,508607 multicast
+    Last 300 seconds input rate 14970897516 bits/sec, 6548645 packets/sec
+    Last 300 seconds output rate 40892601292 bits/sec, 9211422 packets/sec
+    Input: 49962076023248 packets,14254967110436980 bytes
+           49962074105735 unicast,6882 broadcast,508645 multicast
            1527534 errors,0 drops
-    Output:84120811535936 packets,45293786453068426 bytes
-           84120796360831 unicast,6922 broadcast,15164995 multicast
+    Output:84131353388944 packets,45299607621887210 bytes
+           84131338212703 unicast,6922 broadcast,15166127 multicast
            0 errors,2859707 drops
-    Last 300 seconds input utility rate:  15.50%
-    Last 300 seconds output utility rate: 41.42%
+    Last 300 seconds input utility rate:  14.97%
+    Last 300 seconds output utility rate: 40.89%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3240,7 +3240,7 @@ Description: CMPAK-GI-FBB-KHI-100G-02-[CIR-0845]-Backup
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 0Mbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
     Last 300 seconds input rate 0 bits/sec, 0 packets/sec
     Last 300 seconds output rate 0 bits/sec, 0 packets/sec
@@ -3267,18 +3267,18 @@ Description: [INFRA-CDN]-Facebook-FNA-KHI-Agg
 Switch Port, PVID : 2208, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 30502093869 bits/sec, 3153358 packets/sec
-    Last 300 seconds output rate 10265225088 bits/sec, 1587440 packets/sec
-    Input: 115975483904751 packets,137821850689225763 bytes
-           115975480990326 unicast,2 broadcast,2914424 multicast
+    Last 300 seconds input rate 31315667276 bits/sec, 3230929 packets/sec
+    Last 300 seconds output rate 10167945910 bits/sec, 1616124 packets/sec
+    Input: 115979056001657 packets,137826171914424503 bytes
+           115979053087194 unicast,2 broadcast,2914462 multicast
            0 errors,0 drops
-    Output:66252289337512 packets,48099928210865043 bytes
-           66252286688217 unicast,63121 broadcast,2586174 multicast
+    Output:66254059135812 packets,48101323158569547 bytes
+           66254056486477 unicast,63122 broadcast,2586213 multicast
            0 errors,0 drops
-    Last 300 seconds input utility rate:  30.50%
-    Last 300 seconds output utility rate: 10.26%
+    Last 300 seconds input utility rate:  31.31%
+    Last 300 seconds output utility rate: 10.16%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3294,15 +3294,15 @@ Description: CMPAK-GI-MBB-KHI-[1x100G]-[CIR-0845]-Backup-Tertiary
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 1004983 bits/sec, 139 packets/sec
-    Last 300 seconds output rate 28680 bits/sec, 8 packets/sec
-    Input: 27059229263 packets,22618888046200 bytes
-           27058450287 unicast,2403 broadcast,776572 multicast
+    Last 300 seconds input rate 1274941 bits/sec, 160 packets/sec
+    Last 300 seconds output rate 35628 bits/sec, 8 packets/sec
+    Input: 27059403321 packets,22619059409782 bytes
+           27058624307 unicast,2403 broadcast,776610 multicast
            2 errors,0 drops
-    Output:1307841379768 packets,1204402215493235 bytes
-           1307840583574 unicast,18297 broadcast,777897 multicast
+    Output:1307841390124 packets,1204402220668489 bytes
+           1307840593892 unicast,18297 broadcast,777935 multicast
            0 errors,9567653 drops
     Last 300 seconds input utility rate:  0.01%
     Last 300 seconds output utility rate: 0.01%
@@ -3321,18 +3321,18 @@ Description: [INFRA-BKHL-L]-MX960-PL-to-CE8850-[TMEN]-2x10G-AGG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 1082855658 bits/sec, 150022 packets/sec
-    Last 300 seconds output rate 357965728 bits/sec, 98079 packets/sec
-    Input: 3473372043627 packets,2992694264921473 bytes
-           3029087387082 unicast,1131791861 broadcast,147276649 multicast
+    Last 300 seconds input rate 1099393974 bits/sec, 147670 packets/sec
+    Last 300 seconds output rate 348504033 bits/sec, 97648 packets/sec
+    Input: 3473539307864 packets,2992844492073635 bytes
+           3029233025224 unicast,1131823045 broadcast,147280513 multicast
            37 errors,0 drops
-    Output:2722364061389 packets,1672715375236860 bytes
-           2373069320811 unicast,1317151899 broadcast,1092348456 multicast
+    Output:2722477036502 packets,1672769110754224 bytes
+           2373174255928 unicast,1317158237 broadcast,1092377184 multicast
            0 errors,0 drops
-    Last 300 seconds input utility rate:  5.41%
-    Last 300 seconds output utility rate: 1.78%
+    Last 300 seconds input utility rate:  5.49%
+    Last 300 seconds output utility rate: 1.74%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3349,18 +3349,18 @@ Description: [INFRA-CDN-GGC-100G]
 Switch Port, PVID : 2210, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 46785219929 bits/sec, 4422993 packets/sec
-    Last 300 seconds output rate 15584467445 bits/sec, 2578993 packets/sec
-    Input: 224621670631702 packets,297633988605572413 bytes
-           224621662865562 unicast,13 broadcast,7766130 multicast
+    Last 300 seconds input rate 47631871331 bits/sec, 4500529 packets/sec
+    Last 300 seconds output rate 16345891854 bits/sec, 2683771 packets/sec
+    Input: 224626759857034 packets,297640715797184783 bytes
+           224626752090779 unicast,13 broadcast,7766244 multicast
            0 errors,0 drops
-    Output:143902338818177 packets,114242384946575337 bytes
-           143902304324622 unicast,64545 broadcast,34429011 multicast
+    Output:143905347366090 packets,114244664823702399 bytes
+           143905312872495 unicast,64546 broadcast,34429049 multicast
            0 errors,379651373 drops
-    Last 300 seconds input utility rate:  46.78%
-    Last 300 seconds output utility rate: 15.58%
+    Last 300 seconds input utility rate:  47.63%
+    Last 300 seconds output utility rate: 16.34%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3376,18 +3376,18 @@ Description: TES-Res-Backup
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 80Gbps, Current BW : 40Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 22291501177 bits/sec, 2237942 packets/sec
-    Last 300 seconds output rate 2242641895 bits/sec, 1201005 packets/sec
-    Input: 75528062446935 packets,90973647703684136 bytes
-           74891964964650 unicast,16762235 broadcast,31437481200 multicast
+    Last 300 seconds input rate 22069025733 bits/sec, 2216998 packets/sec
+    Last 300 seconds output rate 2159181370 bits/sec, 1168813 packets/sec
+    Input: 75530613634189 packets,90976823783083801 bytes
+           74894493492981 unicast,16762556 broadcast,31438442006 multicast
            1748464 errors,0 drops
-    Output:50560809919502 packets,22798396065806494 bytes
-           50426849840592 unicast,34642903317 broadcast,50133303019 multicast
+    Output:50562165121361 packets,22798710558693471 bytes
+           50428201245931 unicast,34643895463 broadcast,50134275644 multicast
            0 errors,53519355 drops
-    Last 300 seconds input utility rate:  55.72%
-    Last 300 seconds output utility rate: 5.60%
+    Last 300 seconds input utility rate:  55.17%
+    Last 300 seconds output utility rate: 5.39%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3404,18 +3404,18 @@ Description: [INFRA-BKHL-L]-MX960-PL-to-CE-8850-2x100G-LAG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 300Gbps, Current BW : 300Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 167001904493 bits/sec, 27252465 packets/sec
-    Last 300 seconds output rate 192927034463 bits/sec, 27596756 packets/sec
-    Input: 808766906259545 packets,582122882874926239 bytes
-           808436458993250 unicast,59682225499 broadcast,148405559945 multicast
+    Last 300 seconds input rate 173381648172 bits/sec, 27566273 packets/sec
+    Last 300 seconds output rate 189504279529 bits/sec, 26905527 packets/sec
+    Input: 808798112851435 packets,582147210568767961 bytes
+           808467660451615 unicast,59683289000 broadcast,148406533244 multicast
            51 errors,0 drops
-    Output:997922513158574 packets,1132762657108872902 bytes
-           996531117972813 unicast,211250077 broadcast,48901047523 multicast
+    Output:997953400600920 packets,1132789640953898357 bytes
+           996561983688019 unicast,211259565 broadcast,48901067519 multicast
            0 errors,8494235856 drops
-    Last 300 seconds input utility rate:  55.66%
-    Last 300 seconds output utility rate: 64.30%
+    Last 300 seconds input utility rate:  57.79%
+    Last 300 seconds output utility rate: 63.16%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3433,18 +3433,18 @@ Description: [INFRA-BKHL-L]-CE8850-to-S5700-PL2-[TMEN]-2x10G-AGG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 355820974 bits/sec, 98113 packets/sec
-    Last 300 seconds output rate 1079763369 bits/sec, 150085 packets/sec
-    Input: 2856934410469 packets,1702577595666278 bytes
-           2798788414724 unicast,14659587048 broadcast,26586504892 multicast
+    Last 300 seconds input rate 345606946 bits/sec, 97575 packets/sec
+    Last 300 seconds output rate 1093023004 bits/sec, 147395 packets/sec
+    Input: 2857047465202 packets,1702631038613560 bytes
+           2798901008614 unicast,14659621272 broadcast,26586526194 multicast
            10 errors,0 drops
-    Output:3614670894599 packets,3152313311723428 bytes
-           3542531844684 unicast,1123124213 broadcast,157890577 multicast
+    Output:3614838251809 packets,3152463107067667 bytes
+           3542698981344 unicast,1123156656 broadcast,157894586 multicast
            0 errors,61518 drops
-    Last 300 seconds input utility rate:  1.77%
-    Last 300 seconds output utility rate: 5.39%
+    Last 300 seconds input utility rate:  1.72%
+    Last 300 seconds output utility rate: 5.46%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3461,18 +3461,18 @@ Description: [INFRA-BKHL-L]-[CE8850-PL]-to-[6730-02-PL]-2x100G-AGG
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:26+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 5392173856 bits/sec, 1709301 packets/sec
-    Last 300 seconds output rate 15173226583 bits/sec, 1757383 packets/sec
-    Input: 17971544792812 packets,6988723244049825 bytes
-           17971541833449 unicast,14281 broadcast,2945083 multicast
+    Last 300 seconds input rate 5273954216 bits/sec, 1689641 packets/sec
+    Last 300 seconds output rate 14687308633 bits/sec, 1698093 packets/sec
+    Input: 17973466145641 packets,6989470208003193 bytes
+           17973463186069 unicast,14282 broadcast,2945290 multicast
            0 errors,0 drops
-    Output:17428544469310 packets,19645305315745839 bytes
-           17428543270407 unicast,28722 broadcast,1170181 multicast
+    Output:17430514101737 packets,19647435120817047 bytes
+           17430512902750 unicast,28724 broadcast,1170263 multicast
            0 errors,0 drops
-    Last 300 seconds input utility rate:  2.69%
-    Last 300 seconds output utility rate: 7.58%
+    Last 300 seconds input utility rate:  2.63%
+    Last 300 seconds output utility rate: 7.34%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3489,18 +3489,18 @@ Description: TWA-TES-GPON-KHI-NEW-LINK-2*100G
 Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
 Internet protocol processing : disabled
 IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2651
-Current system time: 2024-06-24 15:34:27+05:00
+Current system time: 2024-06-24 15:53:20+05:00
 Physical is ETH_TRUNK
-    Last 300 seconds input rate 7496049020 bits/sec, 1883629 packets/sec
-    Last 300 seconds output rate 37594203736 bits/sec, 4012902 packets/sec
-    Input: 2915945922804 packets,1453613425241273 bytes
-           2915945575099 unicast,1119 broadcast,346586 multicast
+    Last 300 seconds input rate 7558346170 bits/sec, 1977338 packets/sec
+    Last 300 seconds output rate 41052834712 bits/sec, 4313710 packets/sec
+    Input: 2918145413592 packets,1454676659304571 bytes
+           2918145065729 unicast,1119 broadcast,346744 multicast
            0 errors,0 drops
-    Output:6457257859167 packets,7911892858397466 bytes
-           6457252861930 unicast,1152 broadcast,4996086 multicast
+    Output:6462008279837 packets,7917514635126324 bytes
+           6462003280333 unicast,1153 broadcast,4998352 multicast
            0 errors,0 drops
-    Last 300 seconds input utility rate:  3.74%
-    Last 300 seconds output utility rate: 18.79%
+    Last 300 seconds input utility rate:  3.77%
+    Last 300 seconds output utility rate: 20.52%
 ----------------------------------------------------------
 PortName                      Status              Weight   
 ----------------------------------------------------------
@@ -3526,10 +3526,10 @@ Error: Too many parameters found at '^' position.
 Huawei Versatile Routing Platform Software
 VRP (R) software, Version 8.180 (CE8850EI V200R005C10SPC800)
 Copyright (C) 2012-2018 Huawei Technologies Co., Ltd.
-HUAWEI CE8850-32CQ-EI uptime is 896 days, 0 hour, 3 minutes 
+HUAWEI CE8850-32CQ-EI uptime is 896 days, 0 hour, 22 minutes 
 Patch Version: V200R005SPH037
 
-CE8850-32CQ-EI(Master) 1 : uptime is  896 days, 0 hour, 2 minutes
+CE8850-32CQ-EI(Master) 1 : uptime is  896 days, 0 hour, 21 minutes
         StartupTime 2022/01/10   15:55:47+05:00
 Memory    Size    : 4096 M bytes
 Flash     Size    : 1024 M bytes

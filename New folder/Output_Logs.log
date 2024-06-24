@@ -1,18 +1,20 @@
 Device List Reading Complete
 Starting Core Execution ...
+Processing....!!  Devices left : 4
 (1) -> Trying to identify the equipment vendor of 110.93.254.35
-(1) -> 110.93.254.35 is identified as Juniper node
 (2) -> Trying to identify the equipment vendor of  110.93.254.93
-(2) ->  110.93.254.93 is identified as Juniper node
-Accessing Device number 1 at 110.93.254.35
 (3) -> Trying to identify the equipment vendor of 110.93.252.62
-(3) -> 110.93.252.62 is identified as Huawei node
-Accessing Device number 2 at  110.93.254.93
 (4) -> Trying to identify the equipment vendor of 110.93.252.31
+(2) ->  110.93.254.93 is identified as Juniper node
+Accessing Device number 2 at  110.93.254.93
+Processing....!!  Devices left : 4
+(3) -> 110.93.252.62 is identified as Huawei node
 (4) -> 110.93.252.31 is identified as Huawei node
+Processing....!!  Devices left : 4
 Accessing Device number 3 at 110.93.252.62
-Processing....!!  Devices left : 4
 Accessing Device number 4 at 110.93.252.31
+(1) -> 110.93.254.35 is identified as Juniper node
+Accessing Device number 1 at 110.93.254.35
 Processing....!!  Devices left : 4
 Processing....!!  Devices left : 4
 Processing....!!  Devices left : 4
@@ -35,9 +37,13 @@ Processing....!!  Devices left : 4
 Processing....!!  Devices left : 4
 Processing....!!  Devices left : 4
 Processing....!!  Devices left : 4
-Processing....!!  Devices left : 3
-Processing....!!  Devices left : 3
-Processing....!!  Devices left : 3
+Processing....!!  Devices left : 4
+Processing....!!  Devices left : 4
+Processing....!!  Devices left : 4
+Processing....!!  Devices left : 4
+Processing....!!  Devices left : 4
+Processing....!!  Devices left : 4
+Processing....!!  Devices left : 4
 Processing....!!  Devices left : 3
 Processing....!!  Devices left : 3
 Processing....!!  Devices left : 3
@@ -45,10 +51,5 @@ Processing....!!  Devices left : 3
 Processing....!!  Devices left : 3
 Processing....!!  Devices left : 3
 Processing....!!  Devices left : 2
-Processing....!!  Devices left : 1
-Processing....!!  Devices left : 1
-Processing....!!  Devices left : 1
-Processing....!!  Devices left : 1
-Processing....!!  Devices left : 1
 
-Execution Completed in 0:00:45.906384
+Execution Completed in 0:00:39.140018

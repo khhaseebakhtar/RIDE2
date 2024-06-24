@@ -28,7 +28,6 @@ class SessionManager(QObject):
         self.device_state = 0;  # 0 =  access failed, 1 == device accessible
         self.device_name = f"no-name {node_ip}"
         self.identified_vendor = self.unknown_os
-        self.device_name, self.identified_vendor = self.identify_device_type()
         self.physical_interface_command: str = ""
         self.all_interface_description_command: str = ""
         self.trunks_bandwidth_command: str = ""
@@ -55,6 +54,12 @@ class SessionManager(QObject):
         self.set_command_set(
             self.identified_vendor)  # setting up command set and FSM template formate for later execution.
         exe.Thread_control += 1
+
+    def start_execution(self):
+        self.device_name, self.identified_vendor = self.identify_device_type()
+        if self.device_state:
+            self.set_command_set(vendor=self.identified_vendor)
+            self.make_connection()
 
     def make_connection(self):
         if self.device_state:  # if device is identified as accessible : proceed with setting up SSH
@@ -248,6 +253,7 @@ class SessionManager(QObject):
             print(f"Authentication exception happened for {self.device_ip}")
             self.exe.sig.set_logging_signal.emit(
                 f'({self.device_number})-> ****[ERROR]**** : occurred for {self.device_name}, \n {e.with_traceback(None)}')
+            self.handle_failed_device()
 
         except Exception as e:
             self.exe.sig.set_logging_signal.emit(

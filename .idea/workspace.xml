@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1f0ae1-3d99-4eb9-9941-a2ce346da406" name="Changes" comment="only device list is being read and no actual function is being executed, no command is being executed,">
+    <list default="true" id="3b1f0ae1-3d99-4eb9-9941-a2ce346da406" name="Changes" comment="Device Access is OK&#10;Device Identification is fine&#10;Commands are running fine&#10;No Error&#10;No Processing on command output yet.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/New folder/Output_Logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/New folder/Output_Logs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Session_Manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session_Manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_current_sysname.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_current_sysname.textfsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_device.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_device.textfsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_device_pic_status.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_device_pic_status.textfsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_elable_brief.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_elable_brief.textfsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface.textfsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface_description" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface_description" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface_eth_trunk" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface_eth_trunk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_lic_res_usage_port_basic.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_lic_res_usage_port_basic.textfsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license_resource_usage" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license_resource_usage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license_verbose" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license_verbose" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_optical_module_brief.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_optical_module_brief.textfsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_version.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_version.textfsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/extraction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/ 110.93.254.93.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ 110.93.254.93.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/110.93.252.31.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/110.93.252.31.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/110.93.252.62.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/110.93.252.62.log" afterDir="false" />
@@ -109,10 +94,33 @@
       <option name="project" value="LOCAL" />
       <updated>1719045796819</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Device Access is OK&#10;Device Identification is fine&#10;Commands are running fine&#10;No Error&#10;No Processing on command output yet.">
+      <option name="closed" value="true" />
+      <created>1719225575796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719225575796</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -126,19 +134,20 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="only device list is being read and no actual function is being executed, no command is being executed," />
-    <option name="LAST_COMMIT_MESSAGE" value="only device list is being read and no actual function is being executed, no command is being executed," />
+    <MESSAGE value="Device Access is OK&#10;Device Identification is fine&#10;Commands are running fine&#10;No Error&#10;No Processing on command output yet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Device Access is OK&#10;Device Identification is fine&#10;Commands are running fine&#10;No Error&#10;No Processing on command output yet." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Session_Manager.py</url>
-          <line>169</line>
+          <line>174</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Session_Manager.py</url>
-          <line>117</line>
+          <line>122</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>

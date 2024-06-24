@@ -136,17 +136,17 @@ def execute_main_thread():
                             try:
                                 worker = SessionManager(node, exe, ui, device_number)  # Each device session is a new worker
                                 app.processEvents()
-                                if worker.device_state == 1:  # if device is accessible then proceed to make thread
-                                    thread = QThread()
-                                    thread.setObjectName(node)
-                                    exe.therads_list.append((thread, worker))
-                                    worker.moveToThread(thread)
-                                    #exe.sig.set_logging_signal.connect(update_output_panel)
-                                    thread.started.connect(worker.make_connection)
-                                    thread.start()
+                                thread = QThread()
+                                thread.setObjectName(node)
+                                exe.therads_list.append((thread, worker))
+                                worker.moveToThread(thread)
+                                # exe.sig.set_logging_signal.connect(update_output_panel)
+                                thread.started.connect(worker.start_execution)
+                                thread.start()
+
                             except Exception as e:
                                 app.processEvents()
-                                print(e.with_traceback(None))
+                                print(f"[Error]: Exception caught in main: {e.with_traceback(None)}")
 
                         done_devices = exe.successful_device_count + exe.failed_device_count
                         while done_devices != exe.total_device_count:
