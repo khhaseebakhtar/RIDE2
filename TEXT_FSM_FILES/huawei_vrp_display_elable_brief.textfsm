@@ -1,0 +1,63 @@
+Value MODULE (\S+)
+Value SLOT_NO (\d+)
+Value BOARD_TYPE (\S+)
+Value BAR_CODE (\S+)
+Value DESCRIPTION (.*)
+
+Start
+ ^${MODULE}\s+${SLOT_NO}\s+${BOARD_TYPE}\s+${BAR_CODE}\s+${DESCRIPTION} -> Record
+ ^\s+${MODULE}\s+${SLOT_NO}\s+${BOARD_TYPE}\s+${BAR_CODE}\s+${DESCRIPTION} -> Record
+ ^\s+${MODULE}\s+${SLOT_NO}\s+${BOARD_TYPE}\s+${BAR_CODE} -> Record
+ ^${MODULE}\s+${SLOT_NO} -> Record
+ ^\s+${MODULE}\s+${BOARD_TYPE}\s+${BAR_CODE} -> Record
+
+
+
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------
+#Slot #          BoardType                                BarCode                 Description
+#-------------------------------------------------------------------------------------------------------------------------------------------------
+#LPU 1           CR57E2NLFX25                             210305759910JC000028    LPUI-480-2x100G-QSFP28-24x10G LAN/WAN-SFP+
+#  PIC 0         CR57E2NBB2                               032UJU10JB000088        2x100GBase-QSFP28-A
+#  PIC 1         CR57LFXFE1                               030UQEW0JB000046        P480-24x10GBase LAN/WAN-SFP+ -E
+#LPU 2           CR57E8NCB02                              210305769310K4000014    LPUI-1T-CM-8x100G ETH/DWDM-CFP2
+#LPU 3           CR57EDVBA01                              210305881610KB000034    LPUI-1T-CM 16x50/8x100GBase-QSFP28
+#  PIC 0         CR57E8VBA1                               033BSQ10KB000015
+#  PIC 1         CR57E8VBA1                               033BSQ10KB000005
+#LPU 4           CR57LFXF22                               210305469210KA000076    LPUI-240-24x10GBase LAN/WAN-SFP+ -A
+#  PIC 0         CR57LBXF2                                030QKKW0KA000082        P120-12x10GBase LAN/WAN-SFP+ -A
+#  PIC 1         CR57LBXF2                                030QKKW0KA000046        P120-12x10GBase LAN/WAN-SFP+ -A
+#LPU 5           CR57LFXF22                               210305469210KB000080    LPUI-240-24x10GBase LAN/WAN-SFP+ -A
+#  PIC 0         CR57LBXF2                                030QKKW0KB000241        P120-12x10GBase LAN/WAN-SFP+ -A
+#  PIC 1         CR57LBXF2                                030QKKW0KB000158        P120-12x10GBase LAN/WAN-SFP+ -A
+#LPU 6           CR57LPUF480MS01                          2103050DFD10M7000159    LPUF-483-CM
+#  PIC 0         CR57LFXFJ1                               034CQW10M5000222        P483-CM-24x10GBase LAN/WAN-SFP+
+#  PIC 1         CR57LFXFJ1                               034CQW10M5000233        P483-CM-24x10GBase LAN/WAN-SFP+
+#LPU 7           CR57E2NLFX25                             210305759910JB000010    LPUI-480-2x100G-QSFP28-24x10G LAN/WAN-SFP+
+#  PIC 0         CR57E2NBB2                               032UJU10JA000051        2x100GBase-QSFP28-A
+#  PIC 1         CR57LFXFE1                               030UQEW0JA000126        P480-24x10GBase LAN/WAN-SFP+ -E
+#MPU 17          CR57MPUB51                               210305724410JB000148    MPUB5
+#MPU 18          CR57MPUB51                               210305724410JB000145    MPUB5
+#SFU 19          CR57SFU1TB00                             210305609110JB000124    SFUI-1T-B
+#SFU 20          CR57SFU1TB00                             210305609110JB000105    SFUI-1T-B
+#SFU 21          CR57SFU1TB00                             210305609110JB000106    SFUI-1T-B
+#SFU 22          CR57SFU1TB00                             210305609110JB000095    SFUI-1T-B
+#PWR 25
+# PM1            PDC-2200WB                               2102311CNPLUJA004628
+# PM2            PDC-2200WB                               2102311CNPLUJB001223
+# PM3            PDC-2200WB                               2102311CNPLUJB001256
+# PM4            PDC-2200WB                               2102311CNPLUJB001138
+# PM5            PDC-2200WB                               2102311CNPLUJ9000713
+# PM6            PDC-2200WB                               2102311CNPLUJ9000800
+# PM7            PDC-2200WB                               2102311CNPLUJB001210
+# PM8            PDC-2200WB                               2102311CNPLUJB000879
+# PM9            PDC-2200WB                               2102311CNPLUJB001343
+# PM10           PDC-2200WB                               2102311CNPLUJB000906
+#FAN 27          CR56FCBJ                                 2102120866P0JB000360
+#FAN 28          CR56FCBJ                                 2102120866P0JB000835
+#FAN 29          CR56FCBJ                                 2102120866P0JB000364
+#FAN 30          CR56FCBJ                                 2102120866P0JB000329
+#FAN 31          CR56FCBJ                                 2102120866P0JB001252
+#FAN 32          CR56FCBJ                                 2102120866P0JB000475
+#PMU 33          CR56PMUA                                 2102310QUCP0JA001831
+#PMU 34          CR56PMUA                                 2102310QUCP0JA001832

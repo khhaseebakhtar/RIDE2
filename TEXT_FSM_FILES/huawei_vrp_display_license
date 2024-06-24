@@ -1,0 +1,5 @@
+Value LIC_NAME (\S+)
+Value DESCRIPTION (.*)
+
+Start
+ ^\s+${LIC_NAME}+\s+Resource\s+\d+\s+${DESCRIPTION}$$ -> Record

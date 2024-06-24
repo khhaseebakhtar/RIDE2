@@ -1,0 +1,33 @@
+Value VRP_VERSION (\S+)
+Value PRODUCT_VERSION (.+)
+Value MODEL (.+)
+Value UPTIME (.+)
+Value MPU_Q (\d+)
+Value SRU_Q (\d+)
+Value SFU_Q (\d+)
+Value LPU_Q (\d+)
+
+Start
+  ^.*software,\s+Version\s+${VRP_VERSION}\s+\(${PRODUCT_VERSION}\)
+  ^HUAWEI\s+${MODEL}\s+uptime\s+is\s+${UPTIME}$$
+  ^\s+MPU\s+Slot\s+Quantity\s+:\s+${MPU_Q}
+  ^\s+SRU\s+Slot\s+Quantity\s+:\s+${SRU_Q}
+  ^\s+SFU\s+Slot\s+Quantity\s+:\s+${SFU_Q}
+  ^\s+LPU\s+Slot\s+Quantity\s+:\s+${LPU_Q}
+
+
+#Huawei Versatile Routing Platform Software
+#VRP (R) software, Version 8.210 (NE40E V800R021C00SPC100)
+#Copyright (C) 2012-2021 Huawei Technologies Co., Ltd.
+#HUAWEI NE40E-X16A uptime is 352 days, 20 hours, 8 minutes
+#Patch Version: V800R021HP0001
+
+#NE40E-X16A version information:
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#BKP  version information:
+#  PCB         Version : CR56BKP16G REV B
+#  MPU  Slot  Quantity : 2
+#  SRU  Slot  Quantity : 0
+# SFU  Slot  Quantity : 4
+#  LPU  Slot  Quantity : 16
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

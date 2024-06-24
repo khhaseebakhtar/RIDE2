@@ -141,8 +141,7 @@ def execute_main_thread():
                                     thread.setObjectName(node)
                                     exe.therads_list.append((thread, worker))
                                     worker.moveToThread(thread)
-                                    exe.sig.set_logging_signal.connect(update_output_panel)
-                                    app.processEvents()
+                                    #exe.sig.set_logging_signal.connect(update_output_panel)
                                     thread.started.connect(worker.make_connection)
                                     thread.start()
                             except Exception as e:

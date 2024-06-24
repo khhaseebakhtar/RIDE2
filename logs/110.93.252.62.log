@@ -3,11 +3,3674 @@ Warning: The initial password poses security risks.
 The password needs to be changed. Change now? [Y/N]:N
 
 Info: The max number of VTY users is 20, the number of current VTY users online is 1, and total number of terminal users online is 1.
-      The current login time is 2024-06-22 14:14:35+04:40.
-      The last login time is 2024-06-22 14:14:34+04:40 from 110.93.192.18 through SSH.
+      The current login time is 2024-06-24 15:14:11+04:40.
+      The last login time is 2024-06-24 15:14:10+04:40 from 110.93.192.18 through SSH.
 <KHI-CE8850-32CQ-CLS>
 <KHI-CE8850-32CQ-CLS>
 <KHI-CE8850-32CQ-CLS>screen-length 0 temporary
 Error: You do not have permission to run the command or the command is incomplete.
+<KHI-CE8850-32CQ-CLS>display interface | no-more
+100GE1/0/1:1 current state : DOWN (ifindex: 79)
+Line protocol current state : DOWN 
+Description: INFRA-BKHL-CC-KHI-CS-MX10008-to-KHI-CS-CE8850-10G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:12+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/1:2 current state : Administratively DOWN (ifindex: 80)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:12+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/1:3 current state : Administratively DOWN (ifindex: 81)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:12+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/1:4 current state : Administratively DOWN (ifindex: 82)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:12+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/2:1 current state : UP (ifindex: 51)
+Line protocol current state : UP 
+Description: INFRA-BKHL-CC-KHI-CS-MX2020-to-KHI-CS-CE8850-10G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:02+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:12+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 123841 bits/sec, 25 packets/sec
+    Last 300 seconds output rate: 84884 bits/sec, 21 packets/sec
+    Input peak rate 611957 bits/sec, Record time: 2024-06-05 01:28:05+04:40
+    Output peak rate 660125 bits/sec, Record time: 2024-05-29 18:14:34+04:40
+    Input :        43463504265 bytes,           75743426 packets
+    Output:        27116881452 bytes,           56234229 packets
+    Input: 
+      Unicast:               54824762,   Multicast:                 5994263
+      Broadcast:             14836725,   Jumbo:                       87676
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:               55900733,   Multicast:                   87190
+      Broadcast:               246306,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.01%
+    Last 300 seconds output utility rate: 0.01%
+
+100GE1/0/2:2 current state : UP (ifindex: 52)
+Line protocol current state : UP 
+Description: INFRA-BKHL-CS-CS-[MX960-Core02]-[CE8850]-10G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:02+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:12+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 61339621 bits/sec, 78990 packets/sec
+    Last 300 seconds output rate: 3702618602 bits/sec, 304950 packets/sec
+    Input peak rate 459244859 bits/sec, Record time: 2024-06-11 12:20:49+04:40
+    Output peak rate 4703842208 bits/sec, Record time: 2024-05-28 22:49:20+04:40
+    Input :     24034341259636 bytes,       219297530372 packets
+    Output:   1264874738888902 bytes,       833442803253 packets
+    Input: 
+      Unicast:           219289632902,   Multicast:                   86936
+      Broadcast:              7810534,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:           833442689417,   Multicast:                  108875
+      Broadcast:                 4961,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.61%
+    Last 300 seconds output utility rate: 37.02%
+
+100GE1/0/2:3 current state : UP (ifindex: 53)
+Line protocol current state : UP 
+Description: [INFRA-NNI]-TWA-TES-[KHI-CS-CE8850]-[TES-CLS-QFX-5100 xe-0/0/8]-10G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:02+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 3406372 bits/sec, 1298 packets/sec
+    Last 300 seconds output rate: 1875151 bits/sec, 1234 packets/sec
+    Input peak rate 7932077 bits/sec, Record time: 2024-05-29 10:05:18+04:40
+    Output peak rate 5816216 bits/sec, Record time: 2024-06-07 13:53:49+04:40
+    Input :       936671059161 bytes,         3195713697 packets
+    Output:       661184610416 bytes,         3207028594 packets
+    Input: 
+      Unicast:             3195507093,   Multicast:                  202533
+      Broadcast:                 4071,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:             3199159162,   Multicast:                   86504
+      Broadcast:              7782928,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.03%
+    Last 300 seconds output utility rate: 0.01%
+
+100GE1/0/2:4 current state : Administratively DOWN (ifindex: 54)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/3:1 current state : UP (ifindex: 55)
+Line protocol current state : UP 
+Description: TES-OTT-CLS-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:02+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 3526946633 bits/sec, 289694 packets/sec
+    Last 300 seconds output rate: 65491834 bits/sec, 85771 packets/sec
+    Input peak rate 4684948449 bits/sec, Record time: 2024-06-01 01:36:56+04:40
+    Output peak rate 464872353 bits/sec, Record time: 2024-06-11 12:20:49+04:40
+    Input :   1227799651028763 bytes,       806553277926 packets
+    Output:     24911209868774 bytes,       225751917762 packets
+    Input: 
+      Unicast:           806553098405,   Multicast:                  179521
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:           225749329114,   Multicast:                 2587452
+      Broadcast:                 1196,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  35.22%
+    Last 300 seconds output utility rate: 0.65%
+
+100GE1/0/3:2 current state : UP (ifindex: 56)
+Line protocol current state : UP 
+Description: INFRA-BKHL-CS-CS-[MX960-Core02]-[CE8850]-10G-02
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:02+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 69300567 bits/sec, 89170 packets/sec
+    Last 300 seconds output rate: 3904816244 bits/sec, 321586 packets/sec
+    Input peak rate 169896401 bits/sec, Record time: 2024-06-11 12:13:19+04:40
+    Output peak rate 4714955435 bits/sec, Record time: 2024-06-04 14:57:08+04:40
+    Input :     25335798132171 bytes,       232911744342 packets
+    Output:   1226652149150709 bytes,       808585950035 packets
+    Input: 
+      Unicast:           232911658072,   Multicast:                   86270
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:           808585756852,   Multicast:                  190736
+      Broadcast:                 2448,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.69%
+    Last 300 seconds output utility rate: 39.00%
+
+100GE1/0/3:3 current state : UP (ifindex: 57)
+Line protocol current state : UP 
+Description: [INFRA-NNI]-TWA-TES-[KHI-CS-CE8850]-[TES-CLS-QFX-5100 xe-1/0/8]-10G-02
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-06-07 10:26:46+04:40
+Last physical down time : 2024-06-07 10:26:45+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 3104593 bits/sec, 1243 packets/sec
+    Last 300 seconds output rate: 1937832 bits/sec, 1259 packets/sec
+    Input peak rate 7831785 bits/sec, Record time: 2024-06-14 13:59:13+04:40
+    Output peak rate 3813792 bits/sec, Record time: 2024-06-12 21:17:03+04:40
+    Input :       937282197591 bytes,         3194432632 packets
+    Output:       653877848071 bytes,         3155029801 packets
+    Input: 
+      Unicast:             3194136202,   Multicast:                  283158
+      Broadcast:                13272,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:             3154942686,   Multicast:                   87115
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.03%
+    Last 300 seconds output utility rate: 0.01%
+
+100GE1/0/3:4 current state : UP (ifindex: 58)
+Line protocol current state : UP 
+Description: TES-OTT-CLS-02
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:01+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 4081713683 bits/sec, 334930 packets/sec
+    Last 300 seconds output rate: 61450496 bits/sec, 80049 packets/sec
+    Input peak rate 4650872634 bits/sec, Record time: 2024-06-22 00:46:25+04:40
+    Output peak rate 165822884 bits/sec, Record time: 2024-06-11 12:12:30+04:40
+    Input :   1261854181586182 bytes,       829086356379 packets
+    Output:     23144642014374 bytes,       220100568153 packets
+    Input: 
+      Unicast:           829086175710,   Multicast:                  179509
+      Broadcast:                 1160,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:           220097980700,   Multicast:                 2587453
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  40.77%
+    Last 300 seconds output utility rate: 0.61%
+
+100GE1/0/4:1 current state : UP (ifindex: 59)
+Line protocol current state : UP 
+Description: [INFRA-BKHL]-DDOS-NSFOCUS-vNTA1-GW1[via-switch-01]-10G-01
+Switch Port, PVID : 2032, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:01+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 85378 bits/sec, 30 packets/sec
+    Last 300 seconds output rate: 9913829 bits/sec, 3286 packets/sec
+    Input peak rate 102118 bits/sec, Record time: 2024-05-25 16:22:34+04:40
+    Output peak rate 13013438 bits/sec, Record time: 2024-06-09 21:57:02+04:40
+    Input :        22163336463 bytes,           64304557 packets
+    Output:      1996629847471 bytes,         5386485615 packets
+    Input: 
+      Unicast:               62111464,   Multicast:                 2193063
+      Broadcast:                   30,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:             5384660572,   Multicast:                 1774382
+      Broadcast:                50661,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.01%
+    Last 300 seconds output utility rate: 0.09%
+
+100GE1/0/4:2 current state : UP (ifindex: 60)
+Line protocol current state : UP 
+Description: [INFRA-BKHL]-DDOS-NSFOCUS-vNTA2-GW1[via-switch-01]-10G-01
+Switch Port, PVID : 2032, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:01+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 22 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 1186 bits/sec, 1 packets/sec
+    Input peak rate 149034 bits/sec, Record time: 2024-05-25 16:21:43+04:40
+    Output peak rate 11293868 bits/sec, Record time: 2024-06-04 21:58:04+04:40
+    Input :         5072422256 bytes,           14773704 packets
+    Output:       470478392830 bytes,         1266090276 packets
+    Input: 
+      Unicast:               14206764,   Multicast:                  566920
+      Broadcast:                   20,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:             1262639073,   Multicast:                 3400532
+      Broadcast:                50671,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.01%
+    Last 300 seconds output utility rate: 0.01%
+
+100GE1/0/4:3 current state : Administratively DOWN (ifindex: 61)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/4:4 current state : Administratively DOWN (ifindex: 62)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:          ENABLE
+Speed:                10000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/5:1 current state : DOWN (ifindex: 63)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/5:2 current state : DOWN (ifindex: 64)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:13+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/5:3 current state : DOWN (ifindex: 65)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/5:4 current state : DOWN (ifindex: 66)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/6:1 current state : DOWN (ifindex: 67)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/6:2 current state : DOWN (ifindex: 68)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/6:3 current state : DOWN (ifindex: 69)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/6:4 current state : DOWN (ifindex: 70)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/7:1 current state : DOWN (ifindex: 71)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/7:2 current state : DOWN (ifindex: 72)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/7:3 current state : DOWN (ifindex: 73)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/7:4 current state : DOWN (ifindex: 74)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/8:1 current state : DOWN (ifindex: 75)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:14+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/8:2 current state : DOWN (ifindex: 76)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/8:3 current state : DOWN (ifindex: 77)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/8:4 current state : DOWN (ifindex: 78)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:          ENABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/9 current state : UP (ifindex: 13)
+Line protocol current state : UP 
+Description: CDN: INFRA-TENCENT-KHI-100G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:10+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 7359922464 bits/sec, 741378 packets/sec
+    Last 300 seconds output rate: 680111444 bits/sec, 383908 packets/sec
+    Input peak rate 8848763809 bits/sec, Record time: 2024-06-06 14:27:35+04:40
+    Output peak rate 1182604598 bits/sec, Record time: 2024-06-06 10:48:23+04:40
+    Input :   1103162833559181 bytes,       964891070322 packets
+    Output:    117416793860654 bytes,       534567666167 packets
+    Input: 
+      Unicast:           964890897914,   Multicast:                  172408
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:           534567579690,   Multicast:                   86477
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  7.35%
+    Last 300 seconds output utility rate: 0.68%
+
+100GE1/0/10 current state : UP (ifindex: 14)
+Line protocol current state : UP 
+Description: CDN: INFRA-TENCENT-KHI-100G-02
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:10+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 6942480112 bits/sec, 699779 packets/sec
+    Last 300 seconds output rate: 650760245 bits/sec, 387811 packets/sec
+    Input peak rate 8852179416 bits/sec, Record time: 2024-06-06 14:25:05+04:40
+    Output peak rate 1267738655 bits/sec, Record time: 2024-06-06 10:48:23+04:40
+    Input :   1090547662089026 bytes,       936423191344 packets
+    Output:    117912801355321 bytes,       535671961696 packets
+    Input: 
+      Unicast:           936422760119,   Multicast:                  431218
+      Broadcast:                    7,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:           535670581217,   Multicast:                 1380479
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  6.93%
+    Last 300 seconds output utility rate: 0.64%
+
+100GE1/0/11 current state : UP (ifindex: 15)
+Line protocol current state : UP 
+Description: CDN: INFRA-CLOUDFLARE-KHI-100G-01-(et-0/0/23)
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:12+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 61129097262 bits/sec, 7032367 packets/sec
+    Last 300 seconds output rate: 26432337665 bits/sec, 5597781 packets/sec
+    Input peak rate 69538717088 bits/sec, Record time: 2024-05-28 15:39:58+04:40
+    Output peak rate 39927851327 bits/sec, Record time: 2024-05-28 15:40:48+04:40
+    Input :  15771311752046605 bytes,     14591041188040 packets
+    Output:   8187374317120776 bytes,     12516471676426 packets
+    Input: 
+      Unicast:         14591038599876,   Multicast:                 2585797
+      Broadcast:                 2368,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:         12516469086431,   Multicast:                 2587657
+      Broadcast:                 2339,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  61.11%
+    Last 300 seconds output utility rate: 26.41%
+
+100GE1/0/12 current state : UP (ifindex: 16)
+Line protocol current state : UP 
+Description: CDN: INFRA-ZENLAYER-100G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:10+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 52325 bits/sec, 40 packets/sec
+    Last 300 seconds output rate: 2445065 bits/sec, 3621 packets/sec
+    Input peak rate 83611204 bits/sec, Record time: 2024-06-07 10:41:10+04:40
+    Output peak rate 80918090 bits/sec, Record time: 2024-05-30 13:20:32+04:40
+    Input :       146499413324 bytes,          761537157 packets
+    Output:       739834162441 bytes,         7452500640 packets
+    Input: 
+      Unicast:              758968381,   Multicast:                 2567592
+      Broadcast:                 1184,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:             7449912005,   Multicast:                 2587468
+      Broadcast:                 1167,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.01%
+    Last 300 seconds output utility rate: 0.01%
+
+100GE1/0/13 current state : Administratively DOWN (ifindex: 17)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/14 current state : Administratively DOWN (ifindex: 18)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/15 current state : UP (ifindex: 19)
+Line protocol current state : UP 
+Description: CDN: INFRA-AKAMAI-KHI-100G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-06-11 21:58:01+04:40
+Last physical down time : 2024-06-11 21:57:54+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 36639355895 bits/sec, 3535987 packets/sec
+    Last 300 seconds output rate: 8443992354 bits/sec, 2290490 packets/sec
+    Input peak rate 44268967523 bits/sec, Record time: 2024-06-04 13:57:50+04:40
+    Output peak rate 20362272950 bits/sec, Record time: 2024-05-28 22:59:13+04:40
+    Input :   6094115287325020 bytes,      4561733423022 packets
+    Output:   1621484603865681 bytes,      3219204305199 packets
+    Input: 
+      Unicast:          4561719458885,   Multicast:                 9825898
+      Broadcast:              4120073,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:              18926
+      CRC:                      18162,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       1
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                       763
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:          3219203724446,   Multicast:                  580753
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  36.64%
+    Last 300 seconds output utility rate: 8.45%
+
+100GE1/0/16 current state : UP (ifindex: 20)
+Line protocol current state : UP 
+Description: CDN: INFRA-AKAMAI-KHI-100G-02
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-06-11 21:58:00+04:40
+Last physical down time : 2024-06-11 21:57:54+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 36871578440 bits/sec, 3554657 packets/sec
+    Last 300 seconds output rate: 8208623526 bits/sec, 2280596 packets/sec
+    Input peak rate 44479401677 bits/sec, Record time: 2024-06-04 13:57:00+04:40
+    Output peak rate 20484017811 bits/sec, Record time: 2024-05-28 22:59:13+04:40
+    Input :   6093829644974397 bytes,      4561451877731 packets
+    Output:   1621681687406833 bytes,      3219210954861 packets
+    Input: 
+      Unicast:          4561447220451,   Multicast:                 2794619
+      Broadcast:              1862660,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  2
+      CRC:                          1,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         1
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:          3219181335736,   Multicast:                 1399744
+      Broadcast:             28219381,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  36.88%
+    Last 300 seconds output utility rate: 8.20%
+
+100GE1/0/17 current state : Administratively DOWN (ifindex: 21)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:15+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/18 current state : DOWN (ifindex: 22)
+Line protocol current state : DOWN 
+Description: INFRA: CS_AP_TESTING
+Switch Port, PVID : 1215, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : 2024-06-03 16:53:57+04:40
+Last physical down time : 2024-06-03 17:14:12+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 389 bits/sec, Record time: 2024-06-03 16:20:54+04:40
+    Output peak rate 497 bits/sec, Record time: 2024-06-03 16:59:15+04:40
+    Input :              17446 bytes,                122 packets
+    Output:             104247 bytes,                729 packets
+    Input: 
+      Unicast:                      0,   Multicast:                     122
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                     729
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/19 current state : Administratively DOWN (ifindex: 23)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/20 current state : DOWN (ifindex: 24)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/21 current state : UP (ifindex: 25)
+Line protocol current state : UP 
+Description: CDN: INFRA-AKAMAI-KHI-100G-03
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:09+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 36848050655 bits/sec, 3549052 packets/sec
+    Last 300 seconds output rate: 8297629537 bits/sec, 2279454 packets/sec
+    Input peak rate 44461429252 bits/sec, Record time: 2024-06-04 13:57:50+04:40
+    Output peak rate 20077789303 bits/sec, Record time: 2024-05-28 22:59:13+04:40
+    Input :   6092646286639807 bytes,      4560541962231 packets
+    Output:   1620809821219018 bytes,      3218591402930 packets
+    Input: 
+      Unicast:          4560535194729,   Multicast:                 4176626
+      Broadcast:              2590876,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:          3218591201977,   Multicast:                  200793
+      Broadcast:                  160,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  36.86%
+    Last 300 seconds output utility rate: 8.30%
+
+100GE1/0/22 current state : UP (ifindex: 26)
+Line protocol current state : UP 
+Description: CDN: INFRA-AKAMAI-KHI-100G-04
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:09+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 36791838745 bits/sec, 3547848 packets/sec
+    Last 300 seconds output rate: 8441044890 bits/sec, 2292151 packets/sec
+    Input peak rate 44564706086 bits/sec, Record time: 2024-06-04 21:52:56+04:40
+    Output peak rate 20489364772 bits/sec, Record time: 2024-05-28 22:59:13+04:40
+    Input :   6092930713442936 bytes,      4560782673436 packets
+    Output:   1622487283100115 bytes,      3218497788152 packets
+    Input: 
+      Unicast:          4560770476606,   Multicast:                10326123
+      Broadcast:              1870708,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:          3218496736015,   Multicast:                 1052034
+      Broadcast:                  103,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  36.80%
+    Last 300 seconds output utility rate: 8.44%
+
+100GE1/0/23 current state : Administratively DOWN (ifindex: 27)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/24 current state : Administratively DOWN (ifindex: 28)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/25 current state : Administratively DOWN (ifindex: 29)
+Line protocol current state : DOWN 
+Description: 
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/26 current state : UP (ifindex: 30)
+Line protocol current state : UP 
+Description: INFRA-BKHL-CS-CS-[MX10008-CS]-[CE8850-CS]-100G-02
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:13+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 13239641454 bits/sec, 2807418 packets/sec
+    Last 300 seconds output rate: 30227549697 bits/sec, 3483923 packets/sec
+    Input peak rate 20120120633 bits/sec, Record time: 2024-05-28 15:40:49+04:40
+    Output peak rate 35170217411 bits/sec, Record time: 2024-05-28 15:39:59+04:40
+    Input :   4090503789321534 bytes,      6247436889966 packets
+    Output:   7889645689548406 bytes,      7294017218188 packets
+    Input: 
+      Unicast:          6247436749400,   Multicast:                   86467
+      Broadcast:                54100,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:          7294016651346,   Multicast:                  566821
+      Broadcast:                   22,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  13.23%
+    Last 300 seconds output utility rate: 30.22%
+
+100GE1/0/27 current state : UP (ifindex: 31)
+Line protocol current state : UP 
+Description: INFRA-BKHL-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-100G-02
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:20+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 17535228879 bits/sec, 4967081 packets/sec
+    Last 300 seconds output rate: 80981265257 bits/sec, 7817455 packets/sec
+    Input peak rate 41286242625 bits/sec, Record time: 2024-05-28 22:59:14+04:40
+    Output peak rate 95473416053 bits/sec, Record time: 2024-06-04 13:57:51+04:40
+    Input :   3390920178325540 bytes,      6982172842888 packets
+    Output:  13325475864758722 bytes,     10074549461936 packets
+    Input: 
+      Unicast:          6982172756616,   Multicast:                   86272
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:         10074524446399,   Multicast:                21130750
+      Broadcast:              3884787,   Jumbo:                           0
+      Discard:                4884358,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  17.54%
+    Last 300 seconds output utility rate: 80.99%
+
+100GE1/0/28 current state : DOWN (ifindex: 32)
+Line protocol current state : DOWN 
+Description: INFRA-BKHL-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-100G-02
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                           RS-FEC
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/29 current state : DOWN (ifindex: 33)
+Line protocol current state : DOWN 
+Description: MSAN-KHI:INFRA-CS-AP-100G-04-[CE8850]-[MX960-AP]-03
+Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:             AUTO,     Port Split/Aggregate:         DISABLE
+Speed:                 AUTO,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                        -
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                                -
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:16+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/30 current state : DOWN (ifindex: 34)
+Line protocol current state : DOWN 
+Description: INFRA-BKHL-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-100G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                           RS-FEC
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:17+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input: 
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+100GE1/0/31 current state : UP (ifindex: 35)
+Line protocol current state : UP 
+Description: INFRA-BKHL-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-100G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:15+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:17+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 17473142611 bits/sec, 4949350 packets/sec
+    Last 300 seconds output rate: 80971666902 bits/sec, 7812301 packets/sec
+    Input peak rate 41286599642 bits/sec, Record time: 2024-05-28 22:59:14+04:40
+    Output peak rate 95543563807 bits/sec, Record time: 2024-06-04 13:57:51+04:40
+    Input :   3384000781475736 bytes,      6971029373081 packets
+    Output:  13322490279130167 bytes,     10072033486319 packets
+    Input: 
+      Unicast:          6970995197633,   Multicast:                 5931728
+      Broadcast:             28243723,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:         10072022485540,   Multicast:                 4440062
+      Broadcast:              6560718,   Jumbo:                           0
+      Discard:                4395191,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  17.48%
+    Last 300 seconds output utility rate: 80.99%
+
+100GE1/0/32 current state : UP (ifindex: 36)
+Line protocol current state : UP 
+Description: INFRA-BKHL-CS-CS-[MX10008-CS]-[CE8850-CS]-100G-01
+Switch Port, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:     COMMON FIBER,     Port Split/Aggregate:         DISABLE
+Speed:               100000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                  DISABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                      -,     Fec:                           RS-FEC
+Last physical up time   : 2024-05-25 16:21:13+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:17+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 13204979086 bits/sec, 2794208 packets/sec
+    Last 300 seconds output rate: 30906093235 bits/sec, 3548973 packets/sec
+    Input peak rate 19817602523 bits/sec, Record time: 2024-05-28 15:40:49+04:40
+    Output peak rate 34518051695 bits/sec, Record time: 2024-06-23 00:15:45+04:40
+    Input :   4099370276518359 bytes,      6275693600467 packets
+    Output:   7881709154688952 bytes,      7297116852694 packets
+    Input: 
+      Unicast:          6275693514217,   Multicast:                   86250
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:          7297114657319,   Multicast:                 2192989
+      Broadcast:                 2386,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  13.19%
+    Last 300 seconds output utility rate: 30.90%
+
+10GE1/0/1 current state : UP (ifindex: 37)
+Line protocol current state : UP 
+Description: INFRA-CORERO-MGMT-GE-01-[Corere:]
+Switch Port, PVID : 1203, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:    COMMON COPPER,     Port Split/Aggregate:               -
+Speed:                 1000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                   ENABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                   AUTO,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:12+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:17+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 83025 bits/sec, 21 packets/sec
+    Last 300 seconds output rate: 8320 bits/sec, 8 packets/sec
+    Input peak rate 657817 bits/sec, Record time: 2024-05-29 18:14:34+04:40
+    Output peak rate 465314 bits/sec, Record time: 2024-06-05 01:28:05+04:40
+    Input :        26879321480 bytes,           56145622 packets
+    Output:         5477395446 bytes,           34121337 packets
+    Input: 
+      Unicast:               55898594,   Multicast:                     718
+      Broadcast:               246310,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:               18588603,   Multicast:                 4248160
+      Broadcast:             11284574,   Jumbo:                           0
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.01%
+    Last 300 seconds output utility rate: 0.01%
+
+10GE1/0/2 current state : UP (ifindex: 38)
+Line protocol current state : UP 
+Description: INFRA-CORERO-TELEMETRY-GE-02-[Corere:]
+Switch Port, PVID : 1204, TPID : 8100(Hex), The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Port Mode:    COMMON COPPER,     Port Split/Aggregate:               -
+Speed:                 1000,     Loopback:                        NONE
+Duplex:                FULL,     Negotiation:                   ENABLE
+Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+Mdi:                   AUTO,     Fec:                             NONE
+Last physical up time   : 2024-05-25 16:21:08+04:40
+Last physical down time : 2024-05-25 16:19:13+04:40
+Current system time: 2024-06-24 15:14:17+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 115792 bits/sec, 17 packets/sec
+    Input peak rate 2 bits/sec, Record time: 2024-05-25 16:25:04+04:40
+    Output peak rate 142785 bits/sec, Record time: 2024-06-05 01:23:55+04:40
+    Input :             180768 bytes,               2152 packets
+    Output:        38124537299 bytes,           44123774 packets
+    Input: 
+      Unicast:                   2152,   Multicast:                       0
+      Broadcast:                    0,   Jumbo:                           0
+      Discard:                      0,   Frames:                          0
+      Pause:                        0
+      
+      Total Error:                  0
+      CRC:                          0,   Giants:                          0
+      Jabbers:                      0,   Fragments:                       0
+      Runts:                        0,   DropEvents:                      0
+      Alignments:                   0,   Symbols:                         0
+      Ignoreds:                     0
+   
+    Output:
+      Unicast:               36236117,   Multicast:                 4247883
+      Broadcast:              3552098,   Jumbo:                       87676
+      Discard:                      0,   Buffers Purged:                  0
+      Pause:                        0
+
+    Input bandwidth utilization threshold : 90.00%
+    Output bandwidth utilization threshold: 90.00%
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.01%
+
+Eth-Trunk1 current state : UP (ifindex: 50)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:17+04:40
+Description: [INFRA-BKHL-L]-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-[100G-LAG]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:17+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 35008371490 bits/sec, 9916431 packets/sec
+    Last 300 seconds output rate 161952932159 bits/sec, 15629756 packets/sec
+    Input: 13953208233077 packets,6774923643432882 bytes
+           13953173971357 unicast,28243723 broadcast,6018000 multicast
+           0 errors,0 drops
+    Output:20146592566252 packets,26647978553128477 bytes
+           20146556549926 unicast,10445506 broadcast,25570824 multicast
+           0 errors,9279549 drops
+    Last 300 seconds input utility rate:  17.50%
+    Last 300 seconds output utility rate: 80.97%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/27                   UP                  1        
+100GE1/0/31                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk3 current state : UP (ifindex: 102)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:07+04:40
+Description: [INFRA-BKHL-L]-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-[2x10G-LAG]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:17+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 130640188 bits/sec, 168160 packets/sec
+    Last 300 seconds output rate 7607434846 bits/sec, 626536 packets/sec
+    Input: 452209948028 packets,49370205619280 bytes
+           452201964274 unicast,7810548 broadcast,173206 multicast
+           0 errors,0 drops
+    Output:1642031252861 packets,2491530677050262 bytes
+           1642030945840 unicast,7409 broadcast,299612 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.65%
+    Last 300 seconds output utility rate: 38.03%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/2:2                  UP                  1        
+100GE1/0/3:2                  UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk12 current state : Administratively DOWN (ifindex: 85)
+Line protocol current state : DOWN 
+Description: [INFRA-BKHL-L]-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-[100G-LAG]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:17+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+----------------------------------------------------------
+The Number of Ports in Trunk : 0
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk13 current state : DOWN (ifindex: 87)
+Line protocol current state : DOWN 
+Description: [INFRA-BKHL-L]-CS-CS-10x10GE--MX960-02(CS)-CE8850(CS)-AGG
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:17+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+----------------------------------------------------------
+The Number of Ports in Trunk : 0
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk14 current state : DOWN (ifindex: 88)
+Line protocol current state : DOWN 
+Description: [INFRA-BKHL-L]-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-[100G-LAG]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 0Mbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:17+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/28                   DOWN                1        
+100GE1/0/30                   DOWN                1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk15 current state : UP (ifindex: 86)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:11+04:40
+Description: [INFRA-CDN]-Tencent-100G
+Switch Port, PVID : 1205, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:17+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 14302402576 bits/sec, 1441157 packets/sec
+    Last 300 seconds output rate 1330871689 bits/sec, 771719 packets/sec
+    Input: 1901318053949 packets,2193715264186461 bytes
+           1901317450314 unicast,7 broadcast,603628 multicast
+           0 errors,0 drops
+    Output:1070241630745 packets,235330029312934 bytes
+           1070240163788 unicast,0 broadcast,1466957 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  7.15%
+    Last 300 seconds output utility rate: 0.66%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/9                    UP                  1        
+100GE1/0/10                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk16 current state : UP (ifindex: 94)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:13+04:40
+Description: [INFRA-CDN]-AKAMAI-2x100G
+Switch Port, PVID : 1212, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 400Gbps, Current BW : 400Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:17+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 147150823735 bits/sec, 14187544 packets/sec
+    Last 300 seconds output rate 33391290307 bits/sec, 9142691 packets/sec
+    Input: 18244527152937 packets,24373544112087428 bytes
+           18244489567172 unicast,10444322 broadcast,27123282 multicast
+           18928 errors,0 drops
+    Output:12875515397061 packets,6486468451306998 bytes
+           12875483944085 unicast,28219654 broadcast,3233324 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  36.78%
+    Last 300 seconds output utility rate: 8.34%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/15                   UP                  1        
+100GE1/0/16                   UP                  1        
+100GE1/0/21                   UP                  1        
+100GE1/0/22                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 4
+The Number of Up Ports in Trunk : 4
+
+Eth-Trunk18 current state : DOWN (ifindex: 89)
+Line protocol current state : DOWN 
+Description: MSAN-KHI:INFRA-CS-AP-100G-04-[CE8850]-[MX960-AP]-03
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:17+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+----------------------------------------------------------
+The Number of Ports in Trunk : 0
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk19 current state : UP (ifindex: 92)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:03+04:40
+Description: [INFRA-NNI]-TWA-TES-[KHI-CS-CE8850]-[TES-CLS-QFX-5100]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:17+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 6510965 bits/sec, 2541 packets/sec
+    Last 300 seconds output rate 3812983 bits/sec, 2493 packets/sec
+    Input: 6390160302 packets,1873957388292 bytes
+           6389657267 unicast,17343 broadcast,485692 multicast
+           0 errors,0 drops
+    Output:6362071994 packets,1315065595244 bytes
+           6354115433 unicast,7782942 broadcast,173619 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.03%
+    Last 300 seconds output utility rate: 0.01%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/2:3                  UP                  1        
+100GE1/0/3:3                  UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk20 current state : DOWN (ifindex: 90)
+Line protocol current state : DOWN 
+Description: HYD-MX204-TES
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 0Mbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:18+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/20                   DOWN                1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk21 current state : UP (ifindex: 95)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:04+04:40
+Description: TES-OTT-CLS-AGG
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:18+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 7608660316 bits/sec, 624624 packets/sec
+    Last 300 seconds output rate 126942330 bits/sec, 165820 packets/sec
+    Input: 1635641651010 packets,2489656902717870 bytes
+           1635641290821 unicast,1160 broadcast,359030 multicast
+           0 errors,0 drops
+    Output:445853025521 packets,48055903544339 bytes
+           445847849414 unicast,1196 broadcast,5174911 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  38.04%
+    Last 300 seconds output utility rate: 0.63%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/3:1                  UP                  1        
+100GE1/0/3:4                  UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk23 current state : UP (ifindex: 91)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:14+04:40
+Description: INFRA-CDN-CLOUDFLARE-KHI-100G-AGG
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:18+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 61129097262 bits/sec, 7032367 packets/sec
+    Last 300 seconds output rate 26432337665 bits/sec, 5597781 packets/sec
+    Input: 14591058040251 packets,15771330095839566 bytes
+           14591055452085 unicast,2368 broadcast,2585799 multicast
+           0 errors,0 drops
+    Output:12516485040371 packets,8187382154603876 bytes
+           12516482450375 unicast,2339 broadcast,2587659 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  61.12%
+    Last 300 seconds output utility rate: 26.43%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/11                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 1
+
+Eth-Trunk24 current state : UP (ifindex: 93)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:12+04:40
+Description: INFRA-CDN-ZENLAYER-100G-AGG
+Switch Port, PVID : 1211, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:18+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 52325 bits/sec, 40 packets/sec
+    Last 300 seconds output rate 2445065 bits/sec, 3621 packets/sec
+    Input: 761537248 packets,146499426925 bytes
+           758968470 unicast,1184 broadcast,2567594 multicast
+           0 errors,0 drops
+    Output:7452509395 packets,739834903527 bytes
+           7449920758 unicast,1167 broadcast,2587470 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.01%
+    Last 300 seconds output utility rate: 0.01%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/12                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 1
+
+Eth-Trunk33 current state : UP (ifindex: 41)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:15+04:40
+Description: [INFRA-BKHL-L]-CS-CS-[MX10008-CS]-[CE8850-CS]-[100G-LAG]-SHIFTED-to-MX2020-CS
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:18+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 26444620540 bits/sec, 5601626 packets/sec
+    Last 300 seconds output rate 61133642932 bits/sec, 7032896 packets/sec
+    Input: 12523140510450 packets,8189879983380362 bytes
+           12523140283635 unicast,54100 broadcast,172718 multicast
+           0 errors,0 drops
+    Output:14591146639964 packets,15771368505941783 bytes
+           14591143877746 unicast,2408 broadcast,2759811 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  13.22%
+    Last 300 seconds output utility rate: 30.56%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/26                   UP                  1        
+100GE1/0/32                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk34 current state : DOWN (ifindex: 83)
+Line protocol current state : DOWN 
+Description: [INFRA-BKHL]-CS-CS-MX10008(CS)-MX960-Core01(CS)-[10G]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 10Gbps, Current BW : 0Mbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:18+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/1:1                  DOWN                1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk37 current state : UP (ifindex: 84)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:06+04:40
+Description: [INFRA-BKHL-L]-CC-KHI-CS-MX2020-to-KHI-CS-CE8850-[10G]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 10Gbps, Current BW : 10Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:18+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 123841 bits/sec, 25 packets/sec
+    Last 300 seconds output rate 84884 bits/sec, 21 packets/sec
+    Input: 75743571 packets,43463594738 bytes
+           54824857 unicast,14836761 broadcast,5994277 multicast
+           0 errors,0 drops
+    Output:56234250 packets,27116895553 bytes
+           55900754 unicast,246306 broadcast,87190 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.01%
+    Last 300 seconds output utility rate: 0.01%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/2:1                  UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 1
+
+LoopBack0 current state : UP (ifindex: 47)
+Line protocol current state : UP (spoofing) 
+Last line protocol up time : 2024-05-25 16:20:44+04:40
+Description: CE8850-Loopback-IP
+Route Port,The Maximum Transmit Unit is 1500 
+Internet Address is 110.93.252.62/32
+Current system time: 2024-06-24 15:14:18+04:40
+Physical is Loopback
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+MEth0/0/0 current state : DOWN (ifindex: 4)
+Line protocol current state : DOWN 
+Description: 
+Route Port,The Maximum Transmit Unit is 1500 
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2600
+Media type: COMMON COPPER, Link type: auto negotiation
+Loopback: NONE, Maximal BW: 1000M, Current BW: 1000M, Full-duplex mode
+Last physical up time   : -
+Last physical down time : 2024-05-25 16:20:45+04:40
+Current system time: 2024-06-24 15:14:18+04:40
+Statistics last cleared:never
+    Last 300 seconds input rate: 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate: 0 bits/sec, 0 packets/sec
+    Input peak rate 0 bits/sec, Record time: -
+    Output peak rate 0 bits/sec, Record time: -
+    Input :                  0 bytes,                  0 packets
+    Output:                  0 bytes,                  0 packets
+    Input:   
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Overrun:                         0
+      Over-car-pps:                 0
+
+      Total Error:                  0,   CRC:                             0
+      Giants:                       0,   Jabbers:                         0
+      Runts:                        0,   Fragments:                       0
+   
+    Output:
+      Unicast:                      0,   Multicast:                       0
+      Broadcast:                    0,   Underrun:                        0
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+NULL0 current state : UP (ifindex: 2)
+Line protocol current state : UP (spoofing) 
+Description: 
+Route Port,The Maximum Transmit Unit is 1500 
+Internet protocol processing : disabled
+Current system time: 2024-06-24 15:14:18+04:40
+Physical is NULL DEV
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+
+Vlanif1200 current state : UP (ifindex: 48)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:16+04:40
+Description: Mgmt-CC-MX10008-S8850-CS-100G
+Route Port,The Maximum Transmit Unit is 1500
+Internet Address is 110.93.255.202/31
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-260c
+Physical is VLANIF
+Current system time: 2024-06-24 15:14:18+04:40
+    Input bandwidth utilization  : --
+    Output bandwidth utilization : --
+
+<KHI-CE8850-32CQ-CLS>display interface description | no-more
+PHY: Physical
+*down: administratively down
+^down: standby
+(l): loopback
+(s): spoofing
+(b): BFD down
+(e): ETHOAM down
+(d): Dampening Suppressed
+(p): port alarm down
+(dl): DLDP down
+(c): CFM down
+Interface                     PHY     Protocol Description                     
+100GE1/0/1:1                  down    down     INFRA-BKHL-CC-KHI-CS-MX10008-to-KHI-CS-CE8850-10G-01
+100GE1/0/1:2                  *down   down                                     
+100GE1/0/1:3                  *down   down                                     
+100GE1/0/1:4                  *down   down                                     
+100GE1/0/2:1                  up      up       INFRA-BKHL-CC-KHI-CS-MX2020-to-KHI-CS-CE8850-10G-01
+100GE1/0/2:2                  up      up       INFRA-BKHL-CS-CS-[MX960-Core02]-[CE8850]-10G-01
+100GE1/0/2:3                  up      up       [INFRA-NNI]-TWA-TES-[KHI-CS-CE8850]-[TES-CLS-QFX-5100 xe-0/0/8]-10G-01
+100GE1/0/2:4                  *down   down                                     
+100GE1/0/3:1                  up      up       TES-OTT-CLS-01                  
+100GE1/0/3:2                  up      up       INFRA-BKHL-CS-CS-[MX960-Core02]-[CE8850]-10G-02
+100GE1/0/3:3                  up      up       [INFRA-NNI]-TWA-TES-[KHI-CS-CE8850]-[TES-CLS-QFX-5100 xe-1/0/8]-10G-02
+100GE1/0/3:4                  up      up       TES-OTT-CLS-02                  
+100GE1/0/4:1                  up      up       [INFRA-BKHL]-DDOS-NSFOCUS-vNTA1-GW1[via-switch-01]-10G-01
+100GE1/0/4:2                  up      up       [INFRA-BKHL]-DDOS-NSFOCUS-vNTA2-GW1[via-switch-01]-10G-01
+100GE1/0/4:3                  *down   down                                     
+100GE1/0/4:4                  *down   down                                     
+100GE1/0/5:1                  down    down                                     
+100GE1/0/5:2                  down    down                                     
+100GE1/0/5:3                  down    down                                     
+100GE1/0/5:4                  down    down                                     
+100GE1/0/6:1                  down    down                                     
+100GE1/0/6:2                  down    down                                     
+100GE1/0/6:3                  down    down                                     
+100GE1/0/6:4                  down    down                                     
+100GE1/0/7:1                  down    down                                     
+100GE1/0/7:2                  down    down                                     
+100GE1/0/7:3                  down    down                                     
+100GE1/0/7:4                  down    down                                     
+100GE1/0/8:1                  down    down                                     
+100GE1/0/8:2                  down    down                                     
+100GE1/0/8:3                  down    down                                     
+100GE1/0/8:4                  down    down                                     
+100GE1/0/9                    up      up       CDN: INFRA-TENCENT-KHI-100G-01  
+100GE1/0/10                   up      up       CDN: INFRA-TENCENT-KHI-100G-02  
+100GE1/0/11                   up      up       CDN: INFRA-CLOUDFLARE-KHI-100G-01-(et-0/0/23)
+100GE1/0/12                   up      up       CDN: INFRA-ZENLAYER-100G-01     
+100GE1/0/13                   *down   down                                     
+100GE1/0/14                   *down   down                                     
+100GE1/0/15                   up      up       CDN: INFRA-AKAMAI-KHI-100G-01   
+100GE1/0/16                   up      up       CDN: INFRA-AKAMAI-KHI-100G-02   
+100GE1/0/17                   *down   down                                     
+100GE1/0/18                   down    down     INFRA: CS_AP_TESTING            
+100GE1/0/19                   *down   down                                     
+100GE1/0/20                   down    down                                     
+100GE1/0/21                   up      up       CDN: INFRA-AKAMAI-KHI-100G-03   
+100GE1/0/22                   up      up       CDN: INFRA-AKAMAI-KHI-100G-04   
+100GE1/0/23                   *down   down                                     
+100GE1/0/24                   *down   down                                     
+100GE1/0/25                   *down   down                                     
+100GE1/0/26                   up      up       INFRA-BKHL-CS-CS-[MX10008-CS]-[CE8850-CS]-100G-02
+100GE1/0/27                   up      up       INFRA-BKHL-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-100G-02
+100GE1/0/28                   down    down     INFRA-BKHL-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-100G-02
+100GE1/0/29                   down    down     MSAN-KHI:INFRA-CS-AP-100G-04-[CE8850]-[MX960-AP]-03
+100GE1/0/30                   down    down     INFRA-BKHL-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-100G-01
+100GE1/0/31                   up      up       INFRA-BKHL-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-100G-01
+100GE1/0/32                   up      up       INFRA-BKHL-CS-CS-[MX10008-CS]-[CE8850-CS]-100G-01
+10GE1/0/1                     up      up       INFRA-CORERO-MGMT-GE-01-[Corere:]
+10GE1/0/2                     up      up       INFRA-CORERO-TELEMETRY-GE-02-[Corere:]
+Eth-Trunk1                    up      up       [INFRA-BKHL-L]-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-[100G-LAG]
+Eth-Trunk3                    up      up       [INFRA-BKHL-L]-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-[2x10G-LAG]
+Eth-Trunk12                   *down   down     [INFRA-BKHL-L]-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-[100G-LAG]
+Eth-Trunk13                   down    down     [INFRA-BKHL-L]-CS-CS-10x10GE--MX960-02(CS)-CE8850(CS)-AGG
+Eth-Trunk14                   down    down     [INFRA-BKHL-L]-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-[100G-LAG]
+Eth-Trunk15                   up      up       [INFRA-CDN]-Tencent-100G        
+Eth-Trunk16                   up      up       [INFRA-CDN]-AKAMAI-2x100G       
+Eth-Trunk18                   down    down     MSAN-KHI:INFRA-CS-AP-100G-04-[CE8850]-[MX960-AP]-03
+Eth-Trunk19                   up      up       [INFRA-NNI]-TWA-TES-[KHI-CS-CE8850]-[TES-CLS-QFX-5100]
+Eth-Trunk20                   down    down     HYD-MX204-TES                   
+Eth-Trunk21                   up      up       TES-OTT-CLS-AGG                 
+Eth-Trunk23                   up      up       INFRA-CDN-CLOUDFLARE-KHI-100G-AGG
+Eth-Trunk24                   up      up       INFRA-CDN-ZENLAYER-100G-AGG     
+Eth-Trunk33                   up      up       [INFRA-BKHL-L]-CS-CS-[MX10008-CS]-[CE8850-CS]-[100G-LAG]-SHIFTED-to-MX2020-CS
+Eth-Trunk34                   down    down     [INFRA-BKHL]-CS-CS-MX10008(CS)-MX960-Core01(CS)-[10G]
+Eth-Trunk37                   up      up       [INFRA-BKHL-L]-CC-KHI-CS-MX2020-to-KHI-CS-CE8850-[10G]
+Loop0                         up      up(s)    CE8850-Loopback-IP              
+MEth0/0/0                     down    down                                     
+NULL0                         up      up(s)                                    
+Vlanif1200                    up      up       Mgmt-CC-MX10008-S8850-CS-100G   
+<KHI-CE8850-32CQ-CLS>display interface eth-trunk | no-more
+Eth-Trunk1 current state : UP (ifindex: 50)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:17+04:40
+Description: [INFRA-BKHL-L]-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-[100G-LAG]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 34999015723 bits/sec, 9914023 packets/sec
+    Last 300 seconds output rate 161970942622 bits/sec, 15633068 packets/sec
+    Input: 13953266992653 packets,6774949514315859 bytes
+           13953232730879 unicast,28243763 broadcast,6018011 multicast
+           0 errors,0 drops
+    Output:20146687091051 packets,26648100438425607 bytes
+           20146651074619 unicast,10445549 broadcast,25570885 multicast
+           0 errors,9279549 drops
+    Last 300 seconds input utility rate:  17.49%
+    Last 300 seconds output utility rate: 80.98%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/27                   UP                  1        
+100GE1/0/31                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk3 current state : UP (ifindex: 102)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:07+04:40
+Description: [INFRA-BKHL-L]-CS-CS-[MX960-Core03-CS]-[CE8850-CS]-[2x10G-LAG]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 130675017 bits/sec, 168143 packets/sec
+    Last 300 seconds output rate 7603152960 bits/sec, 626199 packets/sec
+    Input: 452210974213 packets,49370306150805 bytes
+           452202990443 unicast,7810564 broadcast,173206 multicast
+           0 errors,0 drops
+    Output:1642035021113 packets,2491536394500083 bytes
+           1642034714091 unicast,7409 broadcast,299613 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.65%
+    Last 300 seconds output utility rate: 38.01%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/2:2                  UP                  1        
+100GE1/0/3:2                  UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk12 current state : Administratively DOWN (ifindex: 85)
+Line protocol current state : DOWN 
+Description: [INFRA-BKHL-L]-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-[100G-LAG]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+----------------------------------------------------------
+The Number of Ports in Trunk : 0
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk13 current state : DOWN (ifindex: 87)
+Line protocol current state : DOWN 
+Description: [INFRA-BKHL-L]-CS-CS-10x10GE--MX960-02(CS)-CE8850(CS)-AGG
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+----------------------------------------------------------
+The Number of Ports in Trunk : 0
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk14 current state : DOWN (ifindex: 88)
+Line protocol current state : DOWN 
+Description: [INFRA-BKHL-L]-CS-CS-[MX960-Core02-CS]-[CE8850-CS]-[100G-LAG]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 0Mbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/28                   DOWN                1        
+100GE1/0/30                   DOWN                1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk15 current state : UP (ifindex: 86)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:11+04:40
+Description: [INFRA-CDN]-Tencent-100G
+Switch Port, PVID : 1205, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 14357037238 bits/sec, 1446390 packets/sec
+    Last 300 seconds output rate 1337841760 bits/sec, 774276 packets/sec
+    Input: 1901327885096 packets,2193727494270920 bytes
+           1901327281461 unicast,7 broadcast,603629 multicast
+           0 errors,0 drops
+    Output:1070246851881 packets,235331245577708 bytes
+           1070245384921 unicast,0 broadcast,1466960 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  7.17%
+    Last 300 seconds output utility rate: 0.66%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/9                    UP                  1        
+100GE1/0/10                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk16 current state : UP (ifindex: 94)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:13+04:40
+Description: [INFRA-CDN]-AKAMAI-2x100G
+Switch Port, PVID : 1212, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 400Gbps, Current BW : 400Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 147112867342 bits/sec, 14185654 packets/sec
+    Last 300 seconds output rate 33373324155 bits/sec, 9137318 packets/sec
+    Input: 18244611838529 packets,24373653378658511 bytes
+           18244574252655 unicast,10444365 broadcast,27123347 multicast
+           18928 errors,0 drops
+    Output:12875568909640 packets,6486492883343002 bytes
+           12875537456619 unicast,28219694 broadcast,3233328 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  36.77%
+    Last 300 seconds output utility rate: 8.34%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/15                   UP                  1        
+100GE1/0/16                   UP                  1        
+100GE1/0/21                   UP                  1        
+100GE1/0/22                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 4
+The Number of Up Ports in Trunk : 4
+
+Eth-Trunk18 current state : DOWN (ifindex: 89)
+Line protocol current state : DOWN 
+Description: MSAN-KHI:INFRA-CS-AP-100G-04-[CE8850]-[MX960-AP]-03
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+----------------------------------------------------------
+The Number of Ports in Trunk : 0
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk19 current state : UP (ifindex: 92)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:03+04:40
+Description: [INFRA-NNI]-TWA-TES-[KHI-CS-CE8850]-[TES-CLS-QFX-5100]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 6524099 bits/sec, 2563 packets/sec
+    Last 300 seconds output rate 3881763 bits/sec, 2516 packets/sec
+    Input: 6390178265 packets,1873962020339 bytes
+           6389675229 unicast,17343 broadcast,485693 multicast
+           0 errors,0 drops
+    Output:6362090058 packets,1315069738306 bytes
+           6354133480 unicast,7782958 broadcast,173620 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.03%
+    Last 300 seconds output utility rate: 0.01%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/2:3                  UP                  1        
+100GE1/0/3:3                  UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk20 current state : DOWN (ifindex: 90)
+Line protocol current state : DOWN 
+Description: HYD-MX204-TES
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 0Mbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/20                   DOWN                1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk21 current state : UP (ifindex: 95)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:04+04:40
+Description: TES-OTT-CLS-AGG
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 20Gbps, Current BW : 20Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:23+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 7599367072 bits/sec, 623857 packets/sec
+    Last 300 seconds output rate 126829930 bits/sec, 165675 packets/sec
+    Input: 1635645402282 packets,2489662617010099 bytes
+           1635645042089 unicast,1160 broadcast,359033 multicast
+           0 errors,0 drops
+    Output:445854033639 packets,48055999933858 bytes
+           445848857520 unicast,1196 broadcast,5174923 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  37.99%
+    Last 300 seconds output utility rate: 0.63%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/3:1                  UP                  1        
+100GE1/0/3:4                  UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk23 current state : UP (ifindex: 91)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:14+04:40
+Description: INFRA-CDN-CLOUDFLARE-KHI-100G-AGG
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:24+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 61123527469 bits/sec, 7032314 packets/sec
+    Last 300 seconds output rate 26439997292 bits/sec, 5598955 packets/sec
+    Input: 14591100272697 packets,15771375765614854 bytes
+           14591097684526 unicast,2368 broadcast,2585805 multicast
+           0 errors,0 drops
+    Output:12516519061585 packets,8187402362836798 bytes
+           12516516471581 unicast,2339 broadcast,2587665 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  61.12%
+    Last 300 seconds output utility rate: 26.43%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/11                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 1
+
+Eth-Trunk24 current state : UP (ifindex: 93)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:12+04:40
+Description: INFRA-CDN-ZENLAYER-100G-AGG
+Switch Port, PVID : 1211, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 100Gbps, Current BW : 100Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:24+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 51784 bits/sec, 40 packets/sec
+    Last 300 seconds output rate 2444721 bits/sec, 3620 packets/sec
+    Input: 761537385 packets,146499446437 bytes
+           758968601 unicast,1184 broadcast,2567600 multicast
+           0 errors,0 drops
+    Output:7452530875 packets,739836720128 bytes
+           7449942232 unicast,1167 broadcast,2587476 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.01%
+    Last 300 seconds output utility rate: 0.01%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/12                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 1
+
+Eth-Trunk33 current state : UP (ifindex: 41)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:15+04:40
+Description: [INFRA-BKHL-L]-CS-CS-[MX10008-CS]-[CE8850-CS]-[100G-LAG]-SHIFTED-to-MX2020-CS
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 200Gbps, Current BW : 200Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:24+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 26453954906 bits/sec, 5603024 packets/sec
+    Last 300 seconds output rate 61130906573 bits/sec, 7033243 packets/sec
+    Input: 12523167882815 packets,8189896228367867 bytes
+           12523167655997 unicast,54100 broadcast,172719 multicast
+           0 errors,0 drops
+    Output:14591180558356 packets,15771405138721792 bytes
+           14591177796134 unicast,2408 broadcast,2759816 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  13.22%
+    Last 300 seconds output utility rate: 30.56%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/26                   UP                  1        
+100GE1/0/32                   UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 2
+The Number of Up Ports in Trunk : 2
+
+Eth-Trunk34 current state : DOWN (ifindex: 83)
+Line protocol current state : DOWN 
+Description: [INFRA-BKHL]-CS-CS-MX10008(CS)-MX960-Core01(CS)-[10G]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 10Gbps, Current BW : 0Mbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:24+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 0 bits/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bits/sec, 0 packets/sec
+    Input: 0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Output:0 packets,0 bytes
+           0 unicast,0 broadcast,0 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.00%
+    Last 300 seconds output utility rate: 0.00%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/1:1                  DOWN                1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 0
+
+Eth-Trunk37 current state : UP (ifindex: 84)
+Line protocol current state : UP 
+Last line protocol up time : 2024-05-25 16:21:06+04:40
+Description: [INFRA-BKHL-L]-CC-KHI-CS-MX2020-to-KHI-CS-CE8850-[10G]
+Switch Port, PVID :    1, TPID : 8100(Hex), Hash Arithmetic : profile default, Maximal BW : 10Gbps, Current BW : 10Gbps, The Maximum Frame Length is 9216
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 44a1-9130-2601
+Current system time: 2024-06-24 15:14:24+04:40
+Physical is ETH_TRUNK
+    Last 300 seconds input rate 123838 bits/sec, 25 packets/sec
+    Last 300 seconds output rate 82531 bits/sec, 21 packets/sec
+    Input: 75743723 packets,43463690299 bytes
+           54824964 unicast,14836793 broadcast,5994290 multicast
+           0 errors,0 drops
+    Output:56234277 packets,27116912591 bytes
+           55900781 unicast,246306 broadcast,87190 multicast
+           0 errors,0 drops
+    Last 300 seconds input utility rate:  0.01%
+    Last 300 seconds output utility rate: 0.01%
+----------------------------------------------------------
+PortName                      Status              Weight   
+----------------------------------------------------------
+100GE1/0/2:1                  UP                  1        
+----------------------------------------------------------
+The Number of Ports in Trunk : 1
+The Number of Up Ports in Trunk : 1
+
+<KHI-CE8850-32CQ-CLS>display license verbose | no-more
+MainBoard:
+Info: No license is activated.
+<KHI-CE8850-32CQ-CLS>display license resource usage | no-more
+                                     ^
+Error: Too many parameters found at '^' position.
+<KHI-CE8850-32CQ-CLS>display optical-module brief | no-more
+                             ^
+Error: Unrecognized command found at '^' position.
+<KHI-CE8850-32CQ-CLS>display device pic-status | no-more
+                                    ^
+Error: Too many parameters found at '^' position.
+<KHI-CE8850-32CQ-CLS>display version | no-more
+Huawei Versatile Routing Platform Software
+VRP (R) software, Version 8.180 (CE8850EI V200R005C10SPC800)
+Copyright (C) 2012-2018 Huawei Technologies Co., Ltd.
+HUAWEI CE8850-32CQ-EI uptime is 29 days, 22 hours, 55 minutes 
+Patch Version: V200R005SPH010
+
+CE8850-32CQ-EI(Master) 1 : uptime is  29 days, 22 hours, 54 minutes
+        StartupTime 2024/05/25   16:20:33+04:40
+Memory    Size    : 4096 M bytes
+Flash     Size    : 1024 M bytes
+CE8850-32CQ-EI version information                               
+1. PCB    Version : CEM32CQP01    VER A
+2. MAB    Version : 1
+3. Board  Type    : CE8850-32CQ-EI
+4. CPLD1  Version : 101
+5. BIOS   Version : 192
+<KHI-CE8850-32CQ-CLS>display elabel brief | no-more
+                             ^
+Error: Unrecognized command found at '^' position.
+<KHI-CE8850-32CQ-CLS>display license resource usage port-basic all | no-more
+                                     ^
+Error: Too many parameters found at '^' position.
 <KHI-CE8850-32CQ-CLS>
 <KHI-CE8850-32CQ-CLS>quit

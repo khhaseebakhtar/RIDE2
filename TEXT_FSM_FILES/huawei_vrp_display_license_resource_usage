@@ -1,0 +1,22 @@
+Value FEATURE_NAME (\S+)
+Value LIC_NAME (\S+)
+Value USED_LIC (\d+)
+Value AVIL_LIC (\d+)
+
+Start
+ ^${FEATURE_NAME}\s+${LIC_NAME}\s+${USED_LIC}\/${AVIL_LIC}$$ -> Record
+
+
+
+#--------------------------------------------------------------------------------
+#FeatureName              ConfigureItemName                         ResourceUsage
+#--------------------------------------------------------------------------------
+#CRFEA4                   LCR9S9KLXRU81                                     24/24
+#CRFEA4                   LCR9S9KNBSL0R                                     28/37
+#CRFEA4                   LCR9S9KNL3V0L                                      0/17
+#--------------------------------------------------------------------------------
+
+
+
+
+

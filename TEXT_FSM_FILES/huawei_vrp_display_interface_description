@@ -1,0 +1,7 @@
+Value INTERFACE (\S+)
+Value PHY (down|DOWN\(.*\)|down\(.*\)|\*down|up\(E\)|up|up\(\S\))
+Value PROTOCOL (down|DOWN\(.*\)|down\(.*\)|\*down|up\(E\)|up|up\(\S\))
+Value DESCRIPTION (\S+)
+
+Start
+  ^${INTERFACE}\s+${PHY}\s+${PROTOCOL}\s+${DESCRIPTION} -> Record

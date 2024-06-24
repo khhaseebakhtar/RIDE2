@@ -33,7 +33,7 @@ def check_credentials(username, password):
 class Execute():
 
     def __init__(self):
-        super().__init__() # inherit logging Signal objects form Signals file
+        super().__init__()  # inherit logging Signal objects form Signals file
         self.init()
 
     def init(self):
@@ -52,17 +52,6 @@ class Execute():
         self.failed_device_count = 0
         self.failed_device_list = []
         self.Thread_control = 0
-        self.display_interface_cmd = ""
-        self.display_interface_brief_cmd = ""
-        self.display_interface_description_cmd = ""
-        self.display_license_verbose_cmd = ""
-        self.display_license_resource_usage_cmd = ""
-        self.display_device_pic_status_cmd = ""
-        self.display_optical_module_brief_cmd = ""
-        self.display_license_resource_usage_port_basic_cmd = ""
-        self.display_interface_eth_cmd = ""
-        self.display_version_cmd = ""
-        self.display_elable_brief_cmd = ""
         self.check_boxes_checked = 0
         self.sig = signals()
         self.output_format_huawei = {
@@ -82,6 +71,24 @@ class Execute():
             'display elabel brief': [{'module': '', 'slot_no': '', 'board_type': '', 'bar_code': '', 'description': ''}]
 
         }
+        self.output_format_juniper = {
+            'show interfaces * | no-more ': [{'interface': '', 'link_status': '', 'port_bw': ''}],
+            'display interface eth-trunk': [{'interface': '', 'link_status': '', 'max_bw': '', "current_bw": ''}],
+            'display interface description': [{'interface': '', 'phy': '', 'description': ''}],
+            'display device pic-status': [{'pic_slot': '', 'pic_sub': '', 'status': '', 'type': '', 'port_count': ''}],
+            'display license verbose': [{'description': '', 'expired_date': '', 'lic_name': ''}],
+            'display license resource usage': [{'lic_name': '', 'avil_lic': '', 'used_lic': ''}],
+            'display optical-module brief': [
+                {'port': '', 'status': '', 'duplex': '', 'type': '', 'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''}],
+            'display license resource usage port-basic all': [
+                {'port': '', 'fname': '', 'ncount': '', 'ucount': '', 'status': ''}],
+            'show version': [
+                {'vrp_version': '', 'product_version': '', 'model': '', 'uptime': '', 'mpu_q': '', 'sru_q': '',
+                 'sfu_q': '', 'lpu_q': ''}],
+            'display elabel brief': [{'module': '', 'slot_no': '', 'board_type': '', 'bar_code': '', 'description': ''}]
+
+        }
+
 
     # ================================================INPUT/OUTPUT File Check
     def check_input_output_files(self, ui):

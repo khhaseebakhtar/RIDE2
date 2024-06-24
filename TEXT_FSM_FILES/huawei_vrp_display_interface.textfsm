@@ -1,0 +1,9 @@
+Value INTERFACE (\S+)
+Value LINK_STATUS (\w+)
+Value PORT_BW (100M|1G|10G|100G|50G)
+
+Start
+  ^Port\s+BW:\s+${PORT_BW}
+  ^${INTERFACE}\s+current\s+state\s+:\s+${LINK_STATUS}\s+\(ifindex:\s+\d+\) -> Record
+  ^.* -> Error
+ 

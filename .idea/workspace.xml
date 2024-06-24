@@ -6,6 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="3b1f0ae1-3d99-4eb9-9941-a2ce346da406" name="Changes" comment="only device list is being read and no actual function is being executed, no command is being executed,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Output_Logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/New folder/Output_Logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session_Manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session_Manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_current_sysname.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_current_sysname.textfsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_device.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_device.textfsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_device_pic_status.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_device_pic_status.textfsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_elable_brief.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_elable_brief.textfsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface.textfsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface_description" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface_description" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface_eth_trunk" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_interface_eth_trunk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_lic_res_usage_port_basic.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_lic_res_usage_port_basic.textfsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license_resource_usage" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license_resource_usage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license_verbose" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_license_verbose" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_optical_module_brief.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_optical_module_brief.textfsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_version.textfsm" beforeDir="false" afterPath="$PROJECT_DIR$/TEXT_FSM_FILES/huawei_vrp_display_version.textfsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ 110.93.254.93.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ 110.93.254.93.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/110.93.252.31.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/110.93.252.31.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/110.93.252.62.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/110.93.252.62.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/110.93.254.35.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/110.93.254.35.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +42,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2iE6Nf8FguRzMSMcY4Os6qkgWpA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,6 +56,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.main.executor": "Run",
     "Python.main1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
@@ -109,21 +132,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>164</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/Session_Manager.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>130</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>154</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/Session_Manager.py</url>
+          <line>117</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self" />
+        <watch expression="physical_interface_output" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

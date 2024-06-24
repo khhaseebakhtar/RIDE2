@@ -1,0 +1,14 @@
+Value INTERFACE (\S+)
+Value LINK_STATUS (down|DOWN\(.*\)|UP|up|Administratively\s+DOWN)
+Value PORT_BW (\w+)
+
+Start
+ ^${INTERFACE}\s+current\s+state\s+:\s+${LINK_STATUS}\s+\(ifindex:\s+\d+\)
+ ^Port\s+BW:\s+${PORT_BW}.* -> Record
+
+
+#100GE1/0/5 current state : Administratively DOWN (ifindex: 11)
+#100GE7/0/1 current state : UP (ifindex: 100)
+#Port BW: 100M
+
+ 

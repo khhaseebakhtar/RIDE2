@@ -1,0 +1,15 @@
+Value PORT (\S+)
+Value STATUS (down|up)
+Value DUPLEX (full|half)
+Value TYPE (\S+) 
+Value WL (\S+)
+Value RXPW (\S+)
+Value TXPW (\S+)
+Value MODE (\S+)
+Value VENDOR (\S+)
+
+
+Start
+  ^${PORT}\s+${STATUS}\s+${DUPLEX}\s+${TYPE}\s+${WL}\s+${RXPW}\s+${TXPW}\s+${MODE}\s+${VENDOR} -> Record
+
+

@@ -1,0 +1,6 @@
+Value SYSNAME (\S+)
+
+Start
+  ^\<${SYSNAME}\> -> Record
+
+#haseeb@LHR-FRF-MX960-re0>

@@ -1,0 +1,22 @@
+Value PORT (\S+)
+Value FNAME (\S+)
+Value NCOUNT (\d+)
+Value UCOUNT (\d+)
+Value STATUS (Allocated|No allocated|Activated)
+
+
+
+Start
+  ^${PORT}\s+${FNAME}\s+${NCOUNT}\s+${UCOUNT}\s+${STATUS} -> Record
+
+
+#License detailed information:
+#====================================================================================
+#Physical Position    FeatureName     Needed Count    Used Count      Active Status
+#------------------------------------------------------------------------------------
+#1/0/0                LCR9S9KNBSL0R   1               1               Activated
+#1/0/1                LCR9S9KNBSL0R   1               1               Activated
+#1/0/2                LCR9S9KNBSL0R   1               1               Activated
+#1/0/3                LCR9S9KNBSL0R   1               0               No allocated
+#1/0/4                LCR9S9KNBSL0R   1               1               Activated
+#1/0/5                LCR9S9KNBSL0R   1               1               Activated

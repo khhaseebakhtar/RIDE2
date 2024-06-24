@@ -1,0 +1,26 @@
+Value EXPIRED_DATE (\S+)
+Value LIC_NAME (.*)
+Value EXP_DATE (.*)
+Value DESCRIPTION (.*)
+
+
+Start
+ ^.*Expired\s+date\s+\:\s+${EXPIRED_DATE}$$
+ ^.*Item\s+name\s+:\s+${LIC_NAME}\s+$$
+ ^.*Item\s+expired\s+date\s+:\s+${EXP_DATE}$$
+ ^.*Description\s+:\s+${DESCRIPTION}$$ -> Record
+
+
+
+
+ #Expired date      : PERMANENT
+ #Item name         : LCR9S9KNBSL0R
+ #Control value     : 27
+ #Used value        : 25
+ #Item expired date : PERMANENT
+ #Description       : NetEngine9000 Solar5.0 100G Port Basic License for Line Process Unit L(per 100G)
+
+ #Item name         : LCR9S9KNL3V0L
+ #Control value     : 17
+ #Item expired date : PERMANENT
+ #Description       : NetEngine9000 100G L3VPN Port License for Line Process Unit L(per 100G)

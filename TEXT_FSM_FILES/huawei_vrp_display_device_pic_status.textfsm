@@ -1,0 +1,25 @@
+Value PIC_SLOT (\d+)
+Value PIC_SUB (\d+)
+Value STATUS (\S+)
+Value TYPE (\S+)
+Value PORT_COUNT (\d+)
+
+Start
+ ^${PIC_SLOT}\/${PIC_SUB}\s+${STATUS}\s+${TYPE}\s+${PORT_COUNT}\s* -> Record
+
+
+
+
+#--------------------------------------------------------------------------------
+#Pic#   Status       Type                      Port_count Init_result  Logic_down
+#--------------------------------------------------------------------------------
+#1/0    Registered   ETH_10x100GF_CARD         10         SUCCESS      SUCCESS   
+#1/1    Registered   ETH_10x100GF_CARD         10         SUCCESS      SUCCESS   
+#2/0    Registered   ETH_10x100GF_CARD         10         SUCCESS      SUCCESS   
+#2/1    Registered   ETH_10x100GF_CARD         10         SUCCESS      SUCCESS   
+#3/0    Registered   ETH_10x100GF_CARD         10         SUCCESS      SUCCESS   
+#3/1    Registered   ETH_10x100GF_CARD         10         SUCCESS      SUCCESS   
+#6/0    Registered   ETH_20x100GF_CARD         20         SUCCESS      SUCCESS   
+#7/0    Registered   LAN_WAN_24x10GX_CARD      24         SUCCESS      SUCCESS   
+#8/0    Registered   LAN_WAN_24x10GX_CARD      24         SUCCESS      SUCCESS   
+#--------------------------------------------------------------------------------
