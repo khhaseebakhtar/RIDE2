@@ -140,7 +140,6 @@ def execute_main_thread():
                                 thread.setObjectName(node)
                                 exe.therads_list.append((thread, worker))
                                 worker.moveToThread(thread)
-                                # exe.sig.set_logging_signal.connect(update_output_panel)
                                 thread.started.connect(worker.start_execution)
                                 thread.start()
 

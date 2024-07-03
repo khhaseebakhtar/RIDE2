@@ -54,40 +54,7 @@ class Execute():
         self.Thread_control = 0
         self.check_boxes_checked = 0
         self.sig = signals()
-        self.output_format_huawei = {
-            'display interface': [{'interface': '', 'link_status': '', 'port_bw': ''}],
-            'display interface eth-trunk': [{'interface': '', 'link_status': '', 'max_bw': '', "current_bw": ''}],
-            'display interface description': [{'interface': '', 'phy': '', 'description': ''}],
-            'display device pic-status': [{'pic_slot': '', 'pic_sub': '', 'status': '', 'type': '', 'port_count': ''}],
-            'display license verbose': [{'description': '', 'expired_date': '', 'lic_name': ''}],
-            'display license resource usage': [{'lic_name': '', 'avil_lic': '', 'used_lic': ''}],
-            'display optical-module brief': [
-                {'port': '', 'status': '', 'duplex': '', 'type': '', 'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''}],
-            'display license resource usage port-basic all': [
-                {'port': '', 'fname': '', 'ncount': '', 'ucount': '', 'status': ''}],
-            'display version': [
-                {'vrp_version': '', 'product_version': '', 'model': '', 'uptime': '', 'mpu_q': '', 'sru_q': '',
-                 'sfu_q': '', 'lpu_q': ''}],
-            'display elabel brief': [{'module': '', 'slot_no': '', 'board_type': '', 'bar_code': '', 'description': ''}]
 
-        }
-        self.output_format_juniper = {
-            'show interfaces * | no-more ': [{'interface': '', 'link_status': '', 'port_bw': ''}],
-            'display interface eth-trunk': [{'interface': '', 'link_status': '', 'max_bw': '', "current_bw": ''}],
-            'display interface description': [{'interface': '', 'phy': '', 'description': ''}],
-            'display device pic-status': [{'pic_slot': '', 'pic_sub': '', 'status': '', 'type': '', 'port_count': ''}],
-            'display license verbose': [{'description': '', 'expired_date': '', 'lic_name': ''}],
-            'display license resource usage': [{'lic_name': '', 'avil_lic': '', 'used_lic': ''}],
-            'display optical-module brief': [
-                {'port': '', 'status': '', 'duplex': '', 'type': '', 'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''}],
-            'display license resource usage port-basic all': [
-                {'port': '', 'fname': '', 'ncount': '', 'ucount': '', 'status': ''}],
-            'show version': [
-                {'vrp_version': '', 'product_version': '', 'model': '', 'uptime': '', 'mpu_q': '', 'sru_q': '',
-                 'sfu_q': '', 'lpu_q': ''}],
-            'display elabel brief': [{'module': '', 'slot_no': '', 'board_type': '', 'bar_code': '', 'description': ''}]
-
-        }
 
 
     # ================================================INPUT/OUTPUT File Check
