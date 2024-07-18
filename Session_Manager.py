@@ -10,13 +10,13 @@ from textfsm import TextFSMTemplateError
 from Writer import Writer
 
 
-def extract_device_name(text):
-    pattern = r'<(.*?)>|@(.*?)>'
+def extract_device_name(text):  # check for the patter for different vendors and returns device name
+    pattern = r'<(.*?)>|@(.*?)>'  # <(DEVICE_NAME)> is pattern for Huawei , @(DEVICE_NAME) is pattern for Juniper
     match = re.search(pattern, text)
     return match.group(0).strip()[1:-1] if match else "<cant read name>"
 
 
-def key_exists(data: dict, key: str) -> bool:  # checks if a certine key existings in the provided dictionary
+def key_exists(data: dict, key: str) -> bool:  # checks if a certain key exists in the provided dictionary
     if key in data.keys():
         return True
     return False
@@ -79,13 +79,14 @@ class SessionManager(QObject):
         }
 
         self.juniper_output_format = {
-            'physical interfaces': [{'interface': '', 'link_status': '', 'port_bw': '','type':''}],
+            'physical interfaces': [{'interface': '', 'link_status': '', 'port_bw': '', 'type': ''}],
             'trunks': [{'interface': '', 'link_status': '', 'no_of_links': '', "members": ''}],
-            'interface descriptions': [{'interface': '', 'phy': '', 'description': ''}],
+            'interface descriptions': [{'interface': '', 'phy': '', 'opr_status': '', 'description': ''}],
             'inventory pic status': [{'pic_slot': '', 'pic_sub': '', 'status': '', 'type': '', 'port_count': ''}],
             'licenses': [{'description': '', 'expired_date': '', 'lic_name': '', 'avil_lic': '', 'used_lic': ''}],
             'optics': [
-                {'port': '', 'status': '', 'duplex': '', 'type': '', 'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''}],
+                {'port': '', 'status': "", 'vendor': '', 'duplex': '', 'part_number': '', 'type': '', 'wl': '',
+                 'rxpw': '', 'txpw': '', 'mode': ''}],
             'version': [{'vrp_version': '', 'product_version': '', 'model': '', 'uptime': '', 'mpu_q': '', 'sru_q': '',
                          'sfu_q': '', 'lpu_q': ''}],
             'inventory details': [{'module': '', 'version': '', 'board_type': '', 'bar_code': '', 'description': ''}]
@@ -104,7 +105,7 @@ class SessionManager(QObject):
                 'host': self.device_ip,
                 'username': self.ui.le_username.text(),
                 'password': self.ui.le_password.text(),
-                'session_timeout': 120,
+                'session_timeout': 300,
                 'session_log': f"logs//{self.device_ip}.log",
                 }
 
@@ -143,8 +144,8 @@ class SessionManager(QObject):
             self.inventory_report_fsm_3: str = "TEXT_FSM_FILES//huawei_vrp_display_elable_brief.textfsm"
 
         if vendor == self.juniper_os:
-            self.physical_interface_command: str = 'show interfaces detail | display json | no-more'
-            self.all_interface_description_command: str = "show interfaces descriptions | display json | no-more"
+            self.physical_interface_command: str = "show interfaces detail | display json | no-more"
+            self.all_interface_description_command: str = "show interfaces descriptions"
             self.trunks_bandwidth_command: str = "show lacp interfaces | display json| no-more"
             self.loaded_licenses_command_1: str = "show system license detail | display json | no-more"
             self.optical_module_commands_1: str = "show chassis fpc pic-status | display json | no-more"
@@ -152,6 +153,10 @@ class SessionManager(QObject):
             self.inventory_report_command_1: str = "show chassis fpc pic-status | display json | no-more "
             self.inventory_report_command_2: str = "show version | display json | no-more"
             self.inventory_report_command_3: str = "show chassis hardware | display json | no-more "
+
+            self.all_interface_description_fsm: str = "TEXT_FSM_FILES//juniper_junos_show_interfaces_description"
+
+
 
     def make_connection(self):
         if self.device_state:  # if device is identified as accessible : proceed with setting up SSH
@@ -163,13 +168,14 @@ class SessionManager(QObject):
 
                 if output != [] and self.identified_vendor == self.juniper_os:
                     structured_output = self.convert_to_json(output[0])
-                    output = self.juniper_output(structured_output)
+                    self.convert_to_writable_formate(structured_output)
                 self.exe.Thread_control -= 1
                 self.exe.sig.set_logging_signal.emit(
                     f'({self.device_number}) -> Data Collection Done for {self.device_name} ')
-                # write = Writer(output, self.device_name, self.exe.output_file_path)  # initiating the data writing
-                # self.exe.sig.set_logging_signal.emit(f'({self.device_number}) -> File Saved for {self.device_name} ')
+                Writer(self.juniper_output_format, self.device_name, self.exe.output_file_path,self.identified_vendor)  # initiating the data writing
+                self.exe.sig.set_logging_signal.emit(f'({self.device_number}) -> File Saved for {self.device_name} ')
                 self.exe.successful_device_count += 1
+
             except KeyError as e:
                 self.exe.sig.set_logging_signal.emit(
                     f'({self.device_number}) -> [JSON CONVERSION ERROR] : cannot obtain processed output, \n {traceback.format_exc()}')
@@ -201,11 +207,13 @@ class SessionManager(QObject):
                 physical_interface_output = SSH_connection.send_command_timing(self.physical_interface_command,
                                                                                use_textfsm=if_huawei,
                                                                                textfsm_template=self.physical_interface_fsm, )
+
             if self.ui.cb_interface_decription.isChecked():
                 all_interface_description_output = SSH_connection.send_command_timing(
                     self.all_interface_description_command,
-                    use_textfsm=if_huawei,
+                    use_textfsm=True,
                     textfsm_template=self.all_interface_description_fsm)
+
             if self.ui.cb_trunks.isChecked():
                 trunks_bandwidth_output = SSH_connection.send_command_timing(self.trunks_bandwidth_command,
                                                                              use_textfsm=if_huawei,
@@ -219,6 +227,7 @@ class SessionManager(QObject):
                     loaded_licenses_2_output = SSH_connection.send_command_timing(self.loaded_licenses_command_2,
                                                                                   use_textfsm=if_huawei,
                                                                                   textfsm_template=self.loaded_licenses_fsm_2)
+
             if self.ui.cb_optical_modules.isChecked():
                 optical_module_commands_1_output = SSH_connection.send_command_timing(
                     self.optical_module_commands_1,
@@ -241,9 +250,6 @@ class SessionManager(QObject):
                         fpc_pic_record.update({fpc_slot: pic_slots})
                     for each_fpc in fpc_pic_record:  #each_fpc will be the Key of fpc_pic_record i.e FPC slot number
                         for each_pic in fpc_pic_record[each_fpc]:
-                            print(optical_module_commands_2_output)
-                            if each_fpc == '19':
-                                pass
                             if each_pic != []:
                                 command = f"show chassis pic fpc-slot {each_fpc} pic-slot {each_pic} | display json | no-more"
                                 temp_output = SSH_connection.send_command_timing(command)
@@ -274,6 +280,7 @@ class SessionManager(QObject):
                                                 f'[Error Device] : {self.device_name}\n {traceback.format_exc()} ')
 
                             pass
+
             if self.ui.cb_lpu_cards.isChecked():
                 inventory_report_command_3_output = ""
                 inventory_report_command_1_output = SSH_connection.send_command_timing(
@@ -289,6 +296,7 @@ class SessionManager(QObject):
                         self.inventory_report_command_3,
                         use_textfsm=if_huawei,
                         textfsm_template=self.inventory_report_fsm_3)
+
             if self.ui.cb_port_lic_utilization.isChecked():
                 license_usage_on_port_output = ""
                 if self.identified_vendor == self.huawei_os:
@@ -376,11 +384,14 @@ class SessionManager(QObject):
         processed_output = []
         for each_set in output_dict:
             for command, output_string in each_set.items():
-                if output_string != "" and isinstance(output_string, str):  # if there is no output or output is already processed then don't proceed
+                #pprint.pprint(f"[1]- command  : {command}\n[1]- output : {output_string} ")
+                if output_string != "" and isinstance(output_string,
+                                                      str):  # if there is no output or output is already processed then don't proceed
                     try:
                         if command in output_string:  # if output string contains actual command itself then commit the first two lines
                             output_string = "\n".join(output_string.split("\n")[2:])
-
+                        processed_output.append([{command: json.loads("\n".join(output_string.split("\n")[2:]))}])
+                    except json.decoder.JSONDecodeError as e:
                         processed_output.append([{command: json.loads(output_string)}])
                     except Exception as e:
                         self.exe.sig.set_logging_signal.emit(
@@ -389,48 +400,114 @@ class SessionManager(QObject):
                     processed_output.append([{command: output_string}])
         return processed_output
 
-    def juniper_output(self, data):
+    def convert_to_writable_formate(self, data):
         for command in data:
             keys = command[0].keys()
+            # 'physical interfaces': 'interface': '', 'link_status': '', 'port_bw': '', 'type': ''
+            # 'trunks': 'interface': '', 'link_status': '', 'no_of_links': '', "members": ''
+            # 'interface descriptions': 'interface': '', 'phy_status': '', 'opr_status': '', 'description': ''
+            # 'inventory pic status': 'pic_slot': '', 'pic_sub': '', 'status': '', 'type': '', 'port_count': ''
+            # 'licenses': 'description': '', 'expired_date': '', 'lic_name': '', 'avil_lic': '', 'used_lic': ''
+            # 'optics': 'port': '', 'status': '', 'duplex': '', 'type': '', 'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''
+            # 'version':'vrp_version': '', 'product_version': '', 'model': '', 'uptime': '', 'mpu_q': '', 'sru_q': '',
+            #              'sfu_q': '', 'lpu_q': ''
+            # 'inventory details': 'module': '', 'version': '', 'board_type': '', 'bar_code': '', 'description': ''
 
-            if 'show interfaces detail | display json | no-more' in keys:
-                all_physical_interfaces: list = command[0]['show interfaces detail | display json | no-more']['interface-information'][0][
-                    'physical-interface']
+            if 'show interfaces detail | display json | no-more' in keys and command[0][
+                'show interfaces detail | display json | no-more'] != "":
+                all_physical_interfaces: list = \
+                    command[0]['show interfaces detail | display json | no-more']['interface-information'][0][
+                        'physical-interface']
                 interfaces = []
                 for each_interface in all_physical_interfaces:
 
-                    interface_type = self.if_key_found(each_interface,'if-type')
+                    interface_type = self.if_key_found(each_interface, 'if-type')
                     if interface_type == "":
                         interface_type = self.if_key_found(each_interface, 'link-level-type')
-                    name = self.if_key_found(each_interface,'name')
-                    status = self.if_key_found(each_interface,'admin-status')
-                    speed = self.if_key_found(each_interface,'speed')
-                    interfaces.append({'interface': name,
-                                       'link_status': status,
-                                       'port_bw': speed,
-                                       'type':interface_type})
+                    if "Ethernet" in interface_type:
+                        name = self.if_key_found(each_interface, 'name')
+                        status = self.if_key_found(each_interface, 'oper-status')
+                        speed = self.if_key_found(each_interface, 'speed')
+                        interfaces.append({'interface': name,
+                                           'link_status': status,
+                                           'port_bw': speed,
+                                           'type': interface_type})
                 self.juniper_output_format['physical interfaces'] = interfaces
-                pprint.pprint(self.juniper_output_format['physical interfaces'])
+                continue
 
 
-            if 'show interfaces descriptions | display json | no-more' in keys:
+            if 'show interfaces descriptions' in keys and command[0][
+                'show interfaces descriptions'] != "":
+                interface_descriptions = []
+                for each_interface in command[0]['show interfaces descriptions']:
+                    name = each_interface['interface']
+                    phy_status = each_interface['phy']
+                    description = each_interface['description']
+                    opr_status = each_interface['admin']
+                    interface_descriptions.append({
+                        'interface': name,
+                        'phy': phy_status,
+                        'opr_status': opr_status,
+                        'description': description
+                    })
+                self.juniper_output_format['interface descriptions']= interface_descriptions
+                continue
+
+            if 'show lacp interfaces | display json | no-more' in keys and command[0][
+                'show lacp interfaces | display json | no-more'] != "":
+                trunks = []
+                for each_interface in command[0]['show lacp interfaces | display json| no-more']['lacp-interface-information-list'][0]['lacp-interface-information']:
+                    trunk_number = command[0]['show lacp interfaces | display json| no-more']['lacp-interface-information-list'][0]['lacp-interface-information'][0]['lag-lacp-header'][0]['aggregate-name'][0]['data']
+                    no_of_links = ['lag-lacp-protocol'].__len__()
+                    member_interface = []
+                    for each_member in each_interface['lag-lacp-protocol']:
+                        try:
+                            member_interface.append(each_member['name'][0]['data'])
+                        except KeyError:
+                            member_interface.append("Member Interface Error")
+                    trunks.append({'trunk_number' : trunk_number,
+                                       'no_of_links': no_of_links,
+                                       'member_interfaces': member_interface})
+                self.juniper_output_format['trunks'] = trunks
+                continue
+            if 'show system license detail | display json | no-more' in keys and command[0][
+                'show system license detail | display json | no-more'] != "":
                 pass
-            if 'show lacp interfaces | display json | no-more' in keys:
+            if 'show chassis fpc pic-status | display json | no-more' in keys and command[0][
+                'show chassis fpc pic-status | display json | no-more'] != "":
                 pass
-            if 'show system license detail | display json | no-more' in keys:
-                pass
-            if 'show chassis fpc pic-status | display json | no-more' in keys:
-                pass
-            if 'show chassis pic fpc-slot' in keys:
-                pass
+
+            if 'show chassis pic fpc-slot' in keys and command[0]['show chassis pic fpc-slot']:
+                optics_data = []
+                all_optics = command[0]['show chassis pic fpc-slot']
+                for each_sfp in all_optics:  # 'optics': 'port': '', 'status': '', 'duplex': '', 'type': '', 'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''
+                    if '100G' in each_sfp['type'] :
+                        optics_data.append(
+                            {"port": each_sfp['port'],
+                             "status": "",
+                             "vendor": each_sfp['vendor'],
+                             "duplex": "",
+                             "part_number": each_sfp['part_number'],
+                             "type": each_sfp['type'],
+                             "wl": each_sfp['wl'],
+                             "rxpw": "",
+                             "txpw": "",
+                             "mode": each_sfp['mode']})
+                self.juniper_output_format['optics']= optics_data
+                continue
+
+
             if 'show version | display json | no-more' in keys:
                 pass
             if 'show chassis hardware | display json | no-more' in keys:
                 pass
 
-    def if_key_found(self,input: dict, key: str):
+        return self.juniper_output_format
+
+    def if_key_found(self, input: dict, key: str):
         if key in input.keys():
             return input[key][0]['data']
         return ""
+
     def huawei_output(self, data):
         pass
