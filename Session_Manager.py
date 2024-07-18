@@ -80,7 +80,7 @@ class SessionManager(QObject):
 
         self.juniper_output_format = {
             'physical interfaces': [{'interface': '', 'link_status': '', 'port_bw': '', 'type': ''}],
-            'trunks': [{'interface': '', 'link_status': '', 'no_of_links': '', "members": ''}],
+            'trunks': [{'trunk_number': '', 'no_of_links': '', "member_interfaces": ''}],
             'interface descriptions': [{'interface': '', 'phy': '', 'opr_status': '', 'description': ''}],
             'inventory pic status': [{'pic_slot': '', 'pic_sub': '', 'status': '', 'type': '', 'port_count': ''}],
             'licenses': [{'description': '', 'expired_date': '', 'lic_name': '', 'avil_lic': '', 'used_lic': ''}],
@@ -146,7 +146,7 @@ class SessionManager(QObject):
         if vendor == self.juniper_os:
             self.physical_interface_command: str = "show interfaces detail | display json | no-more"
             self.all_interface_description_command: str = "show interfaces descriptions"
-            self.trunks_bandwidth_command: str = "show lacp interfaces | display json| no-more"
+            self.trunks_bandwidth_command: str = "show lacp interfaces | display json | no-more"
             self.loaded_licenses_command_1: str = "show system license detail | display json | no-more"
             self.optical_module_commands_1: str = "show chassis fpc pic-status | display json | no-more"
             self.optical_module_commands_2: str = "show chassis pic fpc-slot"
@@ -420,7 +420,6 @@ class SessionManager(QObject):
                         'physical-interface']
                 interfaces = []
                 for each_interface in all_physical_interfaces:
-
                     interface_type = self.if_key_found(each_interface, 'if-type')
                     if interface_type == "":
                         interface_type = self.if_key_found(each_interface, 'link-level-type')
@@ -433,7 +432,7 @@ class SessionManager(QObject):
                                            'port_bw': speed,
                                            'type': interface_type})
                 self.juniper_output_format['physical interfaces'] = interfaces
-                continue
+
 
 
             if 'show interfaces descriptions' in keys and command[0][
@@ -451,25 +450,24 @@ class SessionManager(QObject):
                         'description': description
                     })
                 self.juniper_output_format['interface descriptions']= interface_descriptions
-                continue
 
-            if 'show lacp interfaces | display json | no-more' in keys and command[0][
-                'show lacp interfaces | display json | no-more'] != "":
+
+            if 'show lacp interfaces | display json | no-more' in keys and command[0]['show lacp interfaces | display json | no-more'] != "":
                 trunks = []
-                for each_interface in command[0]['show lacp interfaces | display json| no-more']['lacp-interface-information-list'][0]['lacp-interface-information']:
-                    trunk_number = command[0]['show lacp interfaces | display json| no-more']['lacp-interface-information-list'][0]['lacp-interface-information'][0]['lag-lacp-header'][0]['aggregate-name'][0]['data']
-                    no_of_links = ['lag-lacp-protocol'].__len__()
-                    member_interface = []
+                for each_interface in command[0]['show lacp interfaces | display json | no-more']['lacp-interface-information-list'][0]['lacp-interface-information']:
+                    trunk_number = each_interface['lag-lacp-header'][0]['aggregate-name'][0]['data']
+                    no_of_links = each_interface['lag-lacp-protocol'].__len__()
+                    member_interfaces = ""
                     for each_member in each_interface['lag-lacp-protocol']:
                         try:
-                            member_interface.append(each_member['name'][0]['data'])
+                            member_interfaces = member_interfaces+" \n"+str(each_member['name'][0]['data'])
                         except KeyError:
-                            member_interface.append("Member Interface Error")
+                            pass
                     trunks.append({'trunk_number' : trunk_number,
                                        'no_of_links': no_of_links,
-                                       'member_interfaces': member_interface})
+                                       'member_interfaces': member_interfaces})
                 self.juniper_output_format['trunks'] = trunks
-                continue
+
             if 'show system license detail | display json | no-more' in keys and command[0][
                 'show system license detail | display json | no-more'] != "":
                 pass
@@ -494,7 +492,7 @@ class SessionManager(QObject):
                              "txpw": "",
                              "mode": each_sfp['mode']})
                 self.juniper_output_format['optics']= optics_data
-                continue
+
 
 
             if 'show version | display json | no-more' in keys:
