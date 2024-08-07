@@ -108,7 +108,7 @@ def update_output_panel(log):
 
 
 def log_recording():
-    with open(exe.output_file_path + "\\Output_Logs.log", "w") as test_file:
+    with open("logs//ride_output_logs.log", "w") as test_file:
         test_file.write(ui.te_output_panel.toPlainText())
 
 

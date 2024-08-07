@@ -32,6 +32,8 @@ def check_credentials(username, password):
 
 class Execute():
 
+    failed_device_count: int
+
     def __init__(self):
         super().__init__()  # inherit logging Signal objects form Signals file
         self.init()
@@ -53,6 +55,7 @@ class Execute():
         self.failed_device_list = []
         self.Thread_control = 0
         self.check_boxes_checked = 0
+        self.sfp_filter = ''
         self.sig = signals()
 
 

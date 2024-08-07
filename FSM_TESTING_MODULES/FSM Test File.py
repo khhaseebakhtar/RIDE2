@@ -21,7 +21,7 @@ import datetime
 with open ("Test input file.txt") as test_file:
     output = test_file.read()
 
-with open("TEXT_FSM_FILES//huawei_vrp_display_version.textfsm") as fsm_temp:
+with open("..//TEXT_FSM_FILES//ntc-templates//juniper_junos_show_version.textfsm") as fsm_temp:
     fsm = textfsm.TextFSM(fsm_temp)
     result = fsm.ParseText(output)
 print(fsm.header)
