@@ -176,6 +176,7 @@ class SessionManager(QObject):
                     structured_output = self.convert_to_json(output[0])
                     self.convert_to_writable_formate(structured_output)
                 self.exe.Thread_control -= 1
+
                 self.print_log(log_type='INFO',message='Data Collection Done')
                 Writer(self.juniper_output_format, self.device_name, self.exe.output_file_path, self.identified_vendor,
                        self.exe)  # initiating the data writing
