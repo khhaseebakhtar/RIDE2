@@ -124,20 +124,20 @@ class SessionManager(QObject):
 
     def set_command_set(self, vendor: str):
         if vendor == self.huawei_os:
-            self.physical_interface_command: str = 'display interface | no-more'
+            self.physical_interface_command: str = 'display interface main | no-more'
             self.all_interface_description_command: str = "display interface description | no-more"
-            self.trunks_bandwidth_command: str = "display interface eth-trunk | no-more"
+            self.trunks_bandwidth_command: str = "display interface eth-trunk main | no-more"
             self.loaded_licenses_command_1: str = "display license verbose | no-more"
             self.loaded_licenses_command_2: str = "display license resource usage | no-more"
             self.license_usage_on_port_command: str = "display license resource usage port-basic all | no-more"
             self.optical_module_commands_1: str = "display optical-module brief | no-more"
-            self.inventory_report_command_1: str = "display device "
+            self.inventory_report_command_1: str = "display device | no more"
             self.inventory_report_command_2: str = "display version | no-more"
             self.inventory_report_command_3: str = "display device elabel | no-more"
 
-            self.physical_interface_fsm: str = "TEXT_FSM_FILES//huawei_vrp_display_interface"
-            self.all_interface_description_fsm: str = "TEXT_FSM_FILES//huawei_vrp_display_interface_description"
-            self.trunks_bandwidth_fsm: str = "TEXT_FSM_FILES//huawei_vrp_display_interface_eth_trunk"
+            self.physical_interface_fsm: str = ttp.ttp_huawei_display_interface
+            self.all_interface_description_fsm: str = ttp.ttp_huawei_display_interface_description
+            self.trunks_bandwidth_fsm: str = ttp.ttp_huawei_display_interface_eth_trunk
             self.loaded_licenses_fsm_1: str = "TEXT_FSM_FILES//huawei_vrp_display_license_verbose"
             self.loaded_licenses_fsm_2: str = "TEXT_FSM_FILES//huawei_vrp_display_license_resource_usage"
             self.license_usage_on_port_fsm: str = "TEXT_FSM_FILES//huawei_vrp_display_lic_res_usage_port_basic.textfsm"

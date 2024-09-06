@@ -35,7 +35,7 @@ default_values = {
 <group name="record">
 Interface PHY Protocol Description {{ _start_ }}
 <group name="interface_descriptions" default="default_values">
-{{interface | _start_}} {{phy}} {{opr_status}} {{description}}
+{{interface | _start_}} {{phy}} {{opr_status}} {{description | re(".*")}}
 {{interface | _start_}} {{phy}} {{opr_status}}
 </group>
 </group>
@@ -62,7 +62,7 @@ The Number of Ports in Trunk : {{no_of_links}}
 
 ttp_juniper_show_interface_description = ''' 
 <group name="interface_descriptions" containsall="description">
-{{interface}}    {{admin}}    {{phy | contains('up','down')}}   {{description}}
+{{interface}}    {{admin}}    {{phy | contains('up','down')}}   {{description | re(".*")}}
 </group>
 '''
 
