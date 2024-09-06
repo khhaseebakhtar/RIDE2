@@ -280,7 +280,7 @@ class Ui_main_window(object):
 
     def retranslateUi(self, main_window):
         _translate = QtCore.QCoreApplication.translate
-        main_window.setWindowTitle(_translate("main_window", "RIDE 1.4"))
+        main_window.setWindowTitle(_translate("main_window", "RIDE 2.0"))
         self.l_device_list.setText(_translate("main_window", "Device List"))
         self.l_output_file.setText(_translate("main_window", "Output File"))
         self.le_device_list.setPlaceholderText(_translate("main_window", "Select input xlsx file with device IPs in Sheet1 & col \'A\'"))
@@ -309,8 +309,6 @@ class Ui_main_window(object):
         self.le_password.setPlaceholderText(_translate("main_window", "Enter Password"))
         self.le_password.setText("Tw@Pl@nn1ng")
         self.le_username.setText("haseeb")
-        self.le_device_list.setText("C:/Users/haseeb.akhtar/PycharmProjects/RIDE 2.0/device_list_junipr.xlsx")
-        self.le_output_file.setText("C:/Users/haseeb.akhtar/PycharmProjects/RIDE 2.0/New folder")
         self.l_username.setText(_translate("main_window", "Username"))
         self.l_password.setText(_translate("main_window", "Password"))
         self.b_exit.setText(_translate("main_window", "Exit"))

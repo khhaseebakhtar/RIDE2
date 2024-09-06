@@ -8,6 +8,7 @@ from PyQt5.QtCore import QObject
 from netmiko import ConnectHandler, NetmikoAuthenticationException
 from textfsm import TextFSMTemplateError
 from Writer import Writer
+import ttp_templates as ttp
 
 
 def extract_device_name(text):  # check for the patter for different vendors and returns device name
@@ -160,8 +161,8 @@ class SessionManager(QObject):
             self.inventory_report_command_2: str = "show version | no-more"
             self.inventory_report_command_3: str = "show chassis hardware | display json | no-more"
 
-            self.all_interface_description_fsm: str = "TEXT_FSM_FILES//juniper_junos_show_interfaces_description"
-            self.inventory_report_fsm_2 : str = "TEXT_FSM_FILES//juniper_junos_show_version.textfsm"
+            self.all_interface_description_fsm: str = ttp.ttp_juniper_show_interface_description
+            self.inventory_report_fsm_2 : str = ttp.ttp_juniper_show_version
 
     def make_connection(self):
         if self.device_state:  # if device is identified as accessible : proceed with setting up SSH
@@ -208,40 +209,40 @@ class SessionManager(QObject):
             # check what options user has checked in the UI and then execute commands accordingly
             if self.ui.cb_physical_inteface.isChecked():
                 physical_interface_output = SSH_connection.send_command_timing(self.physical_interface_command,
-                                                                               use_textfsm=if_huawei,
-                                                                               textfsm_template=self.physical_interface_fsm,
+                                                                               use_ttp=if_huawei,
+                                                                               ttp_template=self.physical_interface_fsm,
                                                                                read_timeout=self.read_timeout)
 
             if self.ui.cb_interface_decription.isChecked():
                 all_interface_description_output = SSH_connection.send_command_timing(
                     self.all_interface_description_command,
-                    use_textfsm=True,
-                    textfsm_template=self.all_interface_description_fsm,
+                    use_ttp=True,
+                    ttp_template=self.all_interface_description_fsm,
                     read_timeout=self.read_timeout)
 
             if self.ui.cb_trunks.isChecked():
                 trunks_bandwidth_output = SSH_connection.send_command_timing(self.trunks_bandwidth_command,
-                                                                             use_textfsm=if_huawei,
-                                                                             textfsm_template=self.trunks_bandwidth_fsm,
+                                                                             use_ttp=if_huawei,
+                                                                             ttp_template=self.trunks_bandwidth_fsm,
                                                                              read_timeout=self.read_timeout)
             if self.ui.cb_licenses.isChecked():
                 loaded_licenses_1_output = SSH_connection.send_command_timing(self.loaded_licenses_command_1,
-                                                                              use_textfsm=if_huawei,
+                                                                              use_ttp=if_huawei,
                                                                               read_timeout=self.read_timeout,
-                                                                              textfsm_template=self.loaded_licenses_fsm_1)
+                                                                              ttp_template=self.loaded_licenses_fsm_1)
                 loaded_licenses_2_output = ""
                 if self.identified_vendor == self.huawei_os:
                     loaded_licenses_2_output = SSH_connection.send_command_timing(self.loaded_licenses_command_2,
-                                                                                  use_textfsm=if_huawei,
+                                                                                  use_ttp=if_huawei,
                                                                                   read_timeout=self.read_timeout,
-                                                                                  textfsm_template=self.loaded_licenses_fsm_2)
+                                                                                  ttp_template=self.loaded_licenses_fsm_2)
 
             if self.ui.cb_optical_modules.isChecked():
                 optical_module_commands_1_output = SSH_connection.send_command_timing(
                     self.optical_module_commands_1,
-                    use_textfsm=if_huawei,
+                    use_ttp=if_huawei,
                     read_timeout=self.read_timeout,
-                    textfsm_template=self.optical_module_fsm_1, last_read=4.0)
+                    ttp_template=self.optical_module_fsm_1, last_read=4.0)
                 if self.identified_vendor == self.juniper_os:
                     processed_pic_status_output = self.convert_to_json(
                         [{self.optical_module_commands_1: optical_module_commands_1_output}])
@@ -257,7 +258,7 @@ class SessionManager(QObject):
                                     command = f"show chassis pic fpc-slot {each_fpc} pic-slot {each_pic} | display json | no-more"
                                     temp_output = SSH_connection.send_command_timing(command,
                                                                                      read_timeout=self.read_timeout)
-                                    time.sleep(0.5)
+                                    time.sleep(1)
                                     temp_output1 = self.convert_to_json([{self.optical_module_commands_2: temp_output}])
                                     pic_port_data: dict = \
                                         temp_output1[0][0][self.optical_module_commands_2]['fpc-information'][0]['fpc'][0][
@@ -298,28 +299,28 @@ class SessionManager(QObject):
             if self.ui.cb_lpu_cards.isChecked():
                 inventory_report_command_1_output = SSH_connection.send_command_timing(
                     self.inventory_report_command_1,
-                    use_textfsm=if_huawei,
+                    use_ttp=if_huawei,
                     read_timeout=self.read_timeout,
-                    textfsm_template=self.inventory_report_fsm_1, last_read=4.0)
+                    ttp_template=self.inventory_report_fsm_1, last_read=4.0)
                 inventory_report_command_2_output = SSH_connection.send_command_timing(
                     self.inventory_report_command_2,
-                    use_textfsm=True,
+                    use_ttp=True,
                     read_timeout=self.read_timeout,
-                    textfsm_template=self.inventory_report_fsm_2, last_read=4.0)
+                    ttp_template=self.inventory_report_fsm_2, last_read=4.0)
                 inventory_report_command_3_output = SSH_connection.send_command_timing(
                     self.inventory_report_command_3,
-                    use_textfsm=if_huawei,
+                    use_ttp=if_huawei,
                     read_timeout=self.read_timeout,
-                    textfsm_template=self.inventory_report_fsm_3, last_read=4.0)
+                    ttp_template=self.inventory_report_fsm_3, last_read=4.0)
 
             if self.ui.cb_port_lic_utilization.isChecked():
                 license_usage_on_port_output = ""
                 if self.identified_vendor == self.huawei_os:
                     license_usage_on_port_output = SSH_connection.send_command_timing(
                         self.license_usage_on_port_command,
-                        use_textfsm=if_huawei,
+                        use_ttp=if_huawei,
                         read_timeout=self.read_timeout,
-                        textfsm_template=self.license_usage_on_port_fsm)
+                        ttp_template=self.license_usage_on_port_fsm)
 
             SSH_connection.disconnect()
 
@@ -434,7 +435,7 @@ class SessionManager(QObject):
 
             if command[0].get(self.all_interface_description_command):
                 interface_descriptions = []
-                for each_interface in command[0][self.all_interface_description_command]:
+                for each_interface in command[0][self.all_interface_description_command][0][0]['interface_descriptions']:
                     name = each_interface['interface']
                     phy_status = each_interface['phy']
                     description = each_interface['description']
@@ -543,7 +544,7 @@ class SessionManager(QObject):
                 self.juniper_output_format['optics'] = optics_data
 
             if command[0].get(self.inventory_report_command_2):
-                self._process_show_version(command[0][self.inventory_report_command_2][0], fpc_slots_count)
+                self._process_show_version(command[0][self.inventory_report_command_2][0][0]['version'], fpc_slots_count)
 
             if command[0].get(self.inventory_report_command_3):
                 hardware = self._process_show_hardware_chassis(
@@ -554,11 +555,8 @@ class SessionManager(QObject):
     def _process_show_version(self, version_output:dict, fpc_count):
         # 'version':'main_os': '', 'os_version': '', 'model': '', 'uptime': '', 'mpu_q': '', 'sru_q': '',
         #              'sfu_q': '', 'lpu_q': ''
-        temp = version_output['junos_version'].split(".")
-        main_os = f"JUNOS {temp[0]}"
-        os_version = ""
-        for part in temp:
-            os_version = f"{os_version}.{part}"
+        main_os = f"JUNOS {version_output["main_os"].split(".")[0]}"
+        os_version = f"{version_output["main_os"]}-{version_output["os_version"]}"
         model = version_output['model']
         lpu_q = fpc_count
 

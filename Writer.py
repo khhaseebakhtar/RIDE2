@@ -16,8 +16,6 @@ def make_file1(output, sheet_name, path, vendor, exe):
         optics = output['optics']
 
         version_info = output['version']
-        print(optics)
-        print(version_info)
         inventory_details = output['inventory details']
         license_usage = output['license usage']
         port_license_usage = output['license usage on ports']
