@@ -11,10 +11,7 @@ from Writer import Writer
 import ttp_templates as ttp
 
 
-def extract_device_name(text):  # check for the patter for different vendors and returns device name
-    pattern = r'<(.*?)>|@(.*?)>'  # <(DEVICE_NAME)> is pattern for Huawei , @(DEVICE_NAME) is pattern for Juniper
-    match = re.search(pattern, text)
-    return match.group(0).strip()[1:-1] if match else "cant read name"
+
 
 
 def key_exists(data: dict, key: str) -> bool:  # checks if a certain key exists in the provided dictionary
@@ -64,9 +61,9 @@ class SessionManager(QObject):
         exe.Thread_control += 1
 
         self.huawei_output_format = {
-            'physical interfaces': [{'interface': '', 'link_status': '', 'port_bw': ''}],
-            'Trunks': [{'interface': '', 'trunk_state': '', 'max_bw': '', "current_bw": ''}],
-            'interface descriptions': [{'interface': '', 'phy': '', 'description': ''}],
+            'physical interfaces': [{'interface': '', 'link_status': '', 'port_bw': '', 'type':''}],
+            'trunks': [{'trunk_number': '', 'trunk_state': '', 'no_of_links': '', "member_interfaces": '', 'max_bw': '', "current_bw": ''}],
+            'interface descriptions': [{'interface': '', 'phy': '','opr_status': '', 'description': ''}],
             'inventory pic status': [
                 {'pic_slot': '', 'pic_sub': '', 'status': '', 'type': '', 'port_count': '', 'port_type': ''}],
             'licenses': [{'description': '', 'expired_date': '', 'lic_name': ''}],
@@ -165,30 +162,45 @@ class SessionManager(QObject):
             self.inventory_report_fsm_2 : str = ttp.ttp_juniper_show_version
 
     def make_connection(self):
-        if self.device_state:  # if device is identified as accessible : proceed with setting up SSH
-            self.print_log(log_type='INFO',message="Accessing Device")
-            router = self.return_node_dictionary(self.identified_vendor)
-            try:
-                self.exe.device_name_list.append(self.device_name)
-                output = self.execute_commands(router)
+        if not self.device_state:  # Exit if the device was not accessible while vendor identification
+            return
 
-                if output != [] and self.identified_vendor == self.juniper_os:
-                    structured_output = self.convert_to_json(output[0])
-                    self.convert_to_writable_formate(structured_output)
-                self.exe.Thread_control -= 1
+        self.print_log(log_type='INFO', message="Accessing Device")
+        router = self.return_node_dictionary(self.identified_vendor)
 
-                self.print_log(log_type='INFO',message='Data Collection Done')
-                Writer(self.juniper_output_format, self.device_name, self.exe.output_file_path, self.identified_vendor,
-                       self.exe)  # initiating the data writing
-                self.print_log(log_type='INFO', message='File Saved')
-                self.exe.successful_device_count += 1
+        try:
+            self.exe.device_name_list.append(self.device_name)
+            output = self.execute_commands(router)
 
-            except KeyError as e:
-                self.print_log('[JSON CONVERSION ERROR]','cannot obtain processed output',traceback.format_exc())
-                self.handle_failed_device()
-            except Exception as e:
-                self.print_log('[MAKE CONNECTION ERROR]', 'cannot process connection', traceback.format_exc())
-                self.handle_failed_device()
+            if output:
+                ready_to_write_output = self.process_output_by_vendor(output[0])
+
+            self.exe.Thread_control -= 1
+            self.print_log(log_type='INFO', message='Data Collection Done')
+
+            Writer(ready_to_write_output, self.device_name, self.exe.output_file_path, self.identified_vendor, self.exe)
+            self.print_log(log_type='INFO', message='File Saved')
+            self.exe.successful_device_count += 1
+
+        except KeyError:
+            self.print_log('JSON CONVERSION ERROR', 'Cannot obtain processed output',traceback.format_exc())
+            self.handle_failed_device()
+        except Exception:
+            self.print_log('MAKE CONNECTION ERROR', 'Cannot process connection',traceback.format_exc())
+            self.handle_failed_device()
+
+    def process_output_by_vendor(self, output): # returns only vendor specific format
+        if self.identified_vendor == self.juniper_os:
+            structured_output = self.convert_to_json(output)
+            self._juniper_convert_to_writable_formate(structured_output)
+            return self.juniper_output_format
+
+        if self.identified_vendor == self.huawei_os:
+            self._huawei_convert_to_writable_formate(output)
+            return self.huawei_output_format
+
+        return None
+
 
     def execute_commands(self, router: dict):
         output = []
@@ -346,42 +358,62 @@ class SessionManager(QObject):
 
         return output
 
+    def extract_device_name(self,text):  # check for the patter for different vendors and returns device name
+        pattern = r'<(.*?)|@(.*?)>'  # <(DEVICE_NAME)> is pattern for Huawei , @(DEVICE_NAME) is pattern for Juniper
+        match = re.search(pattern, text)
+        return match.group(0).strip()[1:-1] if match else self.device_ip
+
     def identify_device_type(self):
-        self.print_log('INFO', f'Trying to indentify the equipment vendor')
+        self.print_log('INFO', 'Trying to identify the equipment vendor')
+
         unidentified_node = self.return_node_dictionary(self.unknown_os)
         device_type = self.unknown_os
         name = self.device_ip
+
         try:
             net_connect = ConnectHandler(**unidentified_node)
             net_connect.write_channel("\r")
             time.sleep(0.3)
             output = net_connect.read_channel()
-            huawei_pattern = r'<(.*?)>'
+
+            huawei_pattern = re.compile(r'<(.*?)>')  # Compile regex once
+
+            # Check JUNOS or Huawei patterns in the output
             if 'JUNOS' in output:
-                self.print_log('INFO',f'{self.device_ip} is identified as Juniper node')
+                self.print_log('INFO', f'{self.device_ip} is identified as a Juniper node')
                 device_type = self.juniper_os
-            elif 'Warning: The initial password' or huawei_pattern in output:
-                self.print_log('INFO', f'{self.device_ip} is identified as Huawei node')
-                device_type = self.huawei_os
-                net_connect.write_channel("N")
-                time.sleep(0.3)
-                net_connect.write_channel("\r")
-                time.sleep(0.3)
-                output = net_connect.read_channel()
-            else:
-                self.print_log('INFO', f"{self.device_ip}'s vendor is not identified,setting it up as huawei node for now")
+
+            elif 'Warning: The initial password' in output or huawei_pattern.search(output):
+                self.print_log('INFO', f'{self.device_ip} is identified as a Huawei node')
                 device_type = self.huawei_os
 
-            name = extract_device_name(output)
+                # Interact with the Huawei prompt
+                net_connect.write_channel("N")
+                time.sleep(0.3)
+                net_connect.set_base_prompt(">")
+                net_connect.write_channel("\r")
+                time.sleep(0.3)
+                output = net_connect.read_until_prompt()
+
+            else:
+                self.print_log('INFO', f"{self.device_ip}'s vendor is not identified. Setting it as Huawei for now")
+                device_type = self.huawei_os
+
             net_connect.disconnect()
+
+            # Extract device name (for Huawei, adjust output slicing as "<" is included in output)
+            name = self.extract_device_name(output) if device_type != self.huawei_os else output[2:]
+
             self.device_state = 1
-        except NetmikoAuthenticationException as e:
+
+        except NetmikoAuthenticationException:
             self.print_log('[AUTHENTICATION FAILED ERROR]', traceback.format_exc())
             self.handle_failed_device()
 
-        except Exception as e:
-            self.print_log('[DEVICE IDENTIFCATION ERROR]',"unable to identify the device", traceback.format_exc())
+        except Exception:
+            self.print_log('[DEVICE IDENTIFICATION ERROR]', 'Unable to identify the device', traceback.format_exc())
             self.handle_failed_device()
+
         return name, device_type
 
     def convert_to_json(self, output_dict: list[dict]):
@@ -402,12 +434,11 @@ class SessionManager(QObject):
                     processed_output.append([{command: output_string}])
         return processed_output
 
-    def convert_to_writable_formate(self, data):
+    def _juniper_convert_to_writable_formate(self, data):
         for command in data:
-            keys = command[0].keys()
             # 'physical interfaces': 'interface': '', 'link_status': '', 'port_bw': '', 'type': ''
             # 'trunks': 'interface': '', 'link_status': '', 'no_of_links': '', "members": ''
-            # 'interface descriptions': 'interface': '', 'phy_status': '', 'opr_status': '', 'description': ''
+            # 'interface descriptions': 'interface': '', 'phy': '', 'opr_status': '', 'description': ''
             # 'inventory pic status': 'pic_slot': '', 'pic_sub': '', 'status': '', 'type': '', 'port_count': '', 'port_type': ''
             # 'licenses': 'description': '', 'expired_date': '', 'lic_name': '', 'avil_lic': '', 'used_lic': ''
             # 'optics': 'port': '', 'status': '', 'duplex': '', 'type': '', 'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''
@@ -553,6 +584,35 @@ class SessionManager(QObject):
                 self.juniper_output_format['inventory details'] = hardware
         return self.juniper_output_format
 
+    def _huawei_convert_to_writable_formate(self, data):
+       if data[0].get(self.physical_interface_command):
+           self.huawei_output_format['physical interfaces'] = data[0]['display interface main | no-more'][0][0]['interface_details']
+
+       if data[1].get(self.all_interface_description_command):
+           self.huawei_output_format['interface descriptions'] = data[1]['display interface description | no-more'][0][0]['record']['interface_descriptions']
+
+       if data[2].get(self.trunks_bandwidth_command):
+           trunks_data = []
+           trunk_details = data[2]['display interface eth-trunk main | no-more'][0][0]['trunk_details']
+
+           for trunk in trunk_details:
+               members = ""
+               if self.if_key_found_bool(trunk, "members"):
+                   members: str = self.list_dict_to_string(trunk["members"])
+               trunk["member_interfaces"] = members
+               trunks_data.append(trunk)
+
+           self.huawei_output_format['trunks'] = trunks_data
+
+
+    def list_dict_to_string(self,members : list) -> str: # takes a list of dictionaries as input and returns the string of member interfaces
+        if isinstance(members,dict): # if there is only one memeber interface in then
+            return members["member_interface"]
+        string = ""
+        for member in members:
+            string = f"{string}, {member["member_interface"]}"
+        return string
+
     def _process_show_version(self, version_output:dict, fpc_count):
         # 'version':'main_os': '', 'os_version': '', 'model': '', 'uptime': '', 'mpu_q': '', 'sru_q': '',
         #              'sfu_q': '', 'lpu_q': ''
@@ -607,9 +667,6 @@ class SessionManager(QObject):
         if key in input.keys():
             return True
         return False
-
-    def huawei_output(self, data):
-        pass
 
     def get_pic_data_from_fpc_record(self, fpcs: list[dict]) -> dict:
         fpc_pic_record = {}

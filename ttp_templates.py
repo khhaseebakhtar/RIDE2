@@ -1,26 +1,27 @@
 ttp_huawei_display_interface = ''' 
 <vars>
 default_values = {
-    "bw": "un-known",
+    "port_bw": "un-known",
     "type": "un-known"
 }
+intf_2_ignore = 'Eth-Trunk\S+|Loop|NULL|Virtual'
 </vars>
 
-<group name="interface_details" default ="default_values">
+<group name="interface_details" default ="default_values" containsall="interface">
 ##to catch where if index is present and in 2nd line where if index is not present 
-{{interface | _start_ }} current state : {{ link_status }} ({{ ignore(".*") }})
-{{interface | _start_ }} current state : {{ link_status }}
+{{interface | notstartswith_re('intf_2_ignore') | _start_ }} current state : {{ link_status }} ({{ ignore(".*") }})
+{{interface | notstartswith_re('intf_2_ignore') | _start_ }} current state : {{ link_status }}
 
 ##to catch the state where reason for port down is also mentioned e.g "DOWN(transceiver offline)"
-{{interface | _start_ }} current state : {{ link_status | re("\w+\(.*?\)")}} ({{ ignore(".*") }})
+{{interface | notstartswith_re('intf_2_ignore') | _start_ }} current state : {{ link_status | re("\w+\(.*?\)")}} ({{ ignore(".*") }})
 
 ##to catch two worded state e.g "Admin Down"
-{{interface | _start_ }} current state : {{link_status | re("\S+\s+\S+")}}
+{{interface | notstartswith_re('intf_2_ignore') | _start_ }} current state : {{link_status | re("\S+\s+\S+")}}
 
 Connector Type: {{type | re("\S+")}},{{ ignore(".*") }}
 Port Mode: {{type}}{{ ignore(".*") }}
-Port BW: {{bw}},{{ ignore(".*") }}
-{{ ignore(".*") }}Current BW: {{bw}},{{ ignore(".*") }}
+Port BW: {{port_bw}},{{ ignore(".*") }}
+{{ ignore(".*") }}Current BW: {{port_bw}},{{ ignore(".*") }}
 Physical is {{type}}
 </group>
 '''
@@ -43,18 +44,30 @@ Interface PHY Protocol Description {{ _start_ }}
 
 ttp_huawei_display_interface_eth_trunk = ''' 
 <vars>
-default_values = {
+default_values1 = {
+    "no_of_links" : "0",
+    "max_bw" : "N/A",
+    "current_bw" : "N/A"
+}
+
+deafult_values2 = {
     "member_interface": "No Interfaces",
     "state" : "",
-    "no_of_links" : "0"
-}
+    "weight" : ""
+    }
+
+intf_2_ignore = "PortName|physical"
 </vars>
-<group name="trunk_details" default = "default_values">
+
+<group name="trunk_details" default = "default_values1">
 {{trunk_number | _start_ }} current state : {{ trunk_state }}
-{{trunk_number | _start_ }} current state : {{ trunk_state | re("\S+\s+.*") }}
-The Number of Ports in Trunk : {{no_of_links}}
-<group name="members">
-{{member_interface}} {{state}} {{ignore}}
+{{trunk_number | _start_ }} current state : {{ trunk_state | re("\S+") }} 
+{{trunk_number | _start_ }} current state : {{ trunk_state | re("\S+") }} {{ignore(".*")}}
+{{ignore(".*")}} Maximal BW: {{max_bw}}, Current BW: {{current_bw}}, {{ignore(".*")}}
+The Number of Ports in Trunk : {{no_of_links | re("\d+")}}
+
+<group name="members" default = "default_values2">
+{{member_interface | notstartswith_re('intf_2_ignore')}} {{state}} {{weight | re("\d+")}}
 </group>
 
 </group>
