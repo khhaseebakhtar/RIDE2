@@ -72,6 +72,50 @@ The Number of Ports in Trunk : {{no_of_links | re("\d+")}}
 
 </group>
 '''
+ttp_huawei_display_optical_module_brief = ''' 
+<group name="optics">
+{{port | notstartswith_re('Port')}}    {{status}}     {{duplex}}   {{type}}  {{wl}}   {{rxpw}}    {{txpw}}     {{mode}}  {{vendorpn}}
+</group>
+'''
+
+ttp_huawei_display_device_pic_status = ''' 
+<vars>
+items = {'pic_slot': '', 
+        'pic_sub': '', 
+        'status': '', 
+        'type': '', 
+        'port_count': '', 
+        'port_type': ''}
+</vars>
+<group name="pic_details" default='items'>
+{{pic_slot}}/{{pic_sub}}   {{status}}     {{type}}   {{port_count | re("\d+")}} {{ignore(".*")}}
+</group>
+'''
+
+ttp_huawei_display_version = ''' 
+<vars>
+default_items = {
+        'mpu_q': 'N/A', 
+        'main_os': 'N/A', 
+        'os_version': 'N/A', 
+        'uptime': 'N/A', 
+        'sru_q': 'N/A', 
+        'sfu_q': 'N/A', 
+        'lpu_q': 'N/A',
+        'model' : 'unable to obtain'
+        }
+</vars>
+
+<group name="version_details" default = "default_items">
+VRP (R) software, Version {{main_os | _start_}} ({{ignore(".*")}} {{os_version}})
+Quidway {{model | PHRASE}} uptime is {{uptime | PHRASE}}
+HUAWEI {{model | ORPHRASE}} uptime is {{uptime | PHRASE}}
+{{ignore("\s+")}}MPU  Slot  Quantity : {{mpu_q | re("\d+") }}
+{{ignore("\s+")}}SRU  Slot  Quantity : {{sru_q | re("\d+")}}
+{{ignore("\s+")}}SFU  Slot  Quantity : {{sfu_q | re("\d+")}}
+{{ignore("\s+")}}LPU  Slot  Quantity : {{lpu_q | re("\d+")}}
+</group>
+'''
 
 ttp_juniper_show_interface_description = ''' 
 <group name="interface_descriptions" containsall="description">

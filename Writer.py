@@ -28,11 +28,11 @@ def make_file1(output, sheet_name, path, vendor, exe):
     headers = {
         'A1': 'INTERFACE', 'B1': 'PHY STATE', 'C1': 'ADMIN STATUS', 'D1': 'DESCRIPTION',
         'G1': 'PHYSICAL INTERFACE', 'H1': 'PHY STATE', 'I1': 'PORT BW', 'J1': 'LINK TYPE',
-        'M1': 'TRUNK NAME', 'N1': 'TRUNK STATE', 'O1': 'TOTAL LINKS', 'P1': 'MEMBERS INTERFACES',
+        'M1': 'TRUNK NAME', 'N1': 'TRUNK STATE', 'O1': 'TOTAL LINKS', 'P1': 'MEMBER INTERFACES',
         'S1': 'LICENSE DESCRIPTION', 'T1': 'AVAILABLE LICENSES', 'U1': 'USED LICENSES',
         'V1': 'LICENSE EXPIRY', 'W1': 'ITEM NAME',
         'T20': 'SLOT', 'U20': 'SUB SLOT', 'V20': 'STATUS',
-        'W20': 'TYPE', 'X20': 'PORT COUNT', 'Y20': 'PORT TYPE',
+        'S20': 'TYPE', 'W20': 'PORT TYPE', 'X20': 'PORT COUNT',
         'Z1': 'PORT', 'AA1': 'STATUS', 'AB1': 'DUPLEX',
         'AC1': 'TYPE', 'AD1': 'WL', 'AE1': 'RX POWER', 'AF1': 'TX POWER', 'AG1': 'MODE',
         'AI1': 'CHASSIS DETAILS', 'AI2': 'OS VERSION', 'AI3': 'SOFTWARE VERSION',
@@ -58,11 +58,9 @@ def make_file1(output, sheet_name, path, vendor, exe):
         for change in header_change:
             headers[change[0]] = change[1]
         trunks_colmns = {'M': 'trunk_number', 'N': 'trunk_state', 'O': 'no_of_links', 'P': 'member_interfaces',
-                         'Q': 'max_bw',
-                         'R': 'current_bw'}
+                         'Q': 'max_bw', 'R': 'current_bw'}
         optics_colmns = {'Z': 'port', 'AA': 'status', 'AB': 'duplex', 'AC': 'type', 'AD': 'wl', 'AE': 'rxpw',
-                         'AF': 'txpw',
-                         'AG': 'mode'}
+                         'AF': 'txpw','AG': 'mode'}
         inventory_colmns = {'AI': 'module', 'AJ': 'slot_no', 'AK': 'board_type', 'AL': 'bar_code', 'AM': 'description'}
         green_fill_headers = ('G1', 'H1', 'I1', 'J1', 'Z1', 'AA1', 'AB1', 'AC1', 'AD1', 'AE1', 'AF1', 'AG1')
 
@@ -89,14 +87,12 @@ def make_file1(output, sheet_name, path, vendor, exe):
         worksheet[cell] = value
         worksheet[cell].alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
         worksheet[cell].font = header_font
-        if cell.startswith(('A1', 'B1', 'C1', 'D1', 'S1', 'T1', 'U1', 'V1', 'W1', 'S20', 'AI', 'AJ', 'AK', 'AL', 'AM')):
+        if cell.startswith(('A1', 'B1', 'C1', 'D1', 'S1', 'T1', 'U1', 'V1', 'W1', 'S20', 'AJ', 'AK', 'AL', 'AM')):
             worksheet[cell].fill = yellow_fill
         elif cell.startswith(green_fill_headers):
             worksheet[cell].fill = green_fill
-        elif cell.startswith(('M1', 'N1', 'O1', 'P1', 'T20', 'U20', 'V20', 'W20', 'X20', 'Y20','Q1','R1')):
+        elif cell.startswith(('M1', 'N1', 'O1', 'P1', 'T20', 'U20', 'V20', 'W20', 'X20', 'S20','Q1','R1', 'AI')):
             worksheet[cell].fill = purpil_fill
-        else:
-            worksheet[cell].fill = red_fill
 
     # Write data to worksheet
     def write_data(data, start_row, columns, maker='huawei'):
@@ -110,10 +106,10 @@ def make_file1(output, sheet_name, path, vendor, exe):
     write_data(interface_descriptions, 2, {'A': 'interface', 'B': 'phy', 'C': 'opr_status', 'D': 'description'})
     write_data(physical_interfaces, 2, {'G': 'interface', 'H': 'link_status', 'I': 'port_bw', 'J': 'type'})
     write_data(trunks, 2, trunks_colmns, vendor)
-    # write_data(optics, 2,optics_colmns)
+    write_data(optics, 2,optics_colmns)
     # write_data(port_license_usage, 2, {'AC': 'port', 'AD': 'fname', 'AE': 'ncount', 'AF': 'ucount', 'AG': 'status'})
-    # write_data(inventory_pic_status, 21,
-    #      {'T': 'pic_slot', 'U': 'pic_sub', 'V': 'status', 'W': 'type', 'X': 'port_count', 'Y': 'port_type'})
+    write_data(inventory_pic_status, 21,
+         {'T': 'pic_slot', 'U': 'pic_sub', 'V': 'status', 'S': 'type', 'X': 'port_count', 'W': 'port_type'})
     # write_data(inventory_details, 12,inventory_colmns)
 
     # for row, item in enumerate(licenses, start=2):
@@ -126,18 +122,18 @@ def make_file1(output, sheet_name, path, vendor, exe):
     #             worksheet[f'V{cell}'] = lic['used_lic']
     #             worksheet[f'W{cell}'] = lic['lic_name']
     #
-    # worksheet['AJ2'] = version_info[0]['main_os']
-    # worksheet['AJ3'] = version_info[0]['os_version']
-    # worksheet['AJ4'] = version_info[0]['model']
-    # worksheet['AJ5'] = version_info[0]['uptime']
-    # worksheet['AJ6'] = version_info[0]['mpu_q']
-    # worksheet['AJ7'] = version_info[0]['sru_q']
-    # if 'huawei' in vendor:
-    #     worksheet['AJ8'] = version_info[0]['sfu_q']
-    #     worksheet['AJ9'] = version_info[0]['lpu_q']
-    # if 'juniper' in vendor:
-    #     worksheet['AJ6'] = '=COUNTIF(AI:AI, "Routing Engine *")'
-    #     worksheet['AJ7'] = version_info[0]['lpu_q']
+    worksheet['AJ2'] = version_info[0]['main_os']
+    worksheet['AJ3'] = version_info[0]['os_version']
+    worksheet['AJ4'] = version_info[0]['model']
+    worksheet['AJ5'] = version_info[0]['uptime']
+    worksheet['AJ6'] = version_info[0]['mpu_q']
+    worksheet['AJ7'] = version_info[0]['sru_q']
+    if 'huawei' in vendor:
+        worksheet['AJ8'] = version_info[0]['sfu_q']
+        worksheet['AJ9'] = version_info[0]['lpu_q']
+    if 'juniper' in vendor:
+        worksheet['AJ6'] = '=COUNTIF(AI:AI, "Routing Engine *")'
+        worksheet['AJ7'] = version_info[0]['lpu_q']
 
     # Save workbook
     try:
@@ -150,6 +146,5 @@ def make_file1(output, sheet_name, path, vendor, exe):
 
 class Writer():
     def __init__(self, output, device_name, path, vendor, exe):
-        self.t = threading.Thread(args=(device_name, output, path, vendor, exe),
-                                  target=make_file1(output, device_name, path, vendor, exe))
+        self.t = threading.Thread(args=(output, device_name, path, vendor, exe),target=make_file1)
         self.t.start()

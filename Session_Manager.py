@@ -11,9 +11,6 @@ from Writer import Writer
 import ttp_templates as ttp
 
 
-
-
-
 def key_exists(data: dict, key: str) -> bool:  # checks if a certain key exists in the provided dictionary
     if key in data.keys():
         return True
@@ -61,9 +58,10 @@ class SessionManager(QObject):
         exe.Thread_control += 1
 
         self.huawei_output_format = {
-            'physical interfaces': [{'interface': '', 'link_status': '', 'port_bw': '', 'type':''}],
-            'trunks': [{'trunk_number': '', 'trunk_state': '', 'no_of_links': '', "member_interfaces": '', 'max_bw': '', "current_bw": ''}],
-            'interface descriptions': [{'interface': '', 'phy': '','opr_status': '', 'description': ''}],
+            'physical interfaces': [{'interface': '', 'link_status': '', 'port_bw': '', 'type': ''}],
+            'trunks': [{'trunk_number': '', 'trunk_state': '', 'no_of_links': '', "member_interfaces": '', 'max_bw': '',
+                        "current_bw": ''}],
+            'interface descriptions': [{'interface': '', 'phy': '', 'opr_status': '', 'description': ''}],
             'inventory pic status': [
                 {'pic_slot': '', 'pic_sub': '', 'status': '', 'type': '', 'port_count': '', 'port_type': ''}],
             'licenses': [{'description': '', 'expired_date': '', 'lic_name': ''}],
@@ -128,7 +126,7 @@ class SessionManager(QObject):
             self.loaded_licenses_command_2: str = "display license resource usage | no-more"
             self.license_usage_on_port_command: str = "display license resource usage port-basic all | no-more"
             self.optical_module_commands_1: str = "display optical-module brief | no-more"
-            self.inventory_report_command_1: str = "display device | no more"
+            self.inventory_report_command_1: str = "display device pic-status | no-more"
             self.inventory_report_command_2: str = "display version | no-more"
             self.inventory_report_command_3: str = "display device elabel | no-more"
 
@@ -138,13 +136,13 @@ class SessionManager(QObject):
             self.loaded_licenses_fsm_1: str = "TEXT_FSM_FILES//huawei_vrp_display_license_verbose"
             self.loaded_licenses_fsm_2: str = "TEXT_FSM_FILES//huawei_vrp_display_license_resource_usage"
             self.license_usage_on_port_fsm: str = "TEXT_FSM_FILES//huawei_vrp_display_lic_res_usage_port_basic.textfsm"
-            self.optical_module_fsm_1: str = "TEXT_FSM_FILES//huawei_vrp_display_optical_module_brief.textfsm"
+            self.optical_module_fsm_1: str = ttp.ttp_huawei_display_optical_module_brief
             #for inventory reprort
             # 1 : pic status FSM
             # 2 : version FSM
             # 3 : elable FSM
-            self.inventory_report_fsm_1: str = "TEXT_FSM_FILES//huawei_vrp_display_device_pic_status.textfsm"
-            self.inventory_report_fsm_2: str = "TEXT_FSM_FILES//huawei_vrp_display_version.textfsm"
+            self.inventory_report_fsm_1: str = ttp.ttp_huawei_display_device_pic_status
+            self.inventory_report_fsm_2: str = ttp.ttp_huawei_display_version
             self.inventory_report_fsm_3: str = "TEXT_FSM_FILES//huawei_vrp_display_elable_brief.textfsm"
 
         if vendor == self.juniper_os:
@@ -159,7 +157,7 @@ class SessionManager(QObject):
             self.inventory_report_command_3: str = "show chassis hardware | display json | no-more"
 
             self.all_interface_description_fsm: str = ttp.ttp_juniper_show_interface_description
-            self.inventory_report_fsm_2 : str = ttp.ttp_juniper_show_version
+            self.inventory_report_fsm_2: str = ttp.ttp_juniper_show_version
 
     def make_connection(self):
         if not self.device_state:  # Exit if the device was not accessible while vendor identification
@@ -183,13 +181,13 @@ class SessionManager(QObject):
             self.exe.successful_device_count += 1
 
         except KeyError:
-            self.print_log('JSON CONVERSION ERROR', 'Cannot obtain processed output',traceback.format_exc())
+            self.print_log('JSON CONVERSION ERROR', 'Cannot obtain processed output', traceback.format_exc())
             self.handle_failed_device()
         except Exception:
-            self.print_log('MAKE CONNECTION ERROR', 'Cannot process connection',traceback.format_exc())
+            self.print_log('MAKE CONNECTION ERROR', 'Cannot process connection', traceback.format_exc())
             self.handle_failed_device()
 
-    def process_output_by_vendor(self, output): # returns only vendor specific format
+    def process_output_by_vendor(self, output):  # returns only vendor specific format
         if self.identified_vendor == self.juniper_os:
             structured_output = self.convert_to_json(output)
             self._juniper_convert_to_writable_formate(structured_output)
@@ -200,7 +198,6 @@ class SessionManager(QObject):
             return self.huawei_output_format
 
         return None
-
 
     def execute_commands(self, router: dict):
         output = []
@@ -238,6 +235,7 @@ class SessionManager(QObject):
                                                                              use_ttp=if_huawei,
                                                                              ttp_template=self.trunks_bandwidth_fsm,
                                                                              read_timeout=self.read_timeout)
+
             if self.ui.cb_licenses.isChecked():
                 loaded_licenses_1_output = SSH_connection.send_command_timing(self.loaded_licenses_command_1,
                                                                               use_ttp=if_huawei,
@@ -262,7 +260,7 @@ class SessionManager(QObject):
 
                     # this will list of dictionaries (FPCs) contiaining Pic data
                     fpcs_record = \
-                    processed_pic_status_output[0][0][self.optical_module_commands_1]['fpc-information'][0]['fpc']
+                        processed_pic_status_output[0][0][self.optical_module_commands_1]['fpc-information'][0]['fpc']
                     fpc_pic_record = self.get_pic_data_from_fpc_record(fpcs_record)
                     for each_fpc in fpc_pic_record:  # each_fpc will be the Key of fpc_pic_record i.e FPC slot number
                         for each_pic in fpc_pic_record[each_fpc]:  # sends individual command to router for each PIC
@@ -274,7 +272,8 @@ class SessionManager(QObject):
                                     time.sleep(1)
                                     temp_output1 = self.convert_to_json([{self.optical_module_commands_2: temp_output}])
                                     pic_port_data: dict = \
-                                        temp_output1[0][0][self.optical_module_commands_2]['fpc-information'][0]['fpc'][0][
+                                        temp_output1[0][0][self.optical_module_commands_2]['fpc-information'][0]['fpc'][
+                                            0][
                                             'pic-detail'][0]
                                     if self.if_key_found_bool(pic_port_data, 'port-information'):
                                         if pic_port_data['port-information'][0] != {}:
@@ -287,14 +286,16 @@ class SessionManager(QObject):
                                                                   'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''}
                                                 each_port_data[
                                                     "port"] = f"{each_fpc}/{each_pic}/{each_port['port-number'][0]['data']}"
-                                                each_port_data["vendor"] = self.if_key_found(each_port, 'sfp-vendor-name')
-                                                each_port_data["part_number"] = self.if_key_found(each_port, 'sfp-vendor-pno')
+                                                each_port_data["vendor"] = self.if_key_found(each_port,
+                                                                                             'sfp-vendor-name')
+                                                each_port_data["part_number"] = self.if_key_found(each_port,
+                                                                                                  'sfp-vendor-pno')
                                                 each_port_data["type"] = self.if_key_found(each_port, 'cable-type')
                                                 each_port_data["wl"] = self.if_key_found(each_port, 'wavelength')
                                                 each_port_data["mode"] = self.if_key_found(each_port, 'fiber-mode')
                                                 optical_module_commands_2_output.append(each_port_data)
                                             except KeyError as e:
-                                                self.print_log('[KEY ERROR]',f' in {command}',traceback.format_exc())
+                                                self.print_log('[KEY ERROR]', f' in {command}', traceback.format_exc())
                                                 optical_module_commands_2_output.append(
                                                     {f'fpc-slot {each_fpc} pic-slot {each_pic}': '', 'vendor': '',
                                                      'part_number': '',
@@ -302,14 +303,15 @@ class SessionManager(QObject):
                                                      'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''})
                                                 continue
                             except TypeError:
-                                self.print_log('[OPTICS ERROR]', f' cannot read output for {command}', trace=traceback.format_exc())
+                                self.print_log('[OPTICS ERROR]', f' cannot read output for {command}',
+                                               trace=traceback.format_exc())
                                 optical_module_commands_2_output.append(
                                     {f'fpc-slot {each_fpc} pic-slot {each_pic}': '', 'vendor': '', 'part_number': '',
                                      'type': 'DATA MISSING',
                                      'wl': '', 'rxpw': '', 'txpw': '', 'mode': ''})
                                 continue
 
-            if self.ui.cb_lpu_cards.isChecked():
+            if self.ui.cb_lpu_cards.isChecked(): # inventory report
                 inventory_report_command_1_output = SSH_connection.send_command_timing(
                     self.inventory_report_command_1,
                     use_ttp=if_huawei,
@@ -320,11 +322,11 @@ class SessionManager(QObject):
                     use_ttp=True,
                     read_timeout=self.read_timeout,
                     ttp_template=self.inventory_report_fsm_2, last_read=4.0)
-                inventory_report_command_3_output = SSH_connection.send_command_timing(
-                    self.inventory_report_command_3,
-                    use_ttp=if_huawei,
-                    read_timeout=self.read_timeout,
-                    ttp_template=self.inventory_report_fsm_3, last_read=4.0)
+                # inventory_report_command_3_output = SSH_connection.send_command_timing(
+                #     self.inventory_report_command_3,
+                #     use_ttp=if_huawei,
+                #     read_timeout=self.read_timeout,
+                #     ttp_template=self.inventory_report_fsm_3, last_read=4.0)
 
             if self.ui.cb_port_lic_utilization.isChecked():
                 license_usage_on_port_output = ""
@@ -358,7 +360,7 @@ class SessionManager(QObject):
 
         return output
 
-    def extract_device_name(self,text):  # check for the patter for different vendors and returns device name
+    def extract_device_name(self, text):  # check for the patter for different vendors and returns device name
         pattern = r'<(.*?)|@(.*?)>'  # <(DEVICE_NAME)> is pattern for Huawei , @(DEVICE_NAME) is pattern for Juniper
         match = re.search(pattern, text)
         return match.group(0).strip()[1:-1] if match else self.device_ip
@@ -467,7 +469,8 @@ class SessionManager(QObject):
 
             if command[0].get(self.all_interface_description_command):
                 interface_descriptions = []
-                for each_interface in command[0][self.all_interface_description_command][0][0]['interface_descriptions']:
+                for each_interface in command[0][self.all_interface_description_command][0][0][
+                    'interface_descriptions']:
                     name = each_interface['interface']
                     phy_status = each_interface['phy']
                     description = each_interface['description']
@@ -503,7 +506,8 @@ class SessionManager(QObject):
                 license_data = []
                 lic_usage_data = []
                 try:
-                    lic_usage_summary = command[0][self.loaded_licenses_command_1]['license-summary-information'][0]['license-usage-summary'][0]
+                    lic_usage_summary = command[0][self.loaded_licenses_command_1]['license-summary-information'][0][
+                        'license-usage-summary'][0]
                     if self.if_key_found_bool(lic_usage_summary, 'feature-summary'):
                         feature_summary = lic_usage_summary['feature-summary']
                         for feature in feature_summary:
@@ -518,7 +522,7 @@ class SessionManager(QObject):
                     self.juniper_output_format['licenses'] = license_data
                     self.juniper_output_format['license usage'] = lic_usage_data
                 except KeyError:
-                    self.print_log('[LICENSE DATA ERROR]','cannot obtain License data', traceback.format_exc())
+                    self.print_log('[LICENSE DATA ERROR]', 'cannot obtain License data', traceback.format_exc())
 
             try:
                 if command[0].get(self.inventory_report_command_1):
@@ -555,7 +559,8 @@ class SessionManager(QObject):
 
             except KeyError:
                 fpc_slots_count = 'you can count, right ?'
-                self.print_log('[PIC ERROR]', f'in (show chassis fpc pic-status ) in FPC{pic_slot}', traceback.format_exc())
+                self.print_log('[PIC ERROR]', f'in (show chassis fpc pic-status ) in FPC{pic_slot}',
+                               traceback.format_exc())
 
             if command[0].get(self.optical_module_commands_2):
                 optics_data = []
@@ -576,7 +581,8 @@ class SessionManager(QObject):
                 self.juniper_output_format['optics'] = optics_data
 
             if command[0].get(self.inventory_report_command_2):
-                self._process_show_version(command[0][self.inventory_report_command_2][0][0]['version'], fpc_slots_count)
+                self._process_show_version(command[0][self.inventory_report_command_2][0][0]['version'],
+                                           fpc_slots_count)
 
             if command[0].get(self.inventory_report_command_3):
                 hardware = self._process_show_hardware_chassis(
@@ -585,35 +591,44 @@ class SessionManager(QObject):
         return self.juniper_output_format
 
     def _huawei_convert_to_writable_formate(self, data):
-       if data[0].get(self.physical_interface_command):
-           self.huawei_output_format['physical interfaces'] = data[0]['display interface main | no-more'][0][0]['interface_details']
+        if data[0].get(self.physical_interface_command):
+            self.huawei_output_format['physical interfaces'] = data[0][self.physical_interface_command][0][0][
+                'interface_details']
 
-       if data[1].get(self.all_interface_description_command):
-           self.huawei_output_format['interface descriptions'] = data[1]['display interface description | no-more'][0][0]['record']['interface_descriptions']
+        if data[1].get(self.all_interface_description_command):
+            self.huawei_output_format['interface descriptions'] = \
+                data[1][self.all_interface_description_command][0][0]['record']['interface_descriptions']
 
-       if data[2].get(self.trunks_bandwidth_command):
-           trunks_data = []
-           trunk_details = data[2]['display interface eth-trunk main | no-more'][0][0]['trunk_details']
+        if data[2].get(self.trunks_bandwidth_command):
+            trunks_data = []
+            trunk_details = data[2][self.trunks_bandwidth_command][0][0]['trunk_details']
 
-           for trunk in trunk_details:
-               members = ""
-               if self.if_key_found_bool(trunk, "members"):
-                   members: str = self.list_dict_to_string(trunk["members"])
-               trunk["member_interfaces"] = members
-               trunks_data.append(trunk)
+            for trunk in trunk_details:
+                members = ""
+                if self.if_key_found_bool(trunk, "members"):
+                    members: str = self.list_dict_to_string(trunk["members"])
+                trunk["member_interfaces"] = members
+                trunks_data.append(trunk)
+            self.huawei_output_format['trunks'] = trunks_data
 
-           self.huawei_output_format['trunks'] = trunks_data
+        if data[6].get(self.optical_module_commands_1):
+            self.huawei_output_format['optics'] = data[6][self.optical_module_commands_1][0][0]['optics']
 
+        if data[8].get(self.inventory_report_command_1):
+            self.huawei_output_format['inventory pic status'] = data[8][self.inventory_report_command_1][0][0]['pic_details']
 
-    def list_dict_to_string(self,members : list) -> str: # takes a list of dictionaries as input and returns the string of member interfaces
-        if isinstance(members,dict): # if there is only one memeber interface in then
+        if data[9].get(self.inventory_report_command_2):
+            self.huawei_output_format['version'] = [data[9][self.inventory_report_command_2][0][0]['version_details']]
+
+    def list_dict_to_string(self,members: list) -> str:  # takes a list of dictionaries as input and returns the string of member interfaces
+        if isinstance(members, dict):  # if there is only one memeber interface in then
             return members["member_interface"]
         string = ""
         for member in members:
             string = f"{string}, {member["member_interface"]}"
         return string
 
-    def _process_show_version(self, version_output:dict, fpc_count):
+    def _process_show_version(self, version_output: dict, fpc_count):
         # 'version':'main_os': '', 'os_version': '', 'model': '', 'uptime': '', 'mpu_q': '', 'sru_q': '',
         #              'sfu_q': '', 'lpu_q': ''
         main_os = f"JUNOS {version_output["main_os"].split(".")[0]}"
@@ -679,7 +694,7 @@ class SessionManager(QObject):
             fpc_pic_record.update({fpc_slot: pic_slots})
         return fpc_pic_record
 
-    def print_log(self, log_type: str,message: str = "", trace=None):
+    def print_log(self, log_type: str, message: str = "", trace=None):
         if 'ERROR' in log_type:
             self.exe.sig.set_logging_signal.emit(
                 f'({self.device_number}) -> {log_type} : {message} : Device IP is {self.device_ip}, \n {trace}')
