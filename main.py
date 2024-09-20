@@ -125,6 +125,7 @@ def execute_main_thread():
                         exe.execution_started = True
                         device_number = 0
                         exe.sig.set_logging_signal.emit("Starting Core Execution ...")
+                        exe.ssh_port = ui.le_ssh_port.text() # input is validated in UI class
                         for node in exe.device_ips:
                             # Keeping MAX THREAD below desired number
                             while exe.Thread_control >= MAX_THREADS:

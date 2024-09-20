@@ -7,6 +7,11 @@ from openpyxl.styles import PatternFill, Alignment
 from openpyxl.styles import Font
 
 
+def print_log(exe, device_name, log_type='ERROR', message = 'cannot write command output in file', trace=None):
+    log_message = f'{log_type} in {device_name}: {message} : {trace}'
+    exe.sig.set_logging_signal.emit(log_message)
+
+
 def make_file1(output, sheet_name, path, vendor, exe):
     physical_interfaces = output['physical interfaces']
     trunks = output['trunks']
@@ -36,14 +41,14 @@ def make_file1(output, sheet_name, path, vendor, exe):
         'Z1': 'PORT', 'AA1': 'STATUS', 'AB1': 'DUPLEX',
         'AC1': 'TYPE', 'AD1': 'WL', 'AE1': 'RX POWER', 'AF1': 'TX POWER', 'AG1': 'MODE',
         'AI1': 'CHASSIS DETAILS', 'AI2': 'OS VERSION', 'AI3': 'SOFTWARE VERSION',
-        'AI4': 'MODEL', 'AI5': 'UPTIME', 'AI6': 'SFU SLOTS', 'AI7': 'LPU SLOTS',
+        'AI4': 'MODEL', 'AI5': 'UPTIME', 'AI6': 'MPU SLOTS', 'AI7': 'SRU SLOTS','AI8': 'SFU SLOTS','AI9': 'LPU SLOTS',
         'AI11': 'MODULE TYPE', 'AJ11': 'SLOT', 'AK11': 'BOARD TYPE', 'AL11': 'BAR CODE', 'AM11': 'DESCRIPTION'
     }
 
     wider_cells = [('Q', 'AA', 'AC', 'AJ', 'U', 'AJ', 10),
-                   ('R', 'T',15),
+                   ('R', 'T', 15),
                    ('A', 'G', 'T', 'M', 'I', 'J', 'AA', 'AC', 'AI', 'AL', 'AK', 20),
-                   ('P','W', 'AM', 'AM', 30),
+                   ('P', 'W', 'AM', 'AM', 30),
                    ('D', 'S', 50)]
 
     for each_change in wider_cells:
@@ -60,12 +65,12 @@ def make_file1(output, sheet_name, path, vendor, exe):
         trunks_colmns = {'M': 'trunk_number', 'N': 'trunk_state', 'O': 'no_of_links', 'P': 'member_interfaces',
                          'Q': 'max_bw', 'R': 'current_bw'}
         optics_colmns = {'Z': 'port', 'AA': 'status', 'AB': 'duplex', 'AC': 'type', 'AD': 'wl', 'AE': 'rxpw',
-                         'AF': 'txpw','AG': 'mode'}
+                         'AF': 'txpw', 'AG': 'mode'}
         inventory_colmns = {'AI': 'module', 'AJ': 'slot_no', 'AK': 'board_type', 'AL': 'bar_code', 'AM': 'description'}
         green_fill_headers = ('G1', 'H1', 'I1', 'J1', 'Z1', 'AA1', 'AB1', 'AC1', 'AD1', 'AE1', 'AF1', 'AG1')
 
     if 'juniper' in vendor:
-        header_change = [('AI6', 'ROUTING ENGINES'), ('AI7', 'FPC INSTALLED'),
+        header_change = [('AI6', 'ROUTING ENGINES'), ('AI7', 'FPC INSTALLED'),('AI8', ''),('AI9', ''),
                          ('AA1', 'TYPE'), ('AB1', 'WL'), ('AC1', 'MODE'), ('AJ11', 'PART NUMBER'),
                          ('AD1', ''), ('AE1', ''), ('AF1', ''), ('AG1', ''),
                          ('AJ11', 'VERSION'), ('AK11', 'PART NUMBER')]
@@ -91,11 +96,11 @@ def make_file1(output, sheet_name, path, vendor, exe):
             worksheet[cell].fill = yellow_fill
         elif cell.startswith(green_fill_headers):
             worksheet[cell].fill = green_fill
-        elif cell.startswith(('M1', 'N1', 'O1', 'P1', 'T20', 'U20', 'V20', 'W20', 'X20', 'S20','Q1','R1', 'AI')):
+        elif cell.startswith(('M1', 'N1', 'O1', 'P1', 'T20', 'U20', 'V20', 'W20', 'X20', 'S20', 'Q1', 'R1', 'AI')):
             worksheet[cell].fill = purpil_fill
 
-    # Write data to worksheet
-    def write_data(data, start_row, columns, maker='huawei'):
+    # ==========================================Write data to worksheet ===================================
+    def write_data(data, start_row, columns, maker='huawei'): # writes data to worksheet
         for row, item in enumerate(data, start=start_row):
             for col, key in columns.items():
                 if col == 'N' and 'juniper' in maker:
@@ -103,48 +108,59 @@ def make_file1(output, sheet_name, path, vendor, exe):
                 else:
                     worksheet[f"{col}{row}"] = item[key]
 
-    write_data(interface_descriptions, 2, {'A': 'interface', 'B': 'phy', 'C': 'opr_status', 'D': 'description'})
-    write_data(physical_interfaces, 2, {'G': 'interface', 'H': 'link_status', 'I': 'port_bw', 'J': 'type'})
-    write_data(trunks, 2, trunks_colmns, vendor)
-    write_data(optics, 2,optics_colmns)
-    # write_data(port_license_usage, 2, {'AC': 'port', 'AD': 'fname', 'AE': 'ncount', 'AF': 'ucount', 'AG': 'status'})
-    write_data(inventory_pic_status, 21,
-         {'T': 'pic_slot', 'U': 'pic_sub', 'V': 'status', 'S': 'type', 'X': 'port_count', 'W': 'port_type'})
-    # write_data(inventory_details, 12,inventory_colmns)
+    def safe_write_data(*args, **kwargs): # Ensures that if a write fails, it does not disturb execution of other commands
+        try:
+            write_data(*args, **kwargs)
+        except Exception as e:
+            print_log(exe,sheet_name,traceback.format_exc())
 
-    # for row, item in enumerate(licenses, start=2):
-    #     cell = str(row)
-    #     worksheet[f'S{cell}'] = item['description']
-    #     worksheet[f'T{cell}'] = item['expired_date']
-    #     for lic in license_usage:
-    #         if lic['lic_name'].strip() == item['lic_name'].strip():
-    #             worksheet[f'U{cell}'] = lic['avil_lic']
-    #             worksheet[f'V{cell}'] = lic['used_lic']
-    #             worksheet[f'W{cell}'] = lic['lic_name']
-    #
-    worksheet['AJ2'] = version_info[0]['main_os']
-    worksheet['AJ3'] = version_info[0]['os_version']
-    worksheet['AJ4'] = version_info[0]['model']
-    worksheet['AJ5'] = version_info[0]['uptime']
-    worksheet['AJ6'] = version_info[0]['mpu_q']
-    worksheet['AJ7'] = version_info[0]['sru_q']
-    if 'huawei' in vendor:
-        worksheet['AJ8'] = version_info[0]['sfu_q']
-        worksheet['AJ9'] = version_info[0]['lpu_q']
-    if 'juniper' in vendor:
-        worksheet['AJ6'] = '=COUNTIF(AI:AI, "Routing Engine *")'
-        worksheet['AJ7'] = version_info[0]['lpu_q']
+    safe_write_data(interface_descriptions, 2, {'A': 'interface', 'B': 'phy', 'C': 'opr_status', 'D': 'description'})
+    safe_write_data(physical_interfaces, 2, {'G': 'interface', 'H': 'link_status', 'I': 'port_bw', 'J': 'type'})
+    safe_write_data(trunks, 2, trunks_colmns, vendor)
+    safe_write_data(optics, 2, optics_colmns)
+    safe_write_data(port_license_usage, 2, {'AC': 'port', 'AD': 'fname', 'AE': 'ncount', 'AF': 'ucount', 'AG': 'status'})
+    safe_write_data(inventory_pic_status, 21,
+               {'T': 'pic_slot', 'U': 'pic_sub', 'V': 'status', 'S': 'type', 'X': 'port_count', 'W': 'port_type'})
+    safe_write_data(inventory_details, 12, inventory_colmns)
+
+    for row, item in enumerate(licenses, start=2):
+        cell = str(row)
+        worksheet[f'S{cell}'] = item['description']
+        worksheet[f'T{cell}'] = item['expired_date']
+        for lic in license_usage:
+            if lic['lic_name'].strip() == item['lic_name'].strip():
+                worksheet[f'U{cell}'] = lic['avil_lic']
+                worksheet[f'V{cell}'] = lic['used_lic']
+                worksheet[f'W{cell}'] = lic['lic_name']
+
+
+    try:
+        worksheet['AJ2'] = version_info[0]['main_os']
+        worksheet['AJ3'] = version_info[0]['os_version']
+        worksheet['AJ4'] = version_info[0]['model']
+        worksheet['AJ5'] = version_info[0]['uptime']
+        worksheet['AJ6'] = version_info[0]['mpu_q']
+        worksheet['AJ7'] = version_info[0]['sru_q']
+        if 'huawei' in vendor:
+            worksheet['AJ8'] = version_info[0]['sfu_q']
+            worksheet['AJ9'] = version_info[0]['lpu_q']
+        if 'juniper' in vendor:
+            worksheet['AJ6'] = '=COUNTIF(AI:AI, "Routing Engine *")'
+            worksheet['AJ7'] = version_info[0]['lpu_q']
+    except Exception:
+        print_log(exe=exe,device_name=sheet_name, message=" cannot write output for version command ", trace=traceback.format_exc())
+
 
     # Save workbook
     try:
         workbook.save(f"{path}/{sheet_name}.xlsx")
     except PermissionError:
         file_name = f"{path}/{sheet_name}_{random.randint(0, 1000)}.xlsx"
-        exe.sig.set_logging_signal.emit(f"{traceback.format_exc()}\n file is renamed to {file_name}")
+        print_log(exe=exe,device_name=sheet_name,log_type="WARNING",message=f"File already exists for this device, storing file with the name : {file_name}" )
         workbook.save(file_name)
 
 
 class Writer():
     def __init__(self, output, device_name, path, vendor, exe):
-        self.t = threading.Thread(args=(output, device_name, path, vendor, exe),target=make_file1)
+        self.t = threading.Thread(args=(output, device_name, path, vendor, exe), target=make_file1)
         self.t.start()

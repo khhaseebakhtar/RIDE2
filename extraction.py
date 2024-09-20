@@ -57,6 +57,7 @@ class Execute():
         self.check_boxes_checked = 0
         self.sfp_filter = ''
         self.sig = signals()
+        self.ssh_port = 22
 
 
 

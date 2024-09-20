@@ -1,4 +1,4 @@
-ttp_huawei_display_interface = ''' 
+ttp_huawei_display_interface = r''' 
 <vars>
 default_values = {
     "port_bw": "un-known",
@@ -26,7 +26,7 @@ Physical is {{type}}
 </group>
 '''
 
-ttp_huawei_display_interface_description = ''' 
+ttp_huawei_display_interface_description = r''' 
 <vars>
 default_values = {
     "description": "Not Assigned"
@@ -42,7 +42,7 @@ Interface PHY Protocol Description {{ _start_ }}
 </group>
 '''
 
-ttp_huawei_display_interface_eth_trunk = ''' 
+ttp_huawei_display_interface_eth_trunk = r''' 
 <vars>
 default_values1 = {
     "no_of_links" : "0",
@@ -72,13 +72,13 @@ The Number of Ports in Trunk : {{no_of_links | re("\d+")}}
 
 </group>
 '''
-ttp_huawei_display_optical_module_brief = ''' 
+ttp_huawei_display_optical_module_brief = r''' 
 <group name="optics">
 {{port | notstartswith_re('Port')}}    {{status}}     {{duplex}}   {{type}}  {{wl}}   {{rxpw}}    {{txpw}}     {{mode}}  {{vendorpn}}
 </group>
 '''
 
-ttp_huawei_display_device_pic_status = ''' 
+ttp_huawei_display_device_pic_status = r''' 
 <vars>
 items = {'pic_slot': '', 
         'pic_sub': '', 
@@ -92,7 +92,8 @@ items = {'pic_slot': '',
 </group>
 '''
 
-ttp_huawei_display_version = ''' 
+#is ready all huawei
+ttp_huawei_display_version = r''' 
 <vars>
 default_items = {
         'mpu_q': 'N/A', 
@@ -117,13 +118,51 @@ HUAWEI {{model | ORPHRASE}} uptime is {{uptime | PHRASE}}
 </group>
 '''
 
-ttp_juniper_show_interface_description = ''' 
+ttp_huawei_display_elabel_brief = r''' 
+<vars>
+default_items = {
+        'module': '', 
+        'slot_no': '', 
+        'board_type': '', 
+        'bar_code': '', 
+        'description': ''
+        }
+</vars>
+
+<group name="inventory_details" default = "default_items">
+
+{{module | WORD | _start_}} {{slot_no | DIGIT}} {{board_type}} {{bar_code}} {{description | ORPHRASE}}
+{{ignore("\s+")}} {{module | WORD | _start_}} {{slot_no | DIGIT}} {{board_type}} {{bar_code}} {{description | ORPHRASE}}
+{{module | WORD | _start_}} {{slot_no | DIGIT}}
+{{ignore("\s+")}}{{module | re("\S+") | _start_}} {{board_type}} {{bar_code}} 
+{{module | WORD | _start_}} {{slot_no | DIGIT}} {{board_type}} {{bar_code}} 
+
+</group>
+'''
+
+ttp_huawei_display_licesnse_resource_usage_port_basic_all = ''' 
+<vars>
+default_items = {
+        'port': '', 
+        'fname': '', 
+        'ncount': '', 
+        'ucount': '', 
+        'status': ''
+        }
+</vars>
+
+<group name="port_basic_license_details" default = "default_items">
+{{port}} {{fname}} {{ncount | DIGIT}} {{ucount | DIGIT}} {{status | ORPHRASE}} 
+
+</group>
+'''
+ttp_juniper_show_interface_description = r''' 
 <group name="interface_descriptions" containsall="description">
 {{interface}}    {{admin}}    {{phy | contains('up','down')}}   {{description | re(".*")}}
 </group>
 '''
 
-ttp_juniper_show_version = ''' 
+ttp_juniper_show_version = r''' 
 <group name="version">
 Model: {{model}}
 Junos: {{main_os}}-{{os_version}}

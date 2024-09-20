@@ -9,6 +9,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import QObject
+from PyQt5.QtGui import QIntValidator
 
 
 class Ui_main_window(object):
@@ -168,19 +170,21 @@ class Ui_main_window(object):
         self.le_thread_count.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "border-color: rgb(168, 255, 6);\n"
 "color: rgb(0, 0, 0);")
+        self.le_thread_count.setValidator(QIntValidator(1,100))
         self.le_thread_count.setInputMethodHints(QtCore.Qt.ImhPreferNumbers)
         self.le_thread_count.setAlignment(QtCore.Qt.AlignCenter)
         self.le_thread_count.setObjectName("le_thread_count")
         self.verticalLayout_3.addWidget(self.le_thread_count)
-        self.le_thread_count_2 = QtWidgets.QLineEdit(self.layoutWidget2)
-        self.le_thread_count_2.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.le_thread_count_2.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+        self.le_ssh_port = QtWidgets.QLineEdit(self.layoutWidget2)
+        self.le_ssh_port.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.le_ssh_port.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "border-color: rgb(168, 255, 6);\n"
 "color: rgb(0, 0, 0);")
-        self.le_thread_count_2.setInputMethodHints(QtCore.Qt.ImhPreferNumbers)
-        self.le_thread_count_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.le_thread_count_2.setObjectName("le_thread_count_2")
-        self.verticalLayout_3.addWidget(self.le_thread_count_2)
+        self.le_ssh_port.setInputMethodHints(QtCore.Qt.ImhPreferNumbers)
+        self.le_ssh_port.setAlignment(QtCore.Qt.AlignCenter)
+        self.le_ssh_port.setObjectName("le_ssh_port")
+        self.le_ssh_port.setValidator(QIntValidator(1,65535))
+        self.verticalLayout_3.addWidget(self.le_ssh_port)
         self.splitter = QtWidgets.QSplitter(self.gb_aaa_credentials)
         self.splitter.setGeometry(QtCore.QRect(20, 50, 291, 20))
         self.splitter.setOrientation(QtCore.Qt.Horizontal)
@@ -303,8 +307,8 @@ class Ui_main_window(object):
         self.l_ssh_port.setText(_translate("main_window", "SSH Port"))
         self.le_thread_count.setToolTip(_translate("main_window", "No of devices processed simultaneously "))
         self.le_thread_count.setText(_translate("main_window", "15"))
-        self.le_thread_count_2.setToolTip(_translate("main_window", "No of devices processed simultaneously "))
-        self.le_thread_count_2.setText(_translate("main_window", "22"))
+        self.le_ssh_port.setToolTip(_translate("main_window", "No of devices processed simultaneously "))
+        self.le_ssh_port.setText(_translate("main_window", "22"))
         self.le_username.setPlaceholderText(_translate("main_window", "Enter Username"))
         self.le_password.setPlaceholderText(_translate("main_window", "Enter Password"))
         self.le_password.setText("Tw@Pl@nn1ng")

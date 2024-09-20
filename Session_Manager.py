@@ -25,6 +25,7 @@ class SessionManager(QObject):
     def __init__(self, node_ip, exe, ui, node_number):
         super(SessionManager, self).__init__()
         self.device_ip = node_ip
+        self.ssh_port = exe.ssh_port
         self.exe = exe
         self.ui = ui
         self.read_timeout = 0
@@ -105,6 +106,7 @@ class SessionManager(QObject):
     def return_node_dictionary(self, vendor_OS):
         return {'device_type': vendor_OS,
                 'host': self.device_ip,
+                'port' : self.ssh_port,
                 'username': self.ui.le_username.text(),
                 'password': self.ui.le_password.text(),
                 'session_timeout': 300,
@@ -128,14 +130,14 @@ class SessionManager(QObject):
             self.optical_module_commands_1: str = "display optical-module brief | no-more"
             self.inventory_report_command_1: str = "display device pic-status | no-more"
             self.inventory_report_command_2: str = "display version | no-more"
-            self.inventory_report_command_3: str = "display device elabel | no-more"
+            self.inventory_report_command_3: str = "display elabel brief  | no-more"
 
             self.physical_interface_fsm: str = ttp.ttp_huawei_display_interface
             self.all_interface_description_fsm: str = ttp.ttp_huawei_display_interface_description
             self.trunks_bandwidth_fsm: str = ttp.ttp_huawei_display_interface_eth_trunk
             self.loaded_licenses_fsm_1: str = "TEXT_FSM_FILES//huawei_vrp_display_license_verbose"
             self.loaded_licenses_fsm_2: str = "TEXT_FSM_FILES//huawei_vrp_display_license_resource_usage"
-            self.license_usage_on_port_fsm: str = "TEXT_FSM_FILES//huawei_vrp_display_lic_res_usage_port_basic.textfsm"
+            self.license_usage_on_port_fsm: str = ttp.ttp_huawei_display_licesnse_resource_usage_port_basic_all
             self.optical_module_fsm_1: str = ttp.ttp_huawei_display_optical_module_brief
             #for inventory reprort
             # 1 : pic status FSM
@@ -143,7 +145,7 @@ class SessionManager(QObject):
             # 3 : elable FSM
             self.inventory_report_fsm_1: str = ttp.ttp_huawei_display_device_pic_status
             self.inventory_report_fsm_2: str = ttp.ttp_huawei_display_version
-            self.inventory_report_fsm_3: str = "TEXT_FSM_FILES//huawei_vrp_display_elable_brief.textfsm"
+            self.inventory_report_fsm_3: str = ttp.ttp_huawei_display_elabel_brief
 
         if vendor == self.juniper_os:
             self.physical_interface_command: str = "show interfaces detail | display json | no-more"
@@ -238,15 +240,15 @@ class SessionManager(QObject):
 
             if self.ui.cb_licenses.isChecked():
                 loaded_licenses_1_output = SSH_connection.send_command_timing(self.loaded_licenses_command_1,
-                                                                              use_ttp=if_huawei,
+                                                                              use_textfsm=if_huawei,
                                                                               read_timeout=self.read_timeout,
-                                                                              ttp_template=self.loaded_licenses_fsm_1)
+                                                                              textfsm_template=self.loaded_licenses_fsm_1)
                 loaded_licenses_2_output = ""
                 if self.identified_vendor == self.huawei_os:
                     loaded_licenses_2_output = SSH_connection.send_command_timing(self.loaded_licenses_command_2,
-                                                                                  use_ttp=if_huawei,
+                                                                                  use_textfsm=if_huawei,
                                                                                   read_timeout=self.read_timeout,
-                                                                                  ttp_template=self.loaded_licenses_fsm_2)
+                                                                                  textfsm_template=self.loaded_licenses_fsm_2)
 
             if self.ui.cb_optical_modules.isChecked():
                 optical_module_commands_1_output = SSH_connection.send_command_timing(
@@ -322,11 +324,11 @@ class SessionManager(QObject):
                     use_ttp=True,
                     read_timeout=self.read_timeout,
                     ttp_template=self.inventory_report_fsm_2, last_read=4.0)
-                # inventory_report_command_3_output = SSH_connection.send_command_timing(
-                #     self.inventory_report_command_3,
-                #     use_ttp=if_huawei,
-                #     read_timeout=self.read_timeout,
-                #     ttp_template=self.inventory_report_fsm_3, last_read=4.0)
+                inventory_report_command_3_output = SSH_connection.send_command_timing(
+                    self.inventory_report_command_3,
+                    use_ttp=if_huawei,
+                    read_timeout=self.read_timeout,
+                    ttp_template=self.inventory_report_fsm_3, last_read=4.0)
 
             if self.ui.cb_port_lic_utilization.isChecked():
                 license_usage_on_port_output = ""
@@ -619,6 +621,9 @@ class SessionManager(QObject):
 
         if data[9].get(self.inventory_report_command_2):
             self.huawei_output_format['version'] = [data[9][self.inventory_report_command_2][0][0]['version_details']]
+
+        if data[10].get(self.inventory_report_command_3):
+            self.huawei_output_format['inventory details'] = data[10][self.inventory_report_command_3][0][0]['inventory_details']
 
     def list_dict_to_string(self,members: list) -> str:  # takes a list of dictionaries as input and returns the string of member interfaces
         if isinstance(members, dict):  # if there is only one memeber interface in then
